@@ -6,6 +6,13 @@
   cursor: pointer;
 }
 
+.accordion-sidenav .collapsible-item .title {
+  padding: 10px;
+  color: #eee;
+  background-color: rgb(43, 48, 59);
+  cursor: pointer;
+}
+
 .collapsed-menu .collapsible-item .title {
   padding: 5px !important;
 }

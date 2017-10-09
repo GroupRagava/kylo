@@ -46,11 +46,11 @@ body {
 }
 
 md-content.md-kylo-theme{
-  background-color: #ffffff !important;
+  background-color: #ffffff;
 }
 
 .kylo-logo {
-  padding-top:5px;
+  padding-top: 15px;
 }
 
 /** on small views the height of the top bar (search container) gets smaller with default angular styles.
@@ -1158,4 +1158,11 @@ md-input-container.global-search .md-input {
 }
 
 .elastic-search-property-table tr:not(:last-child) td {
+}
+
+.content-sidenav{
+  background-color: rgb(43, 48, 59) !important;
+}
+.header-sidenav{
+  background-color: #272B35 !important;
 }
