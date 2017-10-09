@@ -2,27 +2,43 @@
             md-component-id="left"
             md-whiteframe="4"
             md-is-locked-open="$mdMedia('gt-md') && sideNavService.isLockOpen"
-            layout="column" >
+            layout="column">
 
-  <md-toolbar class="md-hue-2 layout-column header-sidenav" style="" layout="column">
-    <div layout="row" layout-align="center center" class="kylo-logo">
-      <img src="assets/images/logo.png" height="35px" ng-if="!collapsed">
-      <img src="assets/images/power_logo.png"  width="20px" ng-if="collapsed" style="padding-top: 5px;">
-    </div>
-  </md-toolbar>
-  <md-content layout="column" flex style="overflow:hidden" class="content-sidenav">
-    <div flex style="overflow-y:hidden;overflow-x:hidden" ng-class="{'collapsed-menu':collapsed}">
-        <accordion-menu menu="menu" collapsed="collapsed" class="accordion-sidenav"></accordion-menu>
-    </div>
+    <md-toolbar class="md-hue-2 layout-column header-sidenav" style="" layout="column">
+        <div layout="row" layout-align="center center" class="kylo-logo">
+            <img src="assets/images/logo.png" height="35px" ng-if="!collapsed">
+            <img src="assets/images/power_logo.png" width="20px" ng-if="collapsed" style="padding-top: 5px;">
+        </div>
+    </md-toolbar>
+    <md-content layout="column" flex style="overflow:hidden" class="content-sidenav">
+        <div>
+            <md-list class="accordion-sidenav">
+                <md-list-item ng-repeat="section in sections">
+                    <md-button flex ng-click="selectMenuItem()" class="nav-btn" ui-sref="{{section.sref}}" ng-class="{'md-icon-button': collapsed}">
+                        <div class="layout-padding-left-8 menu-link">
+                            <ng-md-icon md-icon icon="{{section.icon}}" class="nav-btn"></ng-md-icon>
+                            <md-tooltip md-direction="right" ng-if="collapsed">{{section.name}}</md-tooltip>
+                            <span style="padding-left:10px;" ng-if="!collapsed">{{section.name}}</span>
+                        </div>
+                    </md-button>
+                </md-list-item>
+            </md-list>
+        </div>
 
-    <div>
-      <md-divider></md-divider>
-    <div class="collapse-btn" ng-click="expandCollapseSideNavList($event)" layout-align="start start" layout="row" role="button">
 
-      <span flex></span>
-          <ng-md-icon md-icon icon="chevron_left" class="nav-btn" ng-if="!collapsed"></ng-md-icon>
-          <ng-md-icon md-icon icon="chevron_right" class="nav-btn" ng-if="collapsed"></ng-md-icon>
-    </div>
-    </div>
-  </md-content>
+        <span flex></span>
+        <div>
+            <div flex style="overflow-y:hidden;overflow-x:hidden" ng-class="{'collapsed-menu':collapsed}">
+                <accordion-menu menu="menu" collapsed="collapsed" class="accordion-sidenav"></accordion-menu>
+            </div>
+            <md-divider></md-divider>
+            <div class="collapse-btn" ng-click="expandCollapseSideNavList($event)" layout-align="start start"
+                 layout="row" role="button">
+
+                <span flex></span>
+                <ng-md-icon md-icon icon="chevron_left" class="nav-btn" ng-if="!collapsed"></ng-md-icon>
+                <ng-md-icon md-icon icon="chevron_right" class="nav-btn" ng-if="collapsed"></ng-md-icon>
+            </div>
+        </div>
+    </md-content>
 </md-sidenav>

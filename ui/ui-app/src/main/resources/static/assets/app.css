@@ -159,8 +159,8 @@ md-list md-datepicker .md-button.md-icon-button {
 
 md-sidenav .collapse-btn {
   padding: 10px;
-  color: #3483BA;
-  background-color: #F9F9F9;
+  color: #F9F9F9;
+  background-color: rgb(43, 48, 59);
   cursor: pointer;
 }
 

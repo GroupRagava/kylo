@@ -22,6 +22,28 @@ define(['angular','side-nav/module-name', 'constants/AccessConstants', 'side-nav
                  */
                 $scope.menu = [];
 
+                /**
+                 * Sections
+                 * @type {Array}
+                 */
+                $scope.sections = [
+                    {
+                        name: 'Home',
+                        icon: 'home',
+                        sref: '/'
+                    },
+                    {
+                        name: 'Explore',
+                        icon: 'explore',
+                        sref: '/directory'
+                    },
+                    {
+                        name: 'Projects',
+                        icon: 'folder_shared',
+                        sref: '/projects'
+                    }
+                ];
+
 
                 /**
                  * The selected menu item
