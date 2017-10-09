@@ -39,7 +39,7 @@
   background-color: rgb(43, 48, 59);
 }
 
-.accordion-sidenav md-list .md-button:not(.md-no-style) {
+.accordion-sidenav md-list .md-button {
   color: #A7A9AE;
 }
 

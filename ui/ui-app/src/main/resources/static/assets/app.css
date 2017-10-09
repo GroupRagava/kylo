@@ -107,7 +107,7 @@ md-sidenav md-toolbar h1 {
 /* Sidenav area*/
 
 md-list .md-button:not(.md-no-style) {
-  color: #607D8B;
+  color: #A7A9AE;
   font-weight: 500;
   text-align: left;
   text-transform: none;
@@ -1165,4 +1165,8 @@ md-input-container.global-search .md-input {
 }
 .header-sidenav{
   background-color: #272B35 !important;
+}
+
+.site-sidenav  :focus {
+  outline: none;
 }
