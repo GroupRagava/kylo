@@ -16,20 +16,23 @@
                 <md-list-item ng-repeat="section in sections">
                     <md-button flex ng-click="selectMenuItem()" class="nav-btn" ui-sref="{{section.sref}}" ng-class="{'md-icon-button': collapsed}">
                         <div class="layout-padding-left-8 menu-link">
-                            <ng-md-icon md-icon icon="{{section.icon}}" class="nav-btn"></ng-md-icon>
-                            <md-tooltip md-direction="right" ng-if="collapsed">{{section.name}}</md-tooltip>
-                            <span style="padding-left:10px;" ng-if="!collapsed">{{section.name}}</span>
+                            <ng-md-icon md-icon icon="{{section.icon}}" class="nav-btn item-menu"></ng-md-icon>
+                            <md-tooltip md-direction="right" ng-if="collapsed">{{section.text}}</md-tooltip>
+                            <span style="padding-left:10px;" ng-if="!collapsed">{{section.text}}</span>
                         </div>
                     </md-button>
                 </md-list-item>
             </md-list>
+            <!--div flex style="overflow-y:hidden;overflow-x:hidden" ng-class="{'collapsed-menu':collapsed}">
+                <accordion-menu id="1" menu="sections" collapsed="collapsed" class="accordion-sidenav" ng-class="{'width-menu':collapsed}"></accordion-menu>
+            </div-->
         </div>
 
 
         <span flex></span>
         <div>
             <div flex style="overflow-y:hidden;overflow-x:hidden" ng-class="{'collapsed-menu':collapsed}">
-                <accordion-menu menu="menu" collapsed="collapsed" class="accordion-sidenav"></accordion-menu>
+                <accordion-menu menu="menu" collapsed="collapsed" class="accordion-sidenav" ng-class="{'width-menu':collapsed}"></accordion-menu>
             </div>
             <md-divider></md-divider>
             <div class="collapse-btn" ng-click="expandCollapseSideNavList($event)" layout-align="start start"

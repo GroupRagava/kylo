@@ -27,21 +27,9 @@ define(['angular','side-nav/module-name', 'constants/AccessConstants', 'side-nav
                  * @type {Array}
                  */
                 $scope.sections = [
-                    {
-                        name: 'Home',
-                        icon: 'home',
-                        sref: '/'
-                    },
-                    {
-                        name: 'Explore',
-                        icon: 'explore',
-                        sref: '/directory'
-                    },
-                    {
-                        name: 'Projects',
-                        icon: 'folder_shared',
-                        sref: '/projects'
-                    }
+                    {sref: "/",type:'link', icon: "home", text: "Home", defaultActive: false, permission: AccessConstants.UI_STATES.DASHBOARD.permissions},
+                    {sref: "/directory",type:'link', icon: "explore", text: "Explore", defaultActive: false, permission: AccessConstants.UI_STATES.DASHBOARD.permissions},
+                    {sref: "/projects",type:'link', icon: "folder_shared", text: "Projects", defaultActive: false, permission: AccessConstants.UI_STATES.DASHBOARD.permissions}
                 ];
 
 
@@ -108,7 +96,7 @@ define(['angular','side-nav/module-name', 'constants/AccessConstants', 'side-nav
                  * @param allowed
                  */
                 function buildFeedManagerMenu() {
-                    var menu = ({type:'toggle', text: "Feed Manager",narrowText:'Feed',expanded:true,elementId:'toggle_feed_manager'});
+                    var menu = ({type:'toggle', text: "Feed Manager",narrowText:'Feed', icon: 'view_agenda' ,expanded:true,elementId:'toggle_feed_manager'});
                     var links = [];
                     links.push({sref: "feeds",type:'link', icon: "linear_scale", text: "Feeds", permission: AccessConstants.UI_STATES.FEEDS.permissions});
                     links.push({sref: "categories",type:'link', icon: "folder_special", text: "Categories", permission: AccessConstants.UI_STATES.CATEGORIES.permissions});
@@ -128,7 +116,7 @@ define(['angular','side-nav/module-name', 'constants/AccessConstants', 'side-nav
                  * @param allowed
                  */
                 function buildOpsManagerMenu() {
-                       var menu = ({type:'toggle', text: "Operations",narrowText:'Ops',expanded:false});
+                       var menu = ({type:'toggle', text: "Operations",narrowText:'Ops', icon: 'feedback' ,expanded:false});
                        var links = [];
                        links.push({sref: "dashboard",type:'link', icon: "dashboard", text: "Dashboard", defaultActive: false, permission: AccessConstants.UI_STATES.DASHBOARD.permissions});
                        links.push({sref: "service-health",type:'link', icon: "vector_triangle", text: "Services", defaultActive: false, permission: AccessConstants.UI_STATES.SERVICE_HEALTH.permissions});
@@ -149,7 +137,7 @@ define(['angular','side-nav/module-name', 'constants/AccessConstants', 'side-nav
                  */
                 function buildAdminMenu() {
 
-                    var menu = ({type:'toggle', text: "Admin",narrowText:'Admin',expanded:false});
+                    var menu = ({type:'toggle', text: "Admin",narrowText:'Admin', icon: 'person_pin', expanded:false});
                     var links = [];
                     links.push({sref: "datasources", type: "link", icon: "storage", text: "Data Sources", defaultActive: false, permission: AccessControlService.DATASOURCE_ACCESS});
                     links.push({sref: "domain-types", type: "link", icon: "local_offer", text: "Domain Types", defaultActive: false, permission: AccessControlService.FEEDS_ADMIN});

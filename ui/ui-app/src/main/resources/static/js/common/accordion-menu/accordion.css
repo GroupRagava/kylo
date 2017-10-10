@@ -48,12 +48,8 @@
   color: #eee;
 }
 
-.accordion-list menu-link {
-  width: 100% !important;
-  padding-right: 17px;
-}
-
-
-.accordion-list menu-link a {
-  width: 100% !important;
+.accordion-sidenav .item-menu{
+/*  height: 18px;
+  width: 18px;
+  line-height: 18px;*/
 }
