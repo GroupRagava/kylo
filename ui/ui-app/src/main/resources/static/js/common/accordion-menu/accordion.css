@@ -33,23 +33,3 @@
   max-height: 1000px;
   z-index: 1;
 }
-
-.accordion-sidenav .collapsible-item .title {
-  color: #eee;
-  background-color: rgb(43, 48, 59);
-}
-
-.accordion-sidenav md-list .md-button {
-  color: #A7A9AE;
-}
-
-.accordion-sidenav .md-button.md-kylo-theme:not([disabled]):hover {
-  background-color: rgba(158,158,158,0.2);
-  color: #eee;
-}
-
-.accordion-sidenav .item-menu{
-/*  height: 18px;
-  width: 18px;
-  line-height: 18px;*/
-}

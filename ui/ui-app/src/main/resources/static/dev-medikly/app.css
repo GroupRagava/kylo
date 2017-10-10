@@ -1,0 +1,10 @@
+.content-sidenav{
+    background-color: rgb(43, 48, 59) !important;
+}
+.header-sidenav{
+    background-color: #272B35 !important;
+}
+
+.site-sidenav  :focus {
+    outline: none;
+}
