@@ -12,6 +12,16 @@
     color: #eee;
 }
 
-.accordion-sidenav .item-menu{
+kylo-side-nav .accordion-list ng-md-icon {
+    width: 18px;
+    height: 18px;
+}
 
+kylo-side-nav .accordion-list ng-md-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+kylo-side-nav .accordion-list .md-button.md-icon-button {
+    padding: 8px 10px;
 }
