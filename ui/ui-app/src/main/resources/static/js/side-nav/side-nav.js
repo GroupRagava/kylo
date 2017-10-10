@@ -208,7 +208,8 @@ define(['angular','side-nav/module-name', 'constants/AccessConstants', 'side-nav
                         }
                         item.collapsed = $scope.collapsed;
                         if($scope.collapsed){
-                            item.text = item.narrowText;
+                            //item.text = item.narrowText;
+                            item.text = item.text;
 
                         }
                         else {
