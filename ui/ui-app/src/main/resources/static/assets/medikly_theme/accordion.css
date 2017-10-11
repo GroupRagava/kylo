@@ -8,7 +8,20 @@
 }
 
 .accordion-sidenav .md-button.md-kylo-theme:not([disabled]):hover {
-    background-color: rgba(158,158,158,0.2);
+    background-color: rgba(158, 158, 158, 0.2);
+    color: #eee;
+}
+
+.accordion-sidenav .collapsible-item .title {
+    padding: 0px 6px;
+    margin: 6px 8px;
+    color: #A7A9AE;
+    line-height: 36px;
+    border-radius: 2px;
+}
+
+.accordion-sidenav .collapsible-item .title:hover {
+    background-color: rgba(158, 158, 158, 0.2);
     color: #eee;
 }
 
