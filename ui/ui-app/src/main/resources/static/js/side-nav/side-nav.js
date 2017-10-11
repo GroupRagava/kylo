@@ -120,6 +120,7 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                         type: 'toggle',
                         text: "Feed Manager",
                         narrowText: 'Feed',
+                        icon: 'feedback',
                         expanded: true,
                         elementId: 'toggle_feed_manager'
                     });
@@ -173,7 +174,13 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                  * @param allowed
                  */
                 function buildOpsManagerMenu() {
-                    var menu = ({type: 'toggle', text: "Operations", narrowText: 'Ops', expanded: false});
+                    var menu = ({
+                        type: 'toggle',
+                        text: "Operations",
+                        narrowText: 'Ops',
+                        icon: 'view_agenda',
+                        expanded: false
+                    });
                     var links = [];
                     links.push({
                         sref: "dashboard",
@@ -242,7 +249,13 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                  */
                 function buildAdminMenu() {
 
-                    var menu = ({type: 'toggle', text: "Admin", narrowText: 'Admin', expanded: false});
+                    var menu = ({
+                        type: 'toggle',
+                        text: "Admin",
+                        narrowText: 'Admin',
+                        icon: 'person_pin',
+                        expanded: false
+                    });
                     var links = [];
                     links.push({
                         sref: "datasources",

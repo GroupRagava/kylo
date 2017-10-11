@@ -3,19 +3,19 @@ define(['angular','common/module-name'], function (angular,moduleName) {
         .run(['$templateCache', function ($templateCache) {
 
             $templateCache.put('menu-toggle.tmpl.html',
-            '<div class="collapsible-item" ng-class="{open: section.expanded}" ng-if="section.hidden == false" id="{{section.elementId}}">'
-            + '<div class="title" ng-class="{disabled: section.disabled}" ng-click="toggle()" flex layout-align="start start" layout="row">'
-            + '   <span flex>{{section.text}}</span>'
-            + '   <ng-md-icon md-icon icon="{{section.expandIcon}}" ng-if="!isCollapsed()"></ng-md-icon>'
-            + '</div>'
-            + ' <div class="accordion-body">'
-            + ' <md-list id="menu-{{section.text}}" class="accordion-list">\n'
-            + '  <md-list-item ng-repeat="item in section.links" ng-if-permission="{{item.permission}}">\n'
-            + '    <menu-link section="item"></menu-link>\n'
-            + '  </md-list-item>\n'
-            + '</md-list> '
-            + ' </div>'
-            + '</div>');
+                '<div class="collapsible-item" ng-class="{open: section.expanded}" ng-if="section.hidden == false" id="{{section.elementId}}">'
+                + '<div class="title" ng-class="{disabled: section.disabled}" ng-click="toggle()" flex layout-align="start start" layout="row">'
+                + '   <span flex>{{section.text}}</span>'
+                + '   <ng-md-icon md-icon icon="{{section.expandIcon}}" ng-if="!isCollapsed()"></ng-md-icon>'
+                + '</div>'
+                + ' <div class="accordion-body">'
+                + ' <md-list id="menu-{{section.text}}" class="accordion-list">\n'
+                + '  <md-list-item ng-repeat="item in section.links" ng-if-permission="{{item.permission}}">\n'
+                + '    <menu-link section="item"></menu-link>\n'
+                + '  </md-list-item>\n'
+                + '</md-list> '
+                + ' </div>'
+                + '</div>');
 
 
 
