@@ -11,7 +11,13 @@ define(['angular', 'kylo-common', '@uirouter/angular', 'kylo-services',
             debug: false
         });
 
-        $urlRouterProvider.otherwise("/home");
+        $urlRouterProvider.otherwise("/homepage");
+
+        $stateProvider.state( {
+            name: 'homepage.**',
+            url: '/homepage',
+            loadChildren: 'medikly/home/home.module#HomeModule'
+        });
 
         $stateProvider
             .state('home', {

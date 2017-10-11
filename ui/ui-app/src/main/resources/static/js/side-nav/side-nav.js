@@ -29,7 +29,7 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                  */
                 $scope.sections = [
                     {
-                        sref: "/",
+                        sref: "/homepage",
                         type: 'link',
                         icon: "home",
                         text: "Home",

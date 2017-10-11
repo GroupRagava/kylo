@@ -15,7 +15,7 @@
         <div>
             <md-list class="accordion-sidenav">
                 <md-list-item ng-repeat="section in sections">
-                    <md-button flex ng-click="selectMenuItem()" class="nav-btn item-menu" ui-sref="{{section.sref}}"
+                    <md-button flex class="nav-btn item-menu" ui-sref="{{section.sref}}"
                                ng-class="{'md-icon-button': collapsed}">
                         <div class="layout-padding-left-8 menu-link">
                             <ng-md-icon md-icon icon="{{section.icon}}" class="nav-btn"></ng-md-icon>
