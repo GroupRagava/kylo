@@ -29,7 +29,7 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                  */
                 $scope.sections = [
                     {
-                        sref: "/homepage",
+                        sref: "homepage",
                         type: 'link',
                         icon: "home",
                         text: "Home",
@@ -37,7 +37,7 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                         permission: AccessConstants.UI_STATES.DASHBOARD.permissions
                     },
                     {
-                        sref: "/directory",
+                        sref: "directory",
                         type: 'link',
                         icon: "explore",
                         text: "Explore",
@@ -45,7 +45,7 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                         permission: AccessConstants.UI_STATES.DASHBOARD.permissions
                     },
                     {
-                        sref: "/projects",
+                        sref: "projects",
                         type: 'link',
                         icon: "folder_shared",
                         text: "Projects",
