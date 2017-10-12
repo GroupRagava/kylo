@@ -4,10 +4,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-define(["require", "exports", "@angular/core", "@angular/common", "@angular/material", "./home.component", "@uirouter/angular"], function (require, exports, core_1, common_1, material_1, home_component_1, angular_1) {
+define(["require", "exports", "@angular/core", "@angular/common", "@angular/material", "./home.component", "@uirouter/angular", "@angular/flex-layout"], function (require, exports, core_1, common_1, material_1, home_component_1, angular_1, flex_layout_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    // import { FlexLayoutModule} from "@angular/flex-layout";
     exports.HOME_STATES = {
         name: 'homepage',
         url: '/homepage',
@@ -40,6 +39,7 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
                 material_1.MdToolbarModule,
                 material_1.MdProgressBarModule,
                 material_1.MdMenuModule,
+                flex_layout_1.FlexLayoutModule
             ],
             declarations: [home_component_1.HomeComponent]
         })

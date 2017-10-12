@@ -14,7 +14,7 @@ import {HomeComponent} from './home.component';
 import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
 
 
-// import { FlexLayoutModule} from "@angular/flex-layout";
+import { FlexLayoutModule} from "@angular/flex-layout";
 
 export let HOME_STATES: Ng2StateDeclaration = {
     name: 'homepage',
@@ -43,7 +43,7 @@ export let HOME_STATES: Ng2StateDeclaration = {
         MdToolbarModule,
         MdProgressBarModule,
         MdMenuModule,
-        // FlexLayoutModule
+        FlexLayoutModule
     ],
     declarations: [HomeComponent]
 })
