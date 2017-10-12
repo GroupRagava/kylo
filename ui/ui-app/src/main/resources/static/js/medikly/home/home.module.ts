@@ -11,8 +11,10 @@ import {
 } from '@angular/material';
 
 import {HomeComponent} from './home.component';
-
 import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
+
+
+// import { FlexLayoutModule} from "@angular/flex-layout";
 
 export let HOME_STATES: Ng2StateDeclaration = {
     name: 'homepage',
@@ -23,10 +25,10 @@ export let HOME_STATES: Ng2StateDeclaration = {
         }
     },
     data: {
-        breadcrumbRoot: true,
+        breadcrumbRoot: false,
         displayName: "Homepage",
         module: 'homepage',
-        permissions: ['accessOperations']
+        permissions: ['']
     }
 };
 
@@ -40,7 +42,8 @@ export let HOME_STATES: Ng2StateDeclaration = {
         MdListModule,
         MdToolbarModule,
         MdProgressBarModule,
-        MdMenuModule
+        MdMenuModule,
+        // FlexLayoutModule
     ],
     declarations: [HomeComponent]
 })
