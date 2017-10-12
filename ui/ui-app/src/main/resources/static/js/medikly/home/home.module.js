@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 define(["require", "exports", "@angular/core", "@angular/common", "@angular/material", "./home.component", "@uirouter/angular"], function (require, exports, core_1, common_1, material_1, home_component_1, angular_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    // import { FlexLayoutModule} from "@angular/flex-layout";
     exports.HOME_STATES = {
         name: 'homepage',
         url: '/homepage',
@@ -16,10 +17,10 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
             }
         },
         data: {
-            breadcrumbRoot: true,
+            breadcrumbRoot: false,
             displayName: "Homepage",
             module: 'homepage',
-            permissions: ['accessOperations']
+            permissions: ['']
         }
     };
     var HomeModule = (function () {
@@ -38,7 +39,7 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
                 material_1.MdListModule,
                 material_1.MdToolbarModule,
                 material_1.MdProgressBarModule,
-                material_1.MdMenuModule
+                material_1.MdMenuModule,
             ],
             declarations: [home_component_1.HomeComponent]
         })

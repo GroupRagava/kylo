@@ -2,7 +2,7 @@
 var systemLocate = System.locate;
 System.locate = function (load) {
     return Promise.resolve(systemLocate.call(this, load)).then(function (address) {
-        return address + "?ver=0.8.3"
+        return address + "?ver=0.8.4"
     });
 };
 
@@ -46,6 +46,7 @@ System.config({
         '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.min',
         '@angular/http': 'npm:@angular/http/bundles/http.umd.min',
         '@angular/material': 'npm:@angular/material/bundles/material.umd.min',
+        '@angular/flex-layout': 'npm:@angular/flex-layout/bundles/flex-layout.umd',
         '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.min',
               '@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.min',
         '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min',
