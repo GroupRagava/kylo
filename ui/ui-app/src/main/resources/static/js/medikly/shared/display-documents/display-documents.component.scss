@@ -1,0 +1,47 @@
+:host {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 0px;
+  display: block;
+}
+
+/deep/ {
+  .nav-list-measure {
+    .mat-list-item-content {
+      height: 48px !important;
+      width: 100%;
+    }
+  }
+
+  .sidebar-menu {
+    .mat-list-item-content {
+      height: 40px !important;
+    }
+  }
+}
+
+.header-section-list {
+  line-height: 46px;
+  padding-top: 10px;
+
+  .button-toolbar-margin {
+    margin-right: 0px;
+    margin-left: 0px !important;
+  }
+
+}
+
+.submenu-item-measure {
+  padding-left: 24px;
+}
+
+.bottom-add-right {
+  position: fixed !important;
+  background-color: #db4437;
+}
+
+.btn-light-blue {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
