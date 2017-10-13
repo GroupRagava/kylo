@@ -8,7 +8,10 @@
     "start": "tsc -p src/main/resources/static/tsconfig.app.json && concurrently \"tsc -p src/main/resources/static -w\" \"lite-server -c src/main/resources/static/bs-config.js\"",
     "reinstall": "rm -rf node_modules tmp deploy dist && npm i",
     "test": "karma start karma.conf.js",
-    "test:watch": "tsc -p src/main/resources/static/tsconfig.app.json && concurrently \"tsc -p src/main/resources/static/tsconfig.spec.json -w\" \"karma start karma.conf.js\""
+    "test:watch": "tsc -p src/main/resources/static/tsconfig.app.json && concurrently \"tsc -p src/main/resources/static/tsconfig.spec.json -w\" \"karma start karma.conf.js\"",
+    "build-css": "node-sass --include-path scss ./src/main/resources/static/assets/medikly_theme/styles/mdk-main.scss ./src/main/resources/static/assets/medikly_theme/styles/css/mdk-main.css",
+    "build-css-pricing": "node-sass --include-path scss ./src/main/resources/static/assets/medikly_theme/styles/scss/components/_pricing.scss ./src/main/resources/static/assets/medikly_theme/styles/css/pricing.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "engines": {
     "node": ">4.4 < 7",
@@ -62,6 +65,8 @@
     "karma-jasmine": "^1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "lite-server": "^2.3.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
     "typescript": "~2.3.3"
   }
 }
