@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 import { MdIconModule, MdCardModule, MdButtonModule, MdListModule, MdProgressBarModule, MdMenuModule, MdToolbarModule, MdSidenavModule, MdInputModule, MdCheckboxModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { DisplayDocumentsComponent } from './display-documents.component';
 import { DisplayDocumentsRouting } from './display-documents.routing';
@@ -31,7 +30,6 @@ import { OrderModule } from 'ngx-order-pipe';
     MdMenuModule,
     MdInputModule,
     MdCheckboxModule,
-    NgxDatatableModule,
     FlexLayoutModule,
     FlexLayoutModule,
     MdSidenavModule,

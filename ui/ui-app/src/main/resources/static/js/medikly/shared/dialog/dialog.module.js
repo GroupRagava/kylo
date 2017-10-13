@@ -4,7 +4,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-define(["require", "exports", "@angular/core", "./dialog-rename-file.component", "./dialog-remove-file.component", "./dialog-label.component", "./dialog-folder.component", "./dialog-create.component", "@angular/material", "@angular/forms", "@swimlane/ngx-datatable", "@angular/flex-layout", "@angular/common"], function (require, exports, core_1, dialog_rename_file_component_1, dialog_remove_file_component_1, dialog_label_component_1, dialog_folder_component_1, dialog_create_component_1, material_1, forms_1, ngx_datatable_1, flex_layout_1, common_1) {
+define(["require", "exports", "@angular/core", "./dialog-rename-file.component", "./dialog-remove-file.component", "./dialog-label.component", "./dialog-folder.component", "./dialog-create.component", "@angular/material", "@angular/forms", "@angular/flex-layout", "@angular/common"], function (require, exports, core_1, dialog_rename_file_component_1, dialog_remove_file_component_1, dialog_label_component_1, dialog_folder_component_1, dialog_create_component_1, material_1, forms_1, flex_layout_1, common_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var DialogModule = (function () {
@@ -25,7 +25,6 @@ define(["require", "exports", "@angular/core", "./dialog-rename-file.component",
                 material_1.MdProgressBarModule,
                 material_1.MdToolbarModule,
                 forms_1.ReactiveFormsModule,
-                ngx_datatable_1.NgxDatatableModule,
                 flex_layout_1.FlexLayoutModule,
                 common_1.CommonModule,
             ],

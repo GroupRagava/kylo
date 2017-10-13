@@ -19,6 +19,11 @@ define(['angular', 'kylo-common', '@uirouter/angular', 'kylo-services',
             loadChildren: 'medikly/home/home.module#HomeModule'
         });
 
+        $stateProvider.state( {
+            name: 'project.**',
+            url: '/project',
+            loadChildren: 'medikly/projects/projects.module#ProjectsModule'
+        });
 
         $stateProvider
             .state('home', {

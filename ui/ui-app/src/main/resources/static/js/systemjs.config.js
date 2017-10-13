@@ -47,6 +47,7 @@ System.config({
         '@angular/http': 'npm:@angular/http/bundles/http.umd.min',
         '@angular/material': 'npm:@angular/material/bundles/material.umd.min',
         '@angular/flex-layout': '../assets/medikly_theme/vendors/flex-layout/bundles/flex-layout.umd',
+        'ngx-perfect-scrollbar': '../assets/medikly_theme/vendors/ngx-perfect-scrollbar/bundles/ngx-perfect-scrollbar.umd',
         '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.min',
               '@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.min',
         '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min',

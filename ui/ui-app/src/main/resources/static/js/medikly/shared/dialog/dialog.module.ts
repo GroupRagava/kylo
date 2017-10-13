@@ -14,7 +14,6 @@ import {MdButtonModule,
   MdToolbarModule} from '@angular/material';
 import { FormsModule,
   ReactiveFormsModule } from '@angular/forms';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
 
@@ -30,7 +29,6 @@ import { CommonModule } from '@angular/common';
     MdProgressBarModule,
     MdToolbarModule,
     ReactiveFormsModule,
-    NgxDatatableModule,
     FlexLayoutModule,
     CommonModule,
   ],

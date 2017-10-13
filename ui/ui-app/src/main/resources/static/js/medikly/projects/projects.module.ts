@@ -17,8 +17,6 @@ import { MdIconModule,
   MdRadioModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { ChartsModule } from 'ng2-charts/ng2-charts';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import {PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
 import { ProjectsComponent } from './home/projects.component';
 import { WorkflowComponent } from './workflow/workflow.component';
@@ -50,8 +48,6 @@ import { DialogNewProject } from './dialog/new-project/dialog.new-project';
     MdRadioModule,
     MdCheckboxModule,
     MdDialogModule,
-    ChartsModule,
-    NgxDatatableModule,
     FlexLayoutModule,
     SharedListingModule,
     FlexLayoutModule,
