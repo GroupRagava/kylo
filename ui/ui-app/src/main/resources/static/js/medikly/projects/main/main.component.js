@@ -7,12 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.service"], function (require, exports, core_1, toolbar_service_1) {
+define(["require", "exports", "@angular/core"], function (require, exports, core_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var MainComponent = (function () {
-        function MainComponent(ts) {
-            this.ts = ts;
+        function MainComponent() {
             //SideMenu
             this.mainMenu = [
                 { icon: 'inbox', title: 'My reports', items: [{ icon: 'folder', title: 'Folder 1' }, { icon: 'folder', title: 'Folder 2' }] },
@@ -22,14 +21,10 @@ define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.servi
                 {icon: 'star_rate', title: 'Starred'},
                 {icon: 'delete', title: 'Archive'}*/
             ];
-            ts.setTopSectionTitle('Projects');
-            ts.setToolbarColor('dark-blue');
-            ts.setSubMenuOptions(this.mainMenu);
         }
         MainComponent.prototype.ngOnInit = function () {
         };
         MainComponent.prototype.ngOnDestroy = function () {
-            this.ts.restoreToolbarColor();
         };
         return MainComponent;
     }());
@@ -39,9 +34,8 @@ define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.servi
             templateUrl: './main.component.html',
             styleUrls: ['./main.component.scss']
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof toolbar_service_1.ToolbarService !== "undefined" && toolbar_service_1.ToolbarService) === "function" && _a || Object])
+        __metadata("design:paramtypes", [])
     ], MainComponent);
     exports.MainComponent = MainComponent;
-    var _a;
 });
 //# sourceMappingURL=main.component.js.map

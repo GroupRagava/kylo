@@ -6,7 +6,7 @@ import {MdDialog, MdDialogRef} from '@angular/material';
 import { DialogRemoveFile } from '../../shared/dialog/dialog-remove-file.component';
 import { DialogRenameFile } from '../../shared/dialog/dialog-rename-file.component';
 import { DisplayDocumentsService } from './display-documents.service';
-import {DOCUMENTS} from '../../../assets/data/documents';
+import {DOCUMENTS} from '../data/documents';
 
 @Component({
   selector: 'app-display-documents',

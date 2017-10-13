@@ -7,7 +7,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MdDialog, MdDialogRef} from '@angular/material';
 import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
-import {CustomValidators} from 'ng2-validation';
+
 import { Router } from '@angular/router';
 
 

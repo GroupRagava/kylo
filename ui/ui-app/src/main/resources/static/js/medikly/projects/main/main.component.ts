@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import {ToolbarService} from '../../core/toolbar/toolbar.service';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -15,17 +15,14 @@ export class MainComponent implements OnInit, OnDestroy {
     {icon: 'star_rate', title: 'Starred'},
     {icon: 'delete', title: 'Archive'}*/];
 
-  constructor(private ts: ToolbarService) {
-    ts.setTopSectionTitle('Projects');
-    ts.setToolbarColor('dark-blue');
-    ts.setSubMenuOptions(this.mainMenu);
+  constructor() {
   }
 
   ngOnInit() {
   }
 
   ngOnDestroy() {
-    this.ts.restoreToolbarColor();
+
   }
 
 }

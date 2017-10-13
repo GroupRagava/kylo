@@ -19,6 +19,7 @@ define(['angular', 'kylo-common', '@uirouter/angular', 'kylo-services',
             loadChildren: 'medikly/home/home.module#HomeModule'
         });
 
+
         $stateProvider
             .state('home', {
                 url: '/home',

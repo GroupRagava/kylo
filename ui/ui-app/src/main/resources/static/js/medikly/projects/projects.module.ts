@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+
 import { CommonModule } from '@angular/common';
 import { MdIconModule,
   MdCardModule,
@@ -23,7 +23,7 @@ import {PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
 import { ProjectsComponent } from './home/projects.component';
 import { WorkflowComponent } from './workflow/workflow.component';
 import { MainComponent } from './main/main.component';
-import { ProjectsRoutes } from './projects.routing';
+
 import { SharedListingModule} from '../shared/listing/shared-listing.module';
 import { OrderModule } from 'ngx-order-pipe';
 import { DragulaModule } from 'ng2-dragula/ng2-dragula';

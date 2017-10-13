@@ -10,12 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.service", "@angular/material", "@angular/platform-browser", "../dialog/new-project/dialog.new-project", "@angular/router"], function (require, exports, core_1, toolbar_service_1, material_1, platform_browser_1, dialog_new_project_1, router_1) {
+define(["require", "exports", "@angular/core", "@angular/material", "@angular/platform-browser", "../dialog/new-project/dialog.new-project", "@angular/router"], function (require, exports, core_1, material_1, platform_browser_1, dialog_new_project_1, router_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var ProjectsComponent = (function () {
-        function ProjectsComponent(ts, dialog, document, el, router) {
-            this.ts = ts;
+        function ProjectsComponent(dialog, document, el, router) {
             this.dialog = dialog;
             this.document = document;
             this.el = el;
@@ -44,14 +43,11 @@ define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.servi
             this.dataMenu = [{ icon: 'subtitles', title: 'Data Model' }, { icon: 'settings_input_component', title: 'Data Sources' }];
             this.folderMenu = [{ icon: 'folder', title: 'Folder 1' }, { icon: 'folder', title: 'Folder 2' }];
             this.labelMenu = [{ icon: 'label', title: 'Label 1' }, { icon: 'label', title: 'Label 2' }];
-            ts.setTopSectionTitle('Projects');
-            ts.setToolbarColor('dark-blue');
             this.date = new Date();
         }
         ProjectsComponent.prototype.ngOnInit = function () {
         };
         ProjectsComponent.prototype.ngOnDestroy = function () {
-            this.ts.restoreToolbarColor();
         };
         ProjectsComponent.prototype.isOver = function () {
             return window.matchMedia("(max-width: 960px)").matches;
@@ -90,10 +86,9 @@ define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.servi
             templateUrl: 'projects.component.html',
             styleUrls: ['projects.component.scss']
         }),
-        __param(2, core_1.Inject(platform_browser_1.DOCUMENT)),
-        __metadata("design:paramtypes", [typeof (_a = typeof toolbar_service_1.ToolbarService !== "undefined" && toolbar_service_1.ToolbarService) === "function" && _a || Object, material_1.MdDialog, Document, core_1.ElementRef, router_1.Router])
+        __param(1, core_1.Inject(platform_browser_1.DOCUMENT)),
+        __metadata("design:paramtypes", [material_1.MdDialog, Document, core_1.ElementRef, router_1.Router])
     ], ProjectsComponent);
     exports.ProjectsComponent = ProjectsComponent;
-    var _a;
 });
 //# sourceMappingURL=projects.component.js.map

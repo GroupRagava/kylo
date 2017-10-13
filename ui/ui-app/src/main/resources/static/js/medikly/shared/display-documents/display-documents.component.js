@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/material", "../../shared/dialog/dialog-remove-file.component", "../../shared/dialog/dialog-rename-file.component", "./display-documents.service", "../../../assets/data/documents"], function (require, exports, core_1, material_1, dialog_remove_file_component_1, dialog_rename_file_component_1, display_documents_service_1, documents_1) {
+define(["require", "exports", "@angular/core", "@angular/material", "../../shared/dialog/dialog-remove-file.component", "../../shared/dialog/dialog-rename-file.component", "./display-documents.service", "../data/documents"], function (require, exports, core_1, material_1, dialog_remove_file_component_1, dialog_rename_file_component_1, display_documents_service_1, documents_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var DisplayDocumentsComponent = (function () {

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
-import {environment} from '../../../../environments/environment';
+// import {environment} from '../../../../environments/environment';
 
 
 
@@ -12,7 +12,7 @@ export class ProfileHeaderCardComponent implements OnInit {
 
   @Input('profile') profile: any;
   @Input('coverImage') coverImage: string;
-  googleApiKey: string = environment.googleMapApiKey;
+  googleApiKey: string = 'abc';
 
   socialNetworks = [
       {name: 'linkedin', 'icon': 'ion-social-linkedin', mouseOvered: false},

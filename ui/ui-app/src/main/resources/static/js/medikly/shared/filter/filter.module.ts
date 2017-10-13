@@ -17,7 +17,7 @@ import {
   MdGridListModule,
   MdCheckboxModule,
   MdSidenavModule, MdSelectionModule, MdRadioModule,
-  MdExpansionModule, MdSelectModule
+   MdSelectModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -29,7 +29,7 @@ import { FilterComponent } from './filter.component';
     CommonModule,
     MdSelectionModule,
     FlexLayoutModule,
-    MdExpansionModule,
+
     MdCardModule,
     MdToolbarModule,
     MdTabsModule,

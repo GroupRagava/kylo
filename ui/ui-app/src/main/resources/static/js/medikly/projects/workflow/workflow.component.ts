@@ -1,6 +1,5 @@
 
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import {ToolbarService} from '../../core/toolbar/toolbar.service';
 
 interface Tasks {
   title: string;
@@ -125,9 +124,7 @@ export class WorkflowComponent implements OnInit, OnDestroy {
   }];
 
 
-  constructor(private ts: ToolbarService) {
-    ts.setTopSectionTitle('Projects');
-    ts.setToolbarColor('dark-blue');
+  constructor() {
 
   }
 
@@ -136,7 +133,7 @@ export class WorkflowComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.ts.restoreToolbarColor();
+
 
   }
 }

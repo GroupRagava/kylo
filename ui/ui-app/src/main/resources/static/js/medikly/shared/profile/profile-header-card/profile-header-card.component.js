@@ -7,12 +7,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "../../../../environments/environment"], function (require, exports, core_1, environment_1) {
+define(["require", "exports", "@angular/core"], function (require, exports, core_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    // import {environment} from '../../../../environments/environment';
     var ProfileHeaderCardComponent = (function () {
         function ProfileHeaderCardComponent() {
-            this.googleApiKey = environment_1.environment.googleMapApiKey;
+            this.googleApiKey = 'abc';
             this.socialNetworks = [
                 { name: 'linkedin', 'icon': 'ion-social-linkedin', mouseOvered: false },
                 { name: 'facebook', 'icon': 'ion-social-facebook', mouseOvered: false },

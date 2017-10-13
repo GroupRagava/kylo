@@ -18,7 +18,6 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
                 common_1.CommonModule,
                 material_1.MdSelectionModule,
                 flex_layout_1.FlexLayoutModule,
-                material_1.MdExpansionModule,
                 material_1.MdCardModule,
                 material_1.MdToolbarModule,
                 material_1.MdTabsModule,

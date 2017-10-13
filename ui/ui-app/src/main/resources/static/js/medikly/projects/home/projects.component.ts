@@ -1,5 +1,5 @@
 import {Component, OnInit, OnDestroy, Inject, ElementRef} from '@angular/core';
-import {ToolbarService} from '../../core/toolbar/toolbar.service';
+
 import {MdDialog, MdDialogRef} from '@angular/material';
 import {DOCUMENT} from '@angular/platform-browser';
 import { DialogNewProject } from '../dialog/new-project/dialog.new-project';
@@ -40,9 +40,9 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   folderMenu = [{icon: 'folder', title: 'Folder 1'}, {icon: 'folder', title: 'Folder 2'}];
   labelMenu = [{icon: 'label', title: 'Label 1'}, {icon: 'label', title: 'Label 2'}];
 
-  constructor(private ts: ToolbarService, public dialog: MdDialog, @Inject(DOCUMENT) private document: Document, private el: ElementRef, public router: Router) {
-    ts.setTopSectionTitle('Projects');
-    ts.setToolbarColor('dark-blue');
+  constructor(public dialog: MdDialog, @Inject(DOCUMENT) private document: Document, private el: ElementRef, public router: Router) {
+
+
 
     this.date = new Date();
   }
@@ -52,7 +52,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.ts.restoreToolbarColor();
+
   }
 
   isOver(): boolean {

@@ -7,12 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.service"], function (require, exports, core_1, toolbar_service_1) {
+define(["require", "exports", "@angular/core"], function (require, exports, core_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var WorkflowComponent = (function () {
-        function WorkflowComponent(ts) {
-            this.ts = ts;
+        function WorkflowComponent() {
             this.taskboard = [{
                     title: 'todo',
                     tasks: [{
@@ -117,13 +116,10 @@ define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.servi
                             description: 'Donec sed odio dui.'
                         }]
                 }];
-            ts.setTopSectionTitle('Projects');
-            ts.setToolbarColor('dark-blue');
         }
         WorkflowComponent.prototype.ngOnInit = function () {
         };
         WorkflowComponent.prototype.ngOnDestroy = function () {
-            this.ts.restoreToolbarColor();
         };
         return WorkflowComponent;
     }());
@@ -133,9 +129,8 @@ define(["require", "exports", "@angular/core", "../../core/toolbar/toolbar.servi
             templateUrl: 'workflow.component.html',
             styleUrls: ['workflow.component.scss']
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof toolbar_service_1.ToolbarService !== "undefined" && toolbar_service_1.ToolbarService) === "function" && _a || Object])
+        __metadata("design:paramtypes", [])
     ], WorkflowComponent);
     exports.WorkflowComponent = WorkflowComponent;
-    var _a;
 });
 //# sourceMappingURL=workflow.component.js.map

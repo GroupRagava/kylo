@@ -7,11 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/material", "@angular/forms", "ng2-validation"], function (require, exports, core_1, material_1, forms_1, ng2_validation_1) {
+define(["require", "exports", "@angular/core", "@angular/material", "@angular/forms"], function (require, exports, core_1, material_1, forms_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var password = new forms_1.FormControl('', forms_1.Validators.required);
-    var confirmPassword = new forms_1.FormControl('', ng2_validation_1.CustomValidators.equalTo(password));
+    var confirmPassword = new forms_1.FormControl('');
     var DialogCreate = (function () {
         function DialogCreate(dialogRef, fb) {
             this.dialogRef = dialogRef;
@@ -20,12 +20,12 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/fo
         DialogCreate.prototype.ngOnInit = function () {
             this.form = this.fb.group({
                 fname: [null, forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.minLength(5), forms_1.Validators.maxLength(10)])],
-                email: [null, forms_1.Validators.compose([forms_1.Validators.required, ng2_validation_1.CustomValidators.email])],
-                range: [null, forms_1.Validators.compose([forms_1.Validators.required, ng2_validation_1.CustomValidators.range([5, 9])])],
-                url: [null, forms_1.Validators.compose([forms_1.Validators.required, ng2_validation_1.CustomValidators.url])],
-                date: [null, forms_1.Validators.compose([forms_1.Validators.required, ng2_validation_1.CustomValidators.date])],
-                creditCard: [null, forms_1.Validators.compose([forms_1.Validators.required, ng2_validation_1.CustomValidators.creditCard])],
-                phone: [null, forms_1.Validators.compose([forms_1.Validators.required, ng2_validation_1.CustomValidators.phone('en-US')])],
+                email: [null, forms_1.Validators.compose([forms_1.Validators.required])],
+                range: [null, forms_1.Validators.compose([forms_1.Validators.required])],
+                url: [null, forms_1.Validators.compose([forms_1.Validators.required])],
+                date: [null, forms_1.Validators.compose([forms_1.Validators.required])],
+                creditCard: [null, forms_1.Validators.compose([forms_1.Validators.required])],
+                phone: [null, forms_1.Validators.compose([forms_1.Validators.required])],
                 gender: [null, forms_1.Validators.required],
                 password: password,
                 confirmPassword: confirmPassword
