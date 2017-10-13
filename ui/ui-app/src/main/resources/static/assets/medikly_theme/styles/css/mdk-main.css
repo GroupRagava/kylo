@@ -3532,7 +3532,9 @@ color: #fff;
   position: fixed; }
 
 body .mat-card-top {
-  margin-top: -64px; }
+  margin-top: -64px;
+  z-index: 3;
+  position: absolute; }
 
 @media (max-width: 600px) and (orientation: portrait) {
   body .mat-card-top {

@@ -10,6 +10,8 @@ body {
 
   .mat-card-top {
     margin-top: -($mat-toolbar-height-desktop);
+    z-index: 3;
+    position: absolute;
   }
 
   @media ($mat-xsmall) and (orientation: portrait) {
