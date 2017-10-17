@@ -91,8 +91,8 @@ define(["require", "exports", "@angular/core", "@angular/material", "../../../sh
     ModeListComponent = __decorate([
         core_1.Component({
             selector: 'app-display-mode-list',
-            templateUrl: 'mode-list.component.html',
-            styleUrls: ['./mode-list.component.scss']
+            templateUrl: 'js/medikly/shared/display-documents/mode-list/mode-list.component.html',
+            styleUrls: ['js/medikly/shared/display-documents/mode-list/mode-list.component.scss']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog, display_documents_service_1.DisplayDocumentsService])
     ], ModeListComponent);

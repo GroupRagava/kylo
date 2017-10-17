@@ -11,8 +11,8 @@ import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-display-mode-card',
-  templateUrl: 'mode-card.component.html',
-  styleUrls: ['./mode-card.component.scss']
+  templateUrl: 'js/medikly/shared/display-documents/mode-card/mode-card.component.html',
+  styleUrls: ['js/medikly/shared/display-documents/mode-card/mode-card.component.scss']
 })
 export class ModeCardComponent implements OnInit, OnDestroy {
   displayMode = 'default';

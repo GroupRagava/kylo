@@ -72,8 +72,8 @@ define(["require", "exports", "@angular/core", "@angular/material"], function (r
     ToolbarTemplatesComponent = __decorate([
         core_1.Component({
             selector: 'app-toolbar-templates',
-            templateUrl: 'toolbar-templates.component.html',
-            styleUrls: ['toolbar-templates.component.scss'],
+            templateUrl: 'js/medikly/shared/listing/toolbar/toolbar-templates.component.html',
+            styleUrls: ['js/medikly/shared/listing/toolbar/toolbar-templates.component.scss'],
             providers: [material_1.MdGridList],
         }),
         __metadata("design:paramtypes", [])

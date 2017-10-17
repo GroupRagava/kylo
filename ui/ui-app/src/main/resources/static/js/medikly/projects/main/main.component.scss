@@ -1,3 +1,11 @@
+:host {
+  margin-left: -25px !important;
+  margin-right: -25px !important;
+  margin-top: -17px !important;
+  margin-bottom: -25px !important;
+  display: block;
+}
+
 .active {
   background-color: rgba(0, 0, 0, 0.12);
   pointer-events: none;

@@ -31,8 +31,8 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
     MainComponent = __decorate([
         core_1.Component({
             selector: 'app-main',
-            templateUrl: './main.component.html',
-            styleUrls: ['./main.component.scss']
+            templateUrl: 'js/medikly/projects/main/main.component.html',
+            styleUrls: ['js/medikly/projects/main/main.component.scss']
         }),
         __metadata("design:paramtypes", [])
     ], MainComponent);

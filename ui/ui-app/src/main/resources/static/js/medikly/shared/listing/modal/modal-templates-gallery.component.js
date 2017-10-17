@@ -66,8 +66,8 @@ define(["require", "exports", "@angular/core", "@angular/material"], function (r
     ModalTemplatesGalleryComponent = __decorate([
         core_1.Component({
             selector: 'app-modal-templates-gallery',
-            templateUrl: 'modal-templates-gallery.component.html',
-            styleUrls: ['modal-templates-gallery.component.scss'],
+            templateUrl: 'js/medikly/shared/listing/modal/modal-templates-gallery.component.html',
+            styleUrls: ['js/medikly/shared/listing/modal/modal-templates-gallery.component.scss'],
             providers: [material_1.MdGridList],
         }),
         __metadata("design:paramtypes", [])

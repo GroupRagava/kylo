@@ -14,8 +14,8 @@ interface Taskboard {
 
 @Component({
   selector: 'app-projects-workflow',
-  templateUrl: 'workflow.component.html',
-  styleUrls: ['workflow.component.scss']
+  templateUrl: 'js/medikly/projects/workflow/workflow.component.html',
+  styleUrls: ['js/medikly/projects/workflow/workflow.component.scss']
 })
 export class WorkflowComponent implements OnInit, OnDestroy {
   taskboard: Taskboard[] = [{

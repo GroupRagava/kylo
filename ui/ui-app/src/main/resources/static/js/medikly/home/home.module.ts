@@ -32,6 +32,7 @@ export let HOME_STATES: Ng2StateDeclaration = {
     }
 };
 
+
 @NgModule({
     imports: [
         CommonModule,

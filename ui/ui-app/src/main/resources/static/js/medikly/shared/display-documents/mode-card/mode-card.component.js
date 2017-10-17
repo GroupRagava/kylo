@@ -97,8 +97,8 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/ro
     ModeCardComponent = __decorate([
         core_1.Component({
             selector: 'app-display-mode-card',
-            templateUrl: 'mode-card.component.html',
-            styleUrls: ['./mode-card.component.scss']
+            templateUrl: 'js/medikly/shared/display-documents/mode-card/mode-card.component.html',
+            styleUrls: ['js/medikly/shared/display-documents/mode-card/mode-card.component.scss']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog, display_documents_service_1.DisplayDocumentsService, router_1.Router])
     ], ModeCardComponent);

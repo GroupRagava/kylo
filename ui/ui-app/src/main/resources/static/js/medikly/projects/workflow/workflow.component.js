@@ -126,8 +126,8 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
     WorkflowComponent = __decorate([
         core_1.Component({
             selector: 'app-projects-workflow',
-            templateUrl: 'workflow.component.html',
-            styleUrls: ['workflow.component.scss']
+            templateUrl: 'js/medikly/projects/workflow/workflow.component.html',
+            styleUrls: ['js/medikly/projects/workflow/workflow.component.scss']
         }),
         __metadata("design:paramtypes", [])
     ], WorkflowComponent);

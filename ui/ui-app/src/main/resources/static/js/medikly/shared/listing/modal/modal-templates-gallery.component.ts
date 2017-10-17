@@ -3,8 +3,8 @@ import {MdGridList} from '@angular/material';
 
 @Component({
     selector: 'app-modal-templates-gallery',
-    templateUrl: 'modal-templates-gallery.component.html',
-    styleUrls: ['modal-templates-gallery.component.scss'],
+    templateUrl: 'js/medikly/shared/listing/modal/modal-templates-gallery.component.html',
+    styleUrls: ['js/medikly/shared/listing/modal/modal-templates-gallery.component.scss'],
     providers: [MdGridList],
 })
 export class ModalTemplatesGalleryComponent implements OnInit {

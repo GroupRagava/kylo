@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects-home',
-  templateUrl: 'projects.component.html',
-  styleUrls: ['projects.component.scss']
+  templateUrl: 'js/medikly/projects/home/projects.component.html',
+  styleUrls: ['js/medikly/projects/home/projects.component.scss']
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
 

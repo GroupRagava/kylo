@@ -37,7 +37,8 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/fo
         core_1.Component({
             selector: 'app-content-element-dialog',
             styleUrls: ['dialog.new-project.scss'],
-            templateUrl: './dialog.new-project.html'
+            templateUrl: 'js/medikly/projects/dialog/new-project/dialog.new-project.html',
+            styleUrls: ['js/medikly/projects/dialog/new-project/dialog.new-project.scss'],
         }),
         __metadata("design:paramtypes", [material_1.MdDialogRef, forms_1.FormBuilder, router_1.Router])
     ], DialogNewProject);
