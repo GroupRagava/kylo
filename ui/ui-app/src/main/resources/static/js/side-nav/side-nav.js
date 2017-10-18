@@ -45,7 +45,7 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                         permission: AccessConstants.UI_STATES.DASHBOARD.permissions
                     },
                     {
-                        sref: "projects",
+                        sref: "projects.home.recent",
                         type: 'link',
                         icon: "folder_shared",
                         text: "Projects",

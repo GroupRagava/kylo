@@ -7,15 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/material", "@angular/router", "../../../shared/dialog/dialog-remove-file.component", "../../../shared/dialog/dialog-rename-file.component", "../display-documents.service"], function (require, exports, core_1, material_1, router_1, dialog_remove_file_component_1, dialog_rename_file_component_1, display_documents_service_1) {
+define(["require", "exports", "@angular/core", "@angular/material", "../../../shared/dialog/dialog-remove-file.component", "../../../shared/dialog/dialog-rename-file.component", "../display-documents.service"], function (require, exports, core_1, material_1, dialog_remove_file_component_1, dialog_rename_file_component_1, display_documents_service_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var ModeCardComponent = (function () {
-        function ModeCardComponent(dialog, dds, router) {
+        function ModeCardComponent(dialog, dds) {
             var _this = this;
             this.dialog = dialog;
             this.dds = dds;
-            this.router = router;
             this.displayMode = 'default';
             this.multi = false;
             this.hideToggle = true;
@@ -82,7 +81,7 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/ro
             }
         };
         ModeCardComponent.prototype.redirectToView = function (document) {
-            this.router.navigate(['/projects/view/' + document.id]);
+            //this.router.navigate(['/projects/view/'+document.id]);
         };
         return ModeCardComponent;
     }());
@@ -100,7 +99,7 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/ro
             templateUrl: 'js/medikly/shared/display-documents/mode-card/mode-card.component.html',
             styleUrls: ['js/medikly/shared/display-documents/mode-card/mode-card.component.scss']
         }),
-        __metadata("design:paramtypes", [material_1.MdDialog, display_documents_service_1.DisplayDocumentsService, router_1.Router])
+        __metadata("design:paramtypes", [material_1.MdDialog, display_documents_service_1.DisplayDocumentsService])
     ], ModeCardComponent);
     exports.ModeCardComponent = ModeCardComponent;
 });

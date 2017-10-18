@@ -3,7 +3,7 @@
  */
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import {MdDialog, MdDialogRef} from '@angular/material';
-import { Router } from '@angular/router';
+//import { Router } from '@angular/router';
 import { DialogRemoveFile } from '../../../shared/dialog/dialog-remove-file.component';
 import { DialogRenameFile } from '../../../shared/dialog/dialog-rename-file.component';
 import { DisplayDocumentsService } from '../display-documents.service';
@@ -32,7 +32,7 @@ export class ModeCardComponent implements OnInit, OnDestroy {
 
   subscription: Subscription;
 
-  constructor(public dialog: MdDialog, private dds: DisplayDocumentsService, public router: Router) {
+  constructor(public dialog: MdDialog, private dds: DisplayDocumentsService) {
     this.date = new Date();
 
     this.titleMode = this.dds.getTitleMode();
@@ -97,6 +97,6 @@ export class ModeCardComponent implements OnInit, OnDestroy {
   }
 
   redirectToView(document){
-    this.router.navigate(['/projects/view/'+document.id]);
+    //this.router.navigate(['/projects/view/'+document.id]);
   }
 }

@@ -15,7 +15,8 @@ import {
     MdCheckboxModule,
 
     MdDialogModule,
-    MdRadioModule
+    MdRadioModule,
+
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
@@ -26,13 +27,16 @@ import {SharedListingModule} from '../shared/listing/shared-listing.module';
 import {OrderModule} from 'ngx-order-pipe';
 import {DragulaModule} from 'ng2-dragula/ng2-dragula';
 import {DialogModule} from '../shared/dialog/dialog.module';
-import {DisplayDocumentsModule} from '../shared/display-documents/display-documents.module';
 import {CovalentExpansionPanelModule} from '@covalent/core';
 import {CovalentStepsModule} from '@covalent/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {DialogNewProject} from './dialog/new-project/dialog.new-project';
 import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
 
+import { ModeCardComponent } from '../shared/display-documents/mode-card/mode-card.component';
+import { ModeListComponent } from '../shared/display-documents/mode-list/mode-list.component';
+import {DisplayDocumentsService} from "../shared/display-documents/display-documents.service";
+import {DisplayDocumentsComponent} from "../shared/display-documents/display-documents.component";
 export let HOME_STATES: Ng2StateDeclaration =
     {
         name: 'projects',
@@ -62,12 +66,44 @@ let homeState = { name: 'projects.home', url: '/home',    views: {
         component: ProjectsComponent,
     }}
 };
+let recentState = { name: 'projects.home.recent', url: '/recent',    views: {
+    "display-documents": {
+        component: ModeCardComponent,
+    }}
+};
+let sharedState = { name: 'projects.home.shared', url: '/shared',    views: {
+    "display-documents": {
+        component: ModeCardComponent,
+    }}
+};
+let starredState = { name: 'projects.home.starred', url: '/starred',    views: {
+    "display-documents": {
+        component: ModeCardComponent,
+    }}
+};
+let archiveState = { name: 'projects.home.archive', url: '/archive',    views: {
+    "display-documents": {
+        component: ModeCardComponent,
+    }}
+};
+let listState = { name: 'projects.home.list', url: '/list',    views: {
+    "display-documents": {
+        component: ModeListComponent,
+    }}
+};
+let projectViewState = { name: 'projects.view.**', url: '/view',
+        loadChildren: 'medikly/project-view/project-view.module#ProjectViewModule'
+
+};
+
+
+
 
 @NgModule({
     imports: [
         CommonModule,
         PerfectScrollbarModule.forChild(),
-        UIRouterModule.forChild({ states: [projectsState,homeState]}),
+        UIRouterModule.forChild({ states: [projectsState,homeState,recentState,sharedState,starredState,archiveState,listState,projectViewState]}),
         MdIconModule,
         MdCardModule,
         MdButtonModule,
@@ -88,15 +124,15 @@ let homeState = { name: 'projects.home', url: '/home',    views: {
         OrderModule,
         DragulaModule,
         DialogModule,
-        DisplayDocumentsModule,
         CovalentExpansionPanelModule,
 
         CovalentStepsModule,
         ReactiveFormsModule
     ],
-    declarations: [ProjectsComponent, MainComponent, WorkflowComponent, DialogNewProject
+    declarations: [ProjectsComponent, MainComponent, WorkflowComponent, DialogNewProject, DisplayDocumentsComponent, ModeCardComponent, ModeListComponent
     ],
     entryComponents: [DialogNewProject],
+    providers: [DisplayDocumentsService]
 
 
 })

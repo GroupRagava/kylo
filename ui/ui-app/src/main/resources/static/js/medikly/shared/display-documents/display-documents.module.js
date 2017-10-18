@@ -4,7 +4,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-define(["require", "exports", "@angular/core", "@angular/router", "@angular/common", "@angular/material", "@angular/flex-layout", "@angular/forms", "ngx-perfect-scrollbar", "./display-documents.component", "./display-documents.routing", "./mode-list/mode-list.component", "./mode-card/mode-card.component", "./display-documents.service", "ngx-order-pipe"], function (require, exports, core_1, router_1, common_1, material_1, flex_layout_1, forms_1, ngx_perfect_scrollbar_1, display_documents_component_1, display_documents_routing_1, mode_list_component_1, mode_card_component_1, display_documents_service_1, ngx_order_pipe_1) {
+define(["require", "exports", "@angular/core", "@angular/common", "@angular/material", "@angular/flex-layout", "@angular/forms", "ngx-perfect-scrollbar", "./display-documents.component", "./mode-list/mode-list.component", "./mode-card/mode-card.component", "./display-documents.service", "ngx-order-pipe"], function (require, exports, core_1, common_1, material_1, flex_layout_1, forms_1, ngx_perfect_scrollbar_1, display_documents_component_1, mode_list_component_1, mode_card_component_1, display_documents_service_1, ngx_order_pipe_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var DisplayDocumentsModule = (function () {
@@ -16,7 +16,6 @@ define(["require", "exports", "@angular/core", "@angular/router", "@angular/comm
         core_1.NgModule({
             imports: [
                 common_1.CommonModule,
-                router_1.RouterModule.forChild(display_documents_routing_1.DisplayDocumentsRouting),
                 ngx_perfect_scrollbar_1.PerfectScrollbarModule.forChild(),
                 material_1.MdIconModule,
                 material_1.MdCardModule,

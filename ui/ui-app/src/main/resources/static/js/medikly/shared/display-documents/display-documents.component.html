@@ -2,15 +2,15 @@
     <div class="header-section-list">
       <span *ngIf="!modeCard" style="padding-left: 5px">{{titleMode}}</span>
       <div  *ngIf="modeCard" style="padding-left: 5px">
-        <a class="button-tab" routerLinkActive="active" md-button-sm [routerLink]="['recent']">Recent</a>
-        <a class="button-tab" routerLinkActive="active" md-button-sm [routerLink]="['shared']">Shared with me</a>
-        <a class="button-tab" routerLinkActive="active" md-button-sm [routerLink]="['starred']">Starred</a>
-        <a class="button-tab" routerLinkActive="active" md-button-sm [routerLink]="['archive']">Archive</a>
+        <a class="button-tab" uiSref="projects.home.recent" md-button-sm>Recent</a>
+        <a class="button-tab" uiSref="projects.home.shared" md-button-sm>Shared with me</a>
+        <a class="button-tab" uiSref="projects.home.starred" md-button-sm>Starred</a>
+        <a class="button-tab" uiSref="projects.home.archive" md-button-sm>Archive</a>
       </div>
       <span fxFlex></span>
       <button (click)="changeMode()" md-icon-button>
-        <md-icon *ngIf="modeCard" routerLink="list">view_list</md-icon>
-        <md-icon *ngIf="!modeCard" routerLink="recent">view_module</md-icon>
+        <md-icon *ngIf="modeCard" uiSref="projects.home.list">view_list</md-icon>
+        <md-icon *ngIf="!modeCard" uiSref="projects.home.recent">view_module</md-icon>
       </button>
       <button (click)="orderByName()" md-icon-button>
         <md-icon>sort_by_alpha</md-icon>
@@ -20,4 +20,5 @@
       </button>
     </div>
 
-    <router-outlet></router-outlet>
+    <!--<router-outlet></router-outlet>-->
+    <div ui-view="display-documents" class="display-documents"></div>
