@@ -3,7 +3,6 @@ import {Component, OnInit, OnDestroy, Inject, ElementRef} from '@angular/core';
 import {MdDialog, MdDialogRef} from '@angular/material';
 import {DOCUMENT} from '@angular/platform-browser';
 import { DialogNewProject } from '../dialog/new-project/dialog.new-project';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects-home',
@@ -40,7 +39,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   folderMenu = [{icon: 'folder', title: 'Folder 1'}, {icon: 'folder', title: 'Folder 2'}];
   labelMenu = [{icon: 'label', title: 'Label 1'}, {icon: 'label', title: 'Label 2'}];
 
-  constructor(public dialog: MdDialog, @Inject(DOCUMENT) private document: Document, private el: ElementRef, public router: Router) {
+  constructor(public dialog: MdDialog, @Inject(DOCUMENT) private document: Document, private el: ElementRef) {
 
 
 
@@ -84,10 +83,10 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       });
 
       dialogRef.afterClosed().subscribe(result => {
-        if (result) {
-          console.log(result);
-          this.router.navigate(['/projects/view/'+0], { queryParams: { name: dialogRef.componentInstance.form.value.name, objective: dialogRef.componentInstance.form.value.objective, privacy: dialogRef.componentInstance.form.value.privacy } });
-        }
+        // if (result) {
+        //   console.log(result);
+        //   this.router.navigate(['/projects/view/'+0], { queryParams: { name: dialogRef.componentInstance.form.value.name, objective: dialogRef.componentInstance.form.value.objective, privacy: dialogRef.componentInstance.form.value.privacy } });
+        // }
       });
     }
 

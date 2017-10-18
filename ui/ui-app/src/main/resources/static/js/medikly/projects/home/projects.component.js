@@ -10,15 +10,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-define(["require", "exports", "@angular/core", "@angular/material", "@angular/platform-browser", "../dialog/new-project/dialog.new-project", "@angular/router"], function (require, exports, core_1, material_1, platform_browser_1, dialog_new_project_1, router_1) {
+define(["require", "exports", "@angular/core", "@angular/material", "@angular/platform-browser", "../dialog/new-project/dialog.new-project"], function (require, exports, core_1, material_1, platform_browser_1, dialog_new_project_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var ProjectsComponent = (function () {
-        function ProjectsComponent(dialog, document, el, router) {
+        function ProjectsComponent(dialog, document, el) {
             this.dialog = dialog;
             this.document = document;
             this.el = el;
-            this.router = router;
             this.displayMode = 'default';
             this.multi = false;
             this.hideToggle = true;
@@ -67,15 +66,14 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/pl
         };
         //Open dialog new project
         ProjectsComponent.prototype.openDialogNewProject = function () {
-            var _this = this;
             var dialogRef = this.dialog.open(dialog_new_project_1.DialogNewProject, {
                 width: '848px',
             });
             dialogRef.afterClosed().subscribe(function (result) {
-                if (result) {
-                    console.log(result);
-                    _this.router.navigate(['/projects/view/' + 0], { queryParams: { name: dialogRef.componentInstance.form.value.name, objective: dialogRef.componentInstance.form.value.objective, privacy: dialogRef.componentInstance.form.value.privacy } });
-                }
+                // if (result) {
+                //   console.log(result);
+                //   this.router.navigate(['/projects/view/'+0], { queryParams: { name: dialogRef.componentInstance.form.value.name, objective: dialogRef.componentInstance.form.value.objective, privacy: dialogRef.componentInstance.form.value.privacy } });
+                // }
             });
         };
         return ProjectsComponent;
@@ -87,7 +85,7 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/pl
             styleUrls: ['js/medikly/projects/home/projects.component.scss']
         }),
         __param(1, core_1.Inject(platform_browser_1.DOCUMENT)),
-        __metadata("design:paramtypes", [material_1.MdDialog, Document, core_1.ElementRef, router_1.Router])
+        __metadata("design:paramtypes", [material_1.MdDialog, Document, core_1.ElementRef])
     ], ProjectsComponent);
     exports.ProjectsComponent = ProjectsComponent;
 });
