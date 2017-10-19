@@ -23,7 +23,7 @@
               </button>
               <md-menu #projectObjectiveMenu="mdMenu" x-position="before" dense>
                 <md-nav-list dense>
-                  <a md-list-item [routerLink]="['/projects/view/'+project+'/workspace/project-summary']">
+                  <a md-list-item> <!--[routerLink]="['/projects/view/'+project+'/workspace/project-summary']">-->
                     Edit
                   </a>
                 </md-nav-list>
@@ -63,7 +63,7 @@
               </button>
               <md-menu #projectSummaryMenu="mdMenu" x-position="before" dense>
                 <md-nav-list dense>
-                  <a md-list-item [routerLink]="['/projects/view/'+project+'/workspace/project-summary']">
+                  <a md-list-item> <!--[routerLink]="['/projects/view/'+project+'/workspace/project-summary']">-->
                     Edit
                   </a>
                 </md-nav-list>
@@ -196,8 +196,8 @@
     <div class="block-sidebar bt-1">
       <div class="title-block">DOCUMENTS ({{documents.length}})</div>
       <div class="content-block">
-        <a class="link-chips" *ngFor="let document of documents"
-           [routerLink]="['/projects/view/'+project+''+document.url]">
+        <a class="link-chips" *ngFor="let document of documents">
+           <!--[routerLink]="['/projects/view/'+project+''+document.url]">-->
           <div class="md-caption link-option ">
             <span class="title-document">{{document.name}}</span>
             <span class="flat-badge pull-right">MD</span>

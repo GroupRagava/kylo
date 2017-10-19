@@ -1708,8 +1708,8 @@ define(["require", "exports", "@angular/core", "@angular/router", "../../shared/
     TargetComponent = __decorate([
         core_1.Component({
             selector: 'app-project-view-target',
-            templateUrl: '/target.component.html',
-            styleUrls: ['/target.component.scss']
+            templateUrl: 'js/medikly/project-view/target-component/target.component.html',
+            styleUrls: ['js/medikly/project-view/target-component/target.component.scss']
         }),
         __metadata("design:paramtypes", [router_1.ActivatedRoute])
     ], TargetComponent);

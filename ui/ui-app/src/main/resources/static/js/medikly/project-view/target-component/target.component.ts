@@ -7,8 +7,8 @@ import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-project-view-target',
-  templateUrl: '/target.component.html',
-  styleUrls: ['/target.component.scss']
+  templateUrl: 'js/medikly/project-view/target-component/target.component.html',
+  styleUrls: ['js/medikly/project-view/target-component/target.component.scss']
 })
 export class TargetComponent implements OnInit, OnDestroy {
   filters: any = [];

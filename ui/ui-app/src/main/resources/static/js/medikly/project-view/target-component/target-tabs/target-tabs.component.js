@@ -58,8 +58,8 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
     TargetTabsComponent = __decorate([
         core_1.Component({
             selector: 'app-target-tabs',
-            templateUrl: '..//target-tabs/target-tabs.component.html',
-            styleUrls: ['..//target-tabs/target-tabs.component.scss']
+            templateUrl: 'js/medikly/project-view/target-component/target-tabs/target-tabs.component.html',
+            styleUrls: ['js/medikly/project-view/target-component/target-tabs/target-tabs.component.scss']
         }),
         __metadata("design:paramtypes", [])
     ], TargetTabsComponent);
