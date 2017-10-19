@@ -16,7 +16,7 @@
               </div>
               <div fxLayoutAlign="center center" class="hover-button">
                 <button md-raised-button md-button-sm color="accent" class="button-card-style btn-light-blue"
-                        (click)="$event.stopPropagation(); redirectToView(document)" >
+                        (click)="$event.stopPropagation()" uiSref="view.home" [uiParams]="{ id: document.id }">
                   View Project
                 </button>
               </div>
