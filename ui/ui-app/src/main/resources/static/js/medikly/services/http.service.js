@@ -18,16 +18,16 @@ define(["require", "exports", "@angular/core", "@angular/http"], function (requi
             this.http = http;
         }
         HttpService.prototype.getJsonCalDataMap = function () {
-            return this.http.get("../assets/data/highcharts/mapdata/us-cal-all.geo.json")
+            return this.http.get("assets/medikly_theme/highcharts/mapdata/us-cal-all.geo.json")
                 .map(function (res) { return res.json(); });
         };
         HttpService.prototype.getJsonUsaDataMap = function () {
-            return this.http.get("../assets/data/highcharts/mapdata/us-all-all.geo.json")
+            return this.http.get("assets/medikly_theme/highcharts/mapdata/us-all-all.geo.json")
                 .map(function (res) { return res.json(); });
         };
         HttpService.prototype.getJsonUsaData = function () {
             /*return this.http.get("https://www.highcharts.com/samples/data/jsonp.php?filename=us-counties-unemployment.json&callback=?")*/
-            return this.http.get("../assets/data/highcharts/mapdata/data.json")
+            return this.http.get("assets/medikly_theme/highcharts/mapdata/data.json")
                 .map(function (res) { return res.json(); });
         };
         return HttpService;

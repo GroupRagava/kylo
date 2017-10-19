@@ -19,17 +19,17 @@ export class HttpService {
   }
 
   getJsonCalDataMap(): Observable<any> {
-    return this.http.get("../assets/data/highcharts/mapdata/us-cal-all.geo.json")
+    return this.http.get("assets/medikly_theme/highcharts/mapdata/us-cal-all.geo.json")
       .map((res:any) => res.json());
   }
 
   getJsonUsaDataMap(): Observable<any> {
-    return this.http.get("../assets/data/highcharts/mapdata/us-all-all.geo.json")
+    return this.http.get("assets/medikly_theme/highcharts/mapdata/us-all-all.geo.json")
       .map((res:any) => res.json());
   }
   getJsonUsaData(): Observable<any> {
     /*return this.http.get("https://www.highcharts.com/samples/data/jsonp.php?filename=us-counties-unemployment.json&callback=?")*/
-    return this.http.get("../assets/data/highcharts/mapdata/data.json")
+    return this.http.get("assets/medikly_theme/highcharts/mapdata/data.json")
       .map((res:any) => res.json());
   }
 
