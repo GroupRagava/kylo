@@ -2,7 +2,7 @@ import {Routes} from '@angular/router';
 
 import {ProjectViewComponent} from './main/project-view.component';
 import {HomeComponent} from './home/home.component';
-import {TargetComponent} from './target/target.component';
+import {TargetComponent} from './target-component/target.component';
 import {SegmentsComponent} from './segments/segments.component';
 import {ModeCardComponent} from '../shared/display-documents/mode-card/mode-card.component';
 import {ModeListComponent} from '../shared/display-documents/mode-list/mode-list.component';

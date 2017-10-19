@@ -34,14 +34,14 @@ import {ProjectViewRoutes} from './project-view.routing';
 import {ProjectViewComponent} from './main/project-view.component';
 import {InfoPanelComponent} from './main/info-panel/info-panel.component';
 import {HomeComponent} from './home/home.component';
-import {TargetComponent} from './target/target.component';
+import {TargetComponent} from './target-component/target.component';
 import {SharedProfileModule} from '../shared/profile/shared-profile.module';
-import {TargetTabsComponent} from './target/target-tabs/target-tabs.component';
+import {TargetTabsComponent} from './target-component/target-tabs/target-tabs.component';
 import { AssetsComponent } from './assets/assets.component';
 import {SegmentsComponent} from './segments/segments.component';
 import {ReportsComponent} from './reports/reports.component';
 //import {NgCircleProgressModule} from 'ng-circle-progress';
-import {ExpansionChartComponent} from './target/expansion-chart/expansion-chart.component';
+import {ExpansionChartComponent} from './target-component/expansion-chart/expansion-chart.component';
 import {HttpService} from '../services/http.service';
 
 import {CardLayoutModule} from '../shared/card-layout/card-layout.module';

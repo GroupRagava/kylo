@@ -1,0 +1,29 @@
+import {Component, Input, ViewChild, OnInit} from '@angular/core';
+
+@Component({
+  selector: 'app-expansion-chart',
+  templateUrl: '..//expansion-chart/expansion-chart.component.html',
+  styleUrls: ['..//expansion-chart/expansion-chart.component.scss']
+})
+export class ExpansionChartComponent{
+  @Input('children') children: any;
+  @ViewChild('myPanel') myPanel;
+
+  constructor() {
+  }
+
+  //This method throw event 'window:resize' to resize echarts
+  tabActive(){
+    setTimeout(()=>{
+      window.dispatchEvent(new Event('resize'));
+    },100);
+  }
+
+  expandedEvent(chart:any){
+    chart.open=true;
+  }
+  collapsedEvent(chart:any){
+    chart.open=false;
+  }
+
+}
