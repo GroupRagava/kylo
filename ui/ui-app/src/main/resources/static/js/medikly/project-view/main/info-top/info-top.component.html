@@ -11,7 +11,7 @@
     </button>
     <md-menu #topEdit="mdMenu" x-position="before" dense>
       <md-nav-list dense>
-        <a md-list-item [routerLink]="['/projects/view/'+documentId+'/workspace/project-summary']">
+        <a md-list-item> <!--[routerLink]="['/projects/view/'+documentId+'/workspace/project-summary']">-->
           Edit
         </a>
         <a class="tc-red-500" md-list-item>
@@ -25,19 +25,15 @@
 
     <div class="card-tabs">
       <!--<a class="button-tab" routerLinkActive="active" md-button-sm [routerLink]="['recent']">Recent</a>-->
-      <button class="button-tab button-tab-blue" disableRipple routerLinkActive="active" md-button md-button-sm [routerLink]="['/projects/view/'+documentId+'/home']">Overview</button>
-      <button class="button-tab button-tab-blue" disableRipple routerLinkActive="active" md-button md-button-sm [routerLink]="['/projects/view/'+documentId+'/target']">Target</button>
+      <button class="button-tab button-tab-blue" disableRipple md-button md-button-sm>Overview</button><!--routerLinkActive="active"  [routerLink]="['/projects/view/'+documentId+'/home']"-->
+      <button class="button-tab button-tab-blue" disableRipple md-button md-button-sm>Target</button><!--routerLinkActive="active" [routerLink]="['/projects/view/'+documentId+'/target']"-->
       <button md-button md-button-sm class="button-tab button-tab-blue" disableRipple>
         Personalize
       </button>
 
-      <button md-button md-button-sm  routerLinkActive="active" [routerLink]="['/projects/view/'+documentId+'/measure/reports']" [routerLinkActiveOptions]="{exact: false}" class="button-tab button-tab-blue" md-button-sm  disableRipple>Measure
+      <button md-button md-button-sm  routerLinkActive="active" class="button-tab button-tab-blue" md-button-sm  disableRipple>Measure</button><!-- [routerLink]="['/projects/view/'+documentId+'/measure/reports']" [routerLinkActiveOptions]="{exact: false}"-->
 
-      </button>
-
-      <button md-button md-button-sm  routerLinkActive="active" [routerLink]="['/projects/view/'+documentId+'/assets']" [routerLinkActiveOptions]="{exact: false}"  class="button-tab button-tab-blue" md-button-sm disableRipple>Assets
-
-      </button>
+      <button md-button md-button-sm  routerLinkActive="active"  class="button-tab button-tab-blue" md-button-sm disableRipple>Assets</button><!--[routerLink]="['/projects/view/'+documentId+'/assets']" [routerLinkActiveOptions]="{exact: false}"-->
 
 
     </div>

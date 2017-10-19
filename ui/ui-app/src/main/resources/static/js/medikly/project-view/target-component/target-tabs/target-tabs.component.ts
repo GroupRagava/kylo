@@ -2,8 +2,8 @@ import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-target-tabs',
-  templateUrl: '..//target-tabs/target-tabs.component.html',
-  styleUrls: ['..//target-tabs/target-tabs.component.scss']
+  templateUrl: 'js/medikly/project-view/target-component/target-tabs/target-tabs.component.html',
+  styleUrls: ['js/medikly/project-view/target-component/target-tabs/target-tabs.component.scss']
 })
 export class TargetTabsComponent {
 
