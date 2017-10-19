@@ -56,8 +56,8 @@ define(["require", "exports", "@angular/core", "../../shared/display-documents/d
     SegmentsComponent = __decorate([
         core_1.Component({
             selector: 'app-segments',
-            templateUrl: './segments.component.html',
-            styleUrls: ['./segments.component.scss']
+            templateUrl: 'js/medikly/project-view/segments/segments.component.html',
+            styleUrls: ['js/medikly/project-view/segments/segments.component.scss']
         }),
         __metadata("design:paramtypes", [display_documents_service_1.DisplayDocumentsService])
     ], SegmentsComponent);

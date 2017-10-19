@@ -59,8 +59,8 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
     CardLayoutComponent = __decorate([
         core_1.Component({
             selector: 'app-card-layout',
-            templateUrl: './card-layout.component.html',
-            styleUrls: ['./card-layout.component.scss']
+            templateUrl: 'js/medikly/shared/card-layout/card-layout.component.html',
+            styleUrls: ['js/medikly/shared/card-layout/card-layout.component.scss']
         }),
         __metadata("design:paramtypes", [])
     ], CardLayoutComponent);

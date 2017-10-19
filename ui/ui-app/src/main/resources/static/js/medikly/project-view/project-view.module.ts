@@ -40,7 +40,7 @@ import {TargetTabsComponent} from './target/target-tabs/target-tabs.component';
 import { AssetsComponent } from './assets/assets.component';
 import {SegmentsComponent} from './segments/segments.component';
 import {ReportsComponent} from './reports/reports.component';
-import {NgCircleProgressModule} from 'ng-circle-progress';
+//import {NgCircleProgressModule} from 'ng-circle-progress';
 import {ExpansionChartComponent} from './target/expansion-chart/expansion-chart.component';
 import {HttpService} from '../services/http.service';
 
@@ -119,7 +119,7 @@ let homeState = { name: 'view.home', url: '/home',    views: {
     MdChipsModule,
     CovalentChipsModule,
     CardLayoutModule,
-    NgCircleProgressModule.forRoot({
+/*    NgCircleProgressModule.forRoot({
       // set defaults here
       radius: 40,
       outerStrokeWidth: 16,
@@ -128,7 +128,7 @@ let homeState = { name: 'view.home', url: '/home',    views: {
       innerStrokeColor: '#C7E596',
       showSubtitle: false,
       animationDuration: 300,
-    }),
+    }),*/
     //DialogWorkspaceModule
   ],
   declarations: [

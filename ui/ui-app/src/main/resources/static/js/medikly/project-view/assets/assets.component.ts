@@ -11,8 +11,8 @@ const DECIMAL_FORMAT: (v: any) => any = (v: number) => v.toFixed(2);
 
 @Component({
   selector: 'app-assets',
-  templateUrl: './assets.component.html',
-  styleUrls: ['./assets.component.scss']
+  templateUrl: 'js/medikly/project-view/assets/assets.component.html',
+  styleUrls: ['js/medikly/project-view/assets/assets.component.scss']
 })
 export class AssetsComponent implements OnInit, OnDestroy {
 

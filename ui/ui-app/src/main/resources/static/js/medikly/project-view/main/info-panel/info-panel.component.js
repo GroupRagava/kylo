@@ -66,8 +66,8 @@ define(["require", "exports", "@angular/core", "@angular/animations", "@covalent
     InfoPanelComponent = __decorate([
         core_1.Component({
             selector: 'info-panel',
-            templateUrl: 'info-panel.component.html',
-            styleUrls: ['info-panel.component.scss']
+            templateUrl: 'js/medikly/project-view/main/info-panel/info-panel.component.html',
+            styleUrls: ['js/medikly/project-view/main/info-panel/info-panel.component.scss']
         }),
         __metadata("design:paramtypes", [animations_1.AnimationBuilder])
     ], InfoPanelComponent);

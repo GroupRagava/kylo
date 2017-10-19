@@ -5,8 +5,8 @@ import {MdDialog} from "@angular/material";
 import { DialogLabel } from '../../shared/dialog/dialog-label.component';
 @Component({
   selector: 'app-projects-reports',
-  templateUrl: './reports.component.html',
-  styleUrls: ['./reports.component.scss']
+  templateUrl: 'js/medikly/project-view/reports/reports.component.html',
+  styleUrls: ['js/medikly/project-view/reports/reports.component.scss']
 })
 export class ReportsComponent implements OnInit, OnDestroy {
     folderMenu = [{icon: 'folder', title: 'Folder 1'}, {icon: 'folder', title: 'Folder 2'}];

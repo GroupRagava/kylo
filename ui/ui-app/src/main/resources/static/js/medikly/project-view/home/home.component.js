@@ -125,8 +125,8 @@ define(["require", "exports", "@angular/core", "@angular/router", "@angular/mate
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'app-project-view-home',
-            templateUrl: 'home.component.html',
-            styleUrls: ['home.component.scss']
+            templateUrl: 'js/medikly/project-view/home/home.component.html',
+            styleUrls: ['js/medikly/project-view/home/home.component.scss']
         }),
         __metadata("design:paramtypes", [router_1.ActivatedRoute, material_1.MdDialog, router_1.Router])
     ], HomeComponent);

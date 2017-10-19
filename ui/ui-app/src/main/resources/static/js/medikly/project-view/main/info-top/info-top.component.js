@@ -37,8 +37,8 @@ define(["require", "exports", "@angular/core", "@angular/router"], function (req
     InfoTopComponent = __decorate([
         core_1.Component({
             selector: 'app-project-info-top',
-            templateUrl: './info-top.component.html',
-            styleUrls: ['./info-top.component.scss']
+            templateUrl: 'js/medikly/project-view/main/info-top/info-top.component.html',
+            styleUrls: ['js/medikly/project-view/main/info-top/info-top.component.scss']
         }),
         __metadata("design:paramtypes", [router_1.ActivatedRoute])
     ], InfoTopComponent);

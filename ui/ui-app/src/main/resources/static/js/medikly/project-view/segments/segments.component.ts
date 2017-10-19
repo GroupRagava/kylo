@@ -3,8 +3,8 @@ import {Component, OnInit, OnDestroy} from '@angular/core';
 import {DisplayDocumentsService} from '../../shared/display-documents/display-documents.service';
 @Component({
     selector: 'app-segments',
-    templateUrl: './segments.component.html',
-    styleUrls: ['./segments.component.scss']
+    templateUrl: 'js/medikly/project-view/segments/segments.component.html',
+    styleUrls: ['js/medikly/project-view/segments/segments.component.scss']
 })
 export class SegmentsComponent implements OnInit, OnDestroy {
 

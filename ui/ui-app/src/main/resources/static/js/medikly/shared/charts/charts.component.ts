@@ -6,8 +6,8 @@ import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'chart-vertical',
-  templateUrl: 'charts.component.html',
-  styleUrls: ['charts.component.scss']
+  templateUrl: 'js/medikly/shared/charts/charts.component.html',
+  styleUrls: ['js/medikly/shared/charts/charts.component.scss']
 })
 export class ChartsComponent {
 

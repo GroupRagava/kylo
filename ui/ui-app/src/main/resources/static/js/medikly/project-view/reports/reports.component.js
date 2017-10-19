@@ -171,8 +171,8 @@ define(["require", "exports", "@angular/core", "../../shared/dialog/dialog-folde
     ReportsComponent = __decorate([
         core_1.Component({
             selector: 'app-projects-reports',
-            templateUrl: './reports.component.html',
-            styleUrls: ['./reports.component.scss']
+            templateUrl: 'js/medikly/project-view/reports/reports.component.html',
+            styleUrls: ['js/medikly/project-view/reports/reports.component.scss']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog])
     ], ReportsComponent);

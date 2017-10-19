@@ -169,8 +169,8 @@ define(["require", "exports", "@angular/core", "@covalent/core"], function (requ
     AssetsComponent = __decorate([
         core_1.Component({
             selector: 'app-assets',
-            templateUrl: './assets.component.html',
-            styleUrls: ['./assets.component.scss']
+            templateUrl: 'js/medikly/project-view/assets/assets.component.html',
+            styleUrls: ['js/medikly/project-view/assets/assets.component.scss']
         }),
         __metadata("design:paramtypes", [core_2.TdDataTableService])
     ], AssetsComponent);

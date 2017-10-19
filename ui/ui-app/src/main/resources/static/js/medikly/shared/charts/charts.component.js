@@ -83,8 +83,8 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
     ChartsComponent = __decorate([
         core_1.Component({
             selector: 'chart-vertical',
-            templateUrl: 'charts.component.html',
-            styleUrls: ['charts.component.scss']
+            templateUrl: 'js/medikly/shared/charts/charts.component.html',
+            styleUrls: ['js/medikly/shared/charts/charts.component.scss']
         })
     ], ChartsComponent);
     exports.ChartsComponent = ChartsComponent;

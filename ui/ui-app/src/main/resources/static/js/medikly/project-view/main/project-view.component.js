@@ -69,8 +69,8 @@ define(["require", "exports", "@angular/core", "@angular/router", "../../shared/
     ProjectViewComponent = __decorate([
         core_1.Component({
             selector: 'app-project-view',
-            templateUrl: 'project-view.component.html',
-            styleUrls: ['project-view.component.scss']
+            templateUrl: 'js/medikly/project-view/main/project-view.component.html',
+            styleUrls: ['js/medikly/project-view/main/project-view.component.scss']
         }),
         __metadata("design:paramtypes", [router_1.ActivatedRoute])
     ], ProjectViewComponent);

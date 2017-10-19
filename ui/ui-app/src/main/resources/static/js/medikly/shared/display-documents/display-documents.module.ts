@@ -8,9 +8,9 @@ import { MdIconModule, MdCardModule, MdButtonModule, MdListModule, MdProgressBar
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-import { DisplayDocumentsComponent } from './display-documents.component';
-import { ModeListComponent } from './mode-list/mode-list.component';
-import { ModeCardComponent } from './mode-card/mode-card.component';
+//import { DisplayDocumentsComponent } from './display-documents.component';
+//import { ModeListComponent } from './mode-list/mode-list.component';
+//import { ModeCardComponent } from './mode-card/mode-card.component';
 import { DisplayDocumentsService } from './display-documents.service';
 import { OrderModule } from 'ngx-order-pipe';
 import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
@@ -34,9 +34,8 @@ import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
     FormsModule,
     OrderModule
   ],
-  declarations: [ DisplayDocumentsComponent, ModeListComponent, ModeCardComponent
-  ],
-  exports: [ DisplayDocumentsComponent, ModeListComponent, ModeCardComponent],
+  declarations: [],
+  exports: [],
   providers: [DisplayDocumentsService]
 
 })
