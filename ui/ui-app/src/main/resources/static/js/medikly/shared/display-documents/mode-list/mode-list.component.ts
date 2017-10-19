@@ -10,8 +10,8 @@ import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-display-mode-list',
-  templateUrl: '/js/medikly/shared/display-documents/mode-list/mode-list.component.html',
-  styleUrls: ['/js/medikly/shared/display-documents/mode-list/mode-list.component.scss']
+  templateUrl: 'js/medikly/shared/display-documents/mode-list/mode-list.component.html',
+  styleUrls: ['js/medikly/shared/display-documents/mode-list/mode-list.component.scss']
 })
 export class ModeListComponent implements OnInit, OnDestroy {
   displayMode = 'default';
