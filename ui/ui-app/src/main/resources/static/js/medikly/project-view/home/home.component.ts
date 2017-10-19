@@ -39,11 +39,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   documents: any = [
     {
       name: 'Project summary',
-      url: '/workspace/project-summary'
+      url: 'workspace.summary'
     },
     {
       name: 'Data dictionary',
-      url: '/workspace/data-dictionary'
+      url: 'workspace.dictionary'
     }];
 
   //Uploader

@@ -1,8 +1,14 @@
 /*@import "../../../assets/styles/scss/theme/var";*/
 $grey-text-muted : rgba(54, 54, 54, 0.54);
 
-/deep/{
+:host {
+  margin-left: -25px;
+  margin-right: -25px;
+  margin-top: -17px !important;
+  display: block;
+}
 
+/deep/{
 
   .mat-button-focus-overlay{
     background-color: inherit;

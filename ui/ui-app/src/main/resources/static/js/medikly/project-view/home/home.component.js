@@ -35,11 +35,11 @@ define(["require", "exports", "@angular/core", "@angular/material"], function (r
             this.documents = [
                 {
                     name: 'Project summary',
-                    url: '/workspace/project-summary'
+                    url: 'workspace.summary'
                 },
                 {
                     name: 'Data dictionary',
-                    url: '/workspace/data-dictionary'
+                    url: 'workspace.dictionary'
                 }
             ];
             //Uploader
