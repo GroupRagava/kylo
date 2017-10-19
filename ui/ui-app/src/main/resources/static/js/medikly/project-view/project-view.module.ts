@@ -50,7 +50,8 @@ import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
 //import {DialogWorkspaceModule} from '../project-workspace/dialog/dialog-workspace.module';
 
 
-let projectsViewState = { name: 'view', url: '/view/:id',    views: {
+
+let projectsViewState = { name: 'view', url: '/projects/view/:id',    views: {
   "content": {
     component: ProjectViewComponent,
   }}
@@ -60,30 +61,26 @@ let homeState = { name: 'view.home', url: '/home',    views: {
     component: HomeComponent,
   }}
 };
-
-/*path: ':id',
-    component: ProjectViewComponent,
-    children: [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {
-    path: 'home',
-    component: HomeComponent
-  },{
-    path: 'target',
-    component: TargetComponent
-  },
-  {
-    path: 'measure/reports',
-    component: ReportsComponent
-  },
-  {
-    path: 'assets',
-    component: AssetsComponent*/
+let targetState = { name: 'view.target', url: '/target',    views: {
+  "child-content": {
+    component: TargetComponent,
+  }}
+};
+let reportsState = { name: 'view.reports', url: '/reports',    views: {
+  "child-content": {
+    component: ReportsComponent,
+  }}
+};
+let assetsState = { name: 'view.assets', url: '/assets',    views: {
+  "child-content": {
+    component: AssetsComponent,
+  }}
+};
 
 @NgModule({
   imports: [
     CommonModule,
-    UIRouterModule.forChild({ states: [projectsViewState,homeState]}),
+    UIRouterModule.forChild({ states: [projectsViewState,homeState,targetState,reportsState,assetsState]}),
     PerfectScrollbarModule.forChild(),
     MdIconModule,
     MdCardModule,

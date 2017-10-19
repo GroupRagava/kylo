@@ -7,12 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/router", "../../shared/data/documents"], function (require, exports, core_1, router_1, documents_1) {
+define(["require", "exports", "@angular/core", "../../shared/data/documents"], function (require, exports, core_1, documents_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var TargetComponent = (function () {
-        function TargetComponent(route) {
-            this.route = route;
+        function TargetComponent() {
             this.filters = [];
             this.documents = [];
             this.num = 1;
@@ -1711,7 +1710,7 @@ define(["require", "exports", "@angular/core", "@angular/router", "../../shared/
             templateUrl: 'js/medikly/project-view/target-component/target.component.html',
             styleUrls: ['js/medikly/project-view/target-component/target.component.scss']
         }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute])
+        __metadata("design:paramtypes", [])
     ], TargetComponent);
     exports.TargetComponent = TargetComponent;
 });

@@ -8,7 +8,7 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     //import {DialogWorkspaceModule} from '../project-workspace/dialog/dialog-workspace.module';
-    var projectsViewState = { name: 'view', url: '/view/:id', views: {
+    var projectsViewState = { name: 'view', url: '/projects/view/:id', views: {
             "content": {
                 component: project_view_component_1.ProjectViewComponent,
             }
@@ -20,24 +20,24 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
             }
         }
     };
-    /*path: ':id',
-        component: ProjectViewComponent,
-        children: [
-      {path: '', redirectTo: 'home', pathMatch: 'full'},
-      {
-        path: 'home',
-        component: HomeComponent
-      },{
-        path: 'target',
-        component: TargetComponent
-      },
-      {
-        path: 'measure/reports',
-        component: ReportsComponent
-      },
-      {
-        path: 'assets',
-        component: AssetsComponent*/
+    var targetState = { name: 'view.target', url: '/target', views: {
+            "child-content": {
+                component: target_component_1.TargetComponent,
+            }
+        }
+    };
+    var reportsState = { name: 'view.reports', url: '/reports', views: {
+            "child-content": {
+                component: reports_component_1.ReportsComponent,
+            }
+        }
+    };
+    var assetsState = { name: 'view.assets', url: '/assets', views: {
+            "child-content": {
+                component: assets_component_1.AssetsComponent,
+            }
+        }
+    };
     var ProjectViewModule = (function () {
         function ProjectViewModule() {
         }
@@ -47,7 +47,7 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
         core_1.NgModule({
             imports: [
                 common_1.CommonModule,
-                angular_1.UIRouterModule.forChild({ states: [projectsViewState, homeState] }),
+                angular_1.UIRouterModule.forChild({ states: [projectsViewState, homeState, targetState, reportsState, assetsState] }),
                 ngx_perfect_scrollbar_1.PerfectScrollbarModule.forChild(),
                 material_1.MdIconModule,
                 material_1.MdCardModule,

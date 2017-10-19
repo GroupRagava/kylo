@@ -7,17 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/router", "../../shared/data/documents"], function (require, exports, core_1, router_1, documents_1) {
+define(["require", "exports", "@angular/core", "../../shared/data/documents"], function (require, exports, core_1, documents_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     //import {SidenavService} from '../../core/sidenav/sidenav.service';
     var ProjectViewComponent = (function () {
-        function ProjectViewComponent(route) {
-            this.route = route;
+        function ProjectViewComponent() {
             this.filters = [];
             this.documents = [];
             this.num = 1;
-            this.documentId = this.route.snapshot.params['id'];
+            this.documentId = 15; //this.route.snapshot.params['id'];
             if (this.documentId && this.documentId != 0) {
                 this.getDocuments();
             }
@@ -72,7 +71,7 @@ define(["require", "exports", "@angular/core", "@angular/router", "../../shared/
             templateUrl: 'js/medikly/project-view/main/project-view.component.html',
             styleUrls: ['js/medikly/project-view/main/project-view.component.scss']
         }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute])
+        __metadata("design:paramtypes", [])
     ], ProjectViewComponent);
     exports.ProjectViewComponent = ProjectViewComponent;
 });

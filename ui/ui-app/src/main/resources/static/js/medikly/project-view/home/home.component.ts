@@ -1,5 +1,5 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {Router, ActivatedRoute, Params} from '@angular/router';
+
 //import {ToolbarService} from '../../core/toolbar/toolbar.service';
 import {DOCUMENTS} from '../../shared/data/documents';
 //import {SidenavService} from '../../core/sidenav/sidenav.service';
@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   //Uploader
   files: any = [];
 
-  constructor(private route: ActivatedRoute, public dialog: MdDialog, private router: Router) {
+  constructor( public dialog: MdDialog) {
 
   }
 
@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.project = 15;
 
     // subscribe to router event
-    this.params = this.route.queryParams.subscribe(
+/*    this.params = this.route.queryParams.subscribe(
       params => {
         let name = params['name'];
         if (name) this.projectName = name;
@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         let objective = params['objective'];
         if (objective) this.projectObjective = objective;
       }
-    );
+    );*/
   }
 
   ngOnDestroy() {
@@ -128,10 +128,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   redirectToWorkspace(){
-    let url = this.router.url;
-    url = url.replace('/home','/workspace');
+    //let url = this.router.url;
+    //url = url.replace('/home','/workspace');
     console.log(this.files);
-    this.router.navigate([url]);
+    //this.router.navigate([url]);
   }
 
 }

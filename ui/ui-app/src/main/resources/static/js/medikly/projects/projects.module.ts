@@ -91,10 +91,6 @@ let listState = { name: 'projects.home.list', url: '/list',    views: {
         component: ModeListComponent,
     }}
 };
-let projectViewState = { name: 'projects.view.**', url: '/view',
-        loadChildren: 'medikly/project-view/project-view.module#ProjectViewModule'
-
-};
 
 
 
@@ -103,7 +99,7 @@ let projectViewState = { name: 'projects.view.**', url: '/view',
     imports: [
         CommonModule,
         PerfectScrollbarModule.forChild(),
-        UIRouterModule.forChild({ states: [projectsState,homeState,recentState,sharedState,starredState,archiveState,listState,projectViewState]}),
+        UIRouterModule.forChild({ states: [projectsState,homeState,recentState,sharedState,starredState,archiveState,listState]}),
         MdIconModule,
         MdCardModule,
         MdButtonModule,

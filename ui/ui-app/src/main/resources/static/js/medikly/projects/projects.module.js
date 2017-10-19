@@ -58,9 +58,6 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
             }
         }
     };
-    var projectViewState = { name: 'projects.view.**', url: '/view',
-        loadChildren: 'medikly/project-view/project-view.module#ProjectViewModule'
-    };
     var ProjectsModule = (function () {
         function ProjectsModule() {
         }
@@ -71,7 +68,7 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
             imports: [
                 common_1.CommonModule,
                 ngx_perfect_scrollbar_1.PerfectScrollbarModule.forChild(),
-                angular_1.UIRouterModule.forChild({ states: [projectsState, homeState, recentState, sharedState, starredState, archiveState, listState, projectViewState] }),
+                angular_1.UIRouterModule.forChild({ states: [projectsState, homeState, recentState, sharedState, starredState, archiveState, listState] }),
                 material_1.MdIconModule,
                 material_1.MdCardModule,
                 material_1.MdButtonModule,

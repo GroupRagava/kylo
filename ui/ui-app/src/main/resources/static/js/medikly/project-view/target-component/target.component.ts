@@ -1,5 +1,4 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 //import {ToolbarService} from '../../core/toolbar/toolbar.service';
 import {DOCUMENTS} from '../../shared/data/documents';
 //import {SidenavService} from '../../core/sidenav/sidenav.service';
@@ -25,7 +24,7 @@ export class TargetComponent implements OnInit, OnDestroy {
   filtersTabProviders: any;
   filtersTabOrganizations: any;
 
-  constructor(private route: ActivatedRoute) {
+  constructor() {
 
     this.getMainContent();
 

@@ -1,5 +1,4 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 //import {ToolbarService} from '../../core/toolbar/toolbar.service';
 import {DOCUMENTS} from '../../shared/data/documents';
 //import {SidenavService} from '../../core/sidenav/sidenav.service';
@@ -17,8 +16,8 @@ export class ProjectViewComponent implements OnInit, OnDestroy {
   num = 1;
   isOpen: boolean;
 
-  constructor(private route: ActivatedRoute) {
-    this.documentId = this.route.snapshot.params['id'];
+  constructor() {
+    this.documentId = 15//this.route.snapshot.params['id'];
 
     if(this.documentId && this.documentId != 0){
       this.getDocuments();

@@ -25,15 +25,15 @@
 
     <div class="card-tabs">
       <!--<a class="button-tab" routerLinkActive="active" md-button-sm [routerLink]="['recent']">Recent</a>-->
-      <button class="button-tab button-tab-blue" disableRipple md-button md-button-sm>Overview</button><!--routerLinkActive="active"  [routerLink]="['/projects/view/'+documentId+'/home']"-->
-      <button class="button-tab button-tab-blue" disableRipple md-button md-button-sm>Target</button><!--routerLinkActive="active" [routerLink]="['/projects/view/'+documentId+'/target']"-->
+      <button class="button-tab button-tab-blue" disableRipple md-button md-button-sm uiSref="view.home">Overview</button><!--routerLinkActive="active"  [routerLink]="['/projects/view/'+documentId+'/home']"-->
+      <button class="button-tab button-tab-blue" disableRipple md-button md-button-sm uiSref="view.target">Target</button><!--routerLinkActive="active" [routerLink]="['/projects/view/'+documentId+'/target']"-->
       <button md-button md-button-sm class="button-tab button-tab-blue" disableRipple>
         Personalize
       </button>
 
-      <button md-button md-button-sm  routerLinkActive="active" class="button-tab button-tab-blue" md-button-sm  disableRipple>Measure</button><!-- [routerLink]="['/projects/view/'+documentId+'/measure/reports']" [routerLinkActiveOptions]="{exact: false}"-->
+      <button md-button md-button-sm  routerLinkActive="active" class="button-tab button-tab-blue" md-button-sm  disableRipple uiSref="view.reports">Measure</button><!-- [routerLink]="['/projects/view/'+documentId+'/measure/reports']" [routerLinkActiveOptions]="{exact: false}"-->
 
-      <button md-button md-button-sm  routerLinkActive="active"  class="button-tab button-tab-blue" md-button-sm disableRipple>Assets</button><!--[routerLink]="['/projects/view/'+documentId+'/assets']" [routerLinkActiveOptions]="{exact: false}"-->
+      <button md-button md-button-sm  routerLinkActive="active"  class="button-tab button-tab-blue" md-button-sm disableRipple uiSref="view.assets">Assets</button><!--[routerLink]="['/projects/view/'+documentId+'/assets']" [routerLinkActiveOptions]="{exact: false}"-->
 
 
     </div>

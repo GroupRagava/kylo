@@ -7,20 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/router"], function (require, exports, core_1, router_1) {
+define(["require", "exports", "@angular/core"], function (require, exports, core_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var InfoTopComponent = (function () {
-        function InfoTopComponent(route) {
-            var _this = this;
-            this.route = route;
+        function InfoTopComponent() {
             this.projectName = 'Project Name';
             // subscribe to router event
-            this.params = this.route.queryParams.subscribe(function (params) {
-                var name = params['name'];
-                if (name)
-                    _this.projectName = name;
-            });
+            /*      this.params = this.route.queryParams.subscribe(
+                    params => {
+                      let name = params['name'];
+                      if (name) this.projectName = name;
+                    }
+                  );*/
         }
         InfoTopComponent.prototype.ngOnInit = function () {
         };
@@ -40,7 +39,7 @@ define(["require", "exports", "@angular/core", "@angular/router"], function (req
             templateUrl: 'js/medikly/project-view/main/info-top/info-top.component.html',
             styleUrls: ['js/medikly/project-view/main/info-top/info-top.component.scss']
         }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute])
+        __metadata("design:paramtypes", [])
     ], InfoTopComponent);
     exports.InfoTopComponent = InfoTopComponent;
 });

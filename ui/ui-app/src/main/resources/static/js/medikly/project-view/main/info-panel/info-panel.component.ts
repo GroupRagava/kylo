@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {style, animate, AnimationBuilder, AnimationPlayer} from '@angular/animations';
+//import {style, animate, AnimationBuilder, AnimationPlayer} from '@angular/animations';
 import {Subscription} from 'rxjs/Subscription';
 import { StepState } from '@covalent/core';
 
@@ -12,32 +12,32 @@ export class InfoPanelComponent implements OnInit, OnDestroy {
   @ViewChild('openButton') openButton;
   @ViewChild('panel') panel;
 
-  public player: AnimationPlayer;
+  //public player: AnimationPlayer;
 
-  constructor(private animationBuilder: AnimationBuilder) {
+  constructor() {
   }
 
   ngOnInit() {
   }
 
   closeBar() {
-    this.player =
+/*    this.player =
       this.animationBuilder
         .build([
           style({transform: 'translate3d(0,0,0)'}),
           animate('400ms ease', style({transform: 'translate3d(100%,0,0)'}))
         ]).create(this.panel.nativeElement);
-    this.player.play();
+    this.player.play();*/
   }
 
   openBar() {
-    this.player =
+/*    this.player =
       this.animationBuilder
         .build([
           style({transform: 'translate3d(100%,0,0)'}),
           animate('400ms ease', style({transform: 'translate3d(0,0,0)'}))
         ]).create(this.panel.nativeElement);
-    this.player.play();
+    this.player.play();*/
   }
 
   ngOnDestroy() {

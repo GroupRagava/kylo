@@ -7,16 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/router", "@angular/material"], function (require, exports, core_1, router_1, material_1) {
+define(["require", "exports", "@angular/core", "@angular/material"], function (require, exports, core_1, material_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     //import {DialogUploadFiles} from '../../project-workspace/dialog/upload-files/upload-files.dialog';
     //import {DialogAddFilesUrl} from '../../project-workspace/dialog/add-files-url/add-files-url.dialog';
     var HomeComponent = (function () {
-        function HomeComponent(route, dialog, router) {
-            this.route = route;
+        function HomeComponent(dialog) {
             this.dialog = dialog;
-            this.router = router;
             this.filters = [];
             this.num = 1;
             this.projectName = 'MDK Project';
@@ -51,17 +49,17 @@ define(["require", "exports", "@angular/core", "@angular/router", "@angular/mate
             //this.ts.setToolbarColor('dark-blue');
             //this.ts.setSearchBarVisible(false);
             //this.ts.setBackRoute('');
-            var _this = this;
             this.project = 15;
             // subscribe to router event
-            this.params = this.route.queryParams.subscribe(function (params) {
-                var name = params['name'];
-                if (name)
-                    _this.projectName = name;
-                var objective = params['objective'];
-                if (objective)
-                    _this.projectObjective = objective;
-            });
+            /*    this.params = this.route.queryParams.subscribe(
+                  params => {
+                    let name = params['name'];
+                    if (name) this.projectName = name;
+            
+                    let objective = params['objective'];
+                    if (objective) this.projectObjective = objective;
+                  }
+                );*/
         };
         HomeComponent.prototype.ngOnDestroy = function () {
             //this.ts.restoreToolbarColor();
@@ -115,10 +113,10 @@ define(["require", "exports", "@angular/core", "@angular/router", "@angular/mate
                });*/
         };
         HomeComponent.prototype.redirectToWorkspace = function () {
-            var url = this.router.url;
-            url = url.replace('/home', '/workspace');
+            //let url = this.router.url;
+            //url = url.replace('/home','/workspace');
             console.log(this.files);
-            this.router.navigate([url]);
+            //this.router.navigate([url]);
         };
         return HomeComponent;
     }());
@@ -128,7 +126,7 @@ define(["require", "exports", "@angular/core", "@angular/router", "@angular/mate
             templateUrl: 'js/medikly/project-view/home/home.component.html',
             styleUrls: ['js/medikly/project-view/home/home.component.scss']
         }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute, material_1.MdDialog, router_1.Router])
+        __metadata("design:paramtypes", [material_1.MdDialog])
     ], HomeComponent);
     exports.HomeComponent = HomeComponent;
 });

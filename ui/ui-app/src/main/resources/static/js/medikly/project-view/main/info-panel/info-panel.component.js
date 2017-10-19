@@ -7,12 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/animations", "@covalent/core"], function (require, exports, core_1, animations_1, core_2) {
+define(["require", "exports", "@angular/core", "@covalent/core"], function (require, exports, core_1, core_2) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var InfoPanelComponent = (function () {
-        function InfoPanelComponent(animationBuilder) {
-            this.animationBuilder = animationBuilder;
+        //public player: AnimationPlayer;
+        function InfoPanelComponent() {
             //Steps
             this.activeDeactiveStep1Msg = 'No select/deselect detected yet';
             this.stateStep2 = core_2.StepState.Required;
@@ -22,22 +22,22 @@ define(["require", "exports", "@angular/core", "@angular/animations", "@covalent
         InfoPanelComponent.prototype.ngOnInit = function () {
         };
         InfoPanelComponent.prototype.closeBar = function () {
-            this.player =
-                this.animationBuilder
+            /*    this.player =
+                  this.animationBuilder
                     .build([
-                    animations_1.style({ transform: 'translate3d(0,0,0)' }),
-                    animations_1.animate('400ms ease', animations_1.style({ transform: 'translate3d(100%,0,0)' }))
-                ]).create(this.panel.nativeElement);
-            this.player.play();
+                      style({transform: 'translate3d(0,0,0)'}),
+                      animate('400ms ease', style({transform: 'translate3d(100%,0,0)'}))
+                    ]).create(this.panel.nativeElement);
+                this.player.play();*/
         };
         InfoPanelComponent.prototype.openBar = function () {
-            this.player =
-                this.animationBuilder
+            /*    this.player =
+                  this.animationBuilder
                     .build([
-                    animations_1.style({ transform: 'translate3d(100%,0,0)' }),
-                    animations_1.animate('400ms ease', animations_1.style({ transform: 'translate3d(0,0,0)' }))
-                ]).create(this.panel.nativeElement);
-            this.player.play();
+                      style({transform: 'translate3d(100%,0,0)'}),
+                      animate('400ms ease', style({transform: 'translate3d(0,0,0)'}))
+                    ]).create(this.panel.nativeElement);
+                this.player.play();*/
         };
         InfoPanelComponent.prototype.ngOnDestroy = function () {
         };
@@ -69,7 +69,7 @@ define(["require", "exports", "@angular/core", "@angular/animations", "@covalent
             templateUrl: 'js/medikly/project-view/main/info-panel/info-panel.component.html',
             styleUrls: ['js/medikly/project-view/main/info-panel/info-panel.component.scss']
         }),
-        __metadata("design:paramtypes", [animations_1.AnimationBuilder])
+        __metadata("design:paramtypes", [])
     ], InfoPanelComponent);
     exports.InfoPanelComponent = InfoPanelComponent;
 });
