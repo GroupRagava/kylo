@@ -1,42 +1,49 @@
-define(['angular','common/module-name'], function (angular,moduleName) {
+define(['angular', 'common/module-name'], function (angular, moduleName) {
     angular.module(moduleName)
         .run(['$templateCache', function ($templateCache) {
 
             $templateCache.put('menu-toggle.tmpl.html',
-            '<div class="collapsible-item" ng-class="{open: section.expanded}" ng-if="section.hidden == false" id="{{section.elementId}}">'
-            + '<div class="title" ng-class="{disabled: section.disabled}" ng-click="toggle()" flex layout-align="start start" layout="row">'
-            + '   <span flex>{{section.text}}</span>'
-            + '   <ng-md-icon md-icon icon="{{section.expandIcon}}" ng-if="!isCollapsed()"></ng-md-icon>'
-            + '</div>'
-            + ' <div class="accordion-body">'
-            + ' <md-list id="menu-{{section.text}}" class="accordion-list">\n'
-            + '  <md-list-item ng-repeat="item in section.links" ng-if-permission="{{item.permission}}">\n'
-            + '    <menu-link section="item"></menu-link>\n'
-            + '  </md-list-item>\n'
-            + '</md-list> '
-            + ' </div>'
-            + '</div>');
+                '<div  class="collapsible-item" ng-class="{open: section.expanded}" ng-if="section.hidden == false" id="{{section.elementId}}">'
+                + '<div ng-if="!isCollapsed()" class="title" ng-class="{disabled: section.disabled}" ng-click="toggle()" flex layout-align="start start" layout="row">'
 
+                + '<div flex class="layout-padding-left-8 menu-link">'
+                + '<ng-md-icon md-icon icon="{{section.icon}}" class="nav-btn"></ng-md-icon>'
+                + '<span style="padding-left:10px;" ng-if="!isCollapsed()">{{section.text}}</span>'
+                + '</div>'
 
-
-
+                + '   <ng-md-icon md-icon icon="{{section.expandIcon}}" ng-if="!isCollapsed()"></ng-md-icon>'
+                + '</div>'
+                + '<md-button ng-if="isCollapsed()" flex ng-click="toggle()" class="nav-btn md-icon-button">'
+                + '<div class="layout-padding-left-8 menu-link"><ng-md-icon md-icon icon="{{section.icon}}" class="nav-btn"></ng-md-icon>'
+                + '<md-tooltip md-direction="right" ng-if="isCollapsed()" >{{section.text}}</md-tooltip>'
+                + '<span style="padding-left:10px;" ng-if="!isCollapsed()">{{section.text}}</span> '
+                + '</div>'
+                + '</md-button>'
+                + ' <div class="accordion-body">'
+                + ' <md-list id="menu-{{section.text}}" class="accordion-list">\n'
+                + '  <md-list-item ng-repeat="item in section.links" ng-if-permission="{{item.permission}}">\n'
+                + '    <menu-link section="item"></menu-link>\n'
+                + '  </md-list-item>\n'
+                + '</md-list> '
+                + ' </div>'
+                + '</div>');
 
 
         }])
-        .directive('menuToggle', ['$timeout','AccessControlService', function ($timeout,AccessControlService) {
+        .directive('menuToggle', ['$timeout', 'AccessControlService', function ($timeout, AccessControlService) {
             return {
                 scope: {
                     section: '='
                 },
                 require: '^accordionMenu',
                 templateUrl: 'menu-toggle.tmpl.html',
-                link: function (scope, element,attrs,controller) {
+                link: function (scope, element, attrs, controller) {
                     scope.section.hidden = true;
 
                     scope.isOpened = scope.section.expanded;
 
 
-                    if(scope.isOpened) {
+                    if (scope.isOpened) {
                         scope.section.expandIcon = 'expand_less';
                     }
                     else {
@@ -44,10 +51,10 @@ define(['angular','common/module-name'], function (angular,moduleName) {
                     }
 
 
-                    scope.isCollapsed= controller.isCollapsed;
+                    scope.isCollapsed = controller.isCollapsed;
 
-                    scope.$watch('section.collapsed',function(newVal,oldVal){
-                        if(newVal == true){
+                    scope.$watch('section.collapsed', function (newVal, oldVal) {
+                        if (newVal == true) {
                             element.find('.toggle-label').addClass('collapsed-toggle-header').removeClass('layout-padding-left-8');
                             element.find('.menu-link').removeClass('layout-padding-left-8');
                         }
@@ -57,10 +64,10 @@ define(['angular','common/module-name'], function (angular,moduleName) {
                         }
                     })
 
-                    var checkPermissions = function(){
-                        AccessControlService.doesUserHavePermission(getTogglePermissions()).then(function(allowed){
+                    var checkPermissions = function () {
+                        AccessControlService.doesUserHavePermission(getTogglePermissions()).then(function (allowed) {
                             //if not allowed, remove the links;
-                            if(!allowed){
+                            if (!allowed) {
                                 scope.section.links = [];
                             }
 
@@ -69,31 +76,30 @@ define(['angular','common/module-name'], function (angular,moduleName) {
                     }
 
 
-                    var getTogglePermissions = function(){
-                            var allPermissions = [];
-                            _.each(scope.section.links,function(item){
-                                var permissionStr = item.permission;
-                                if(permissionStr != undefined) {
-                                    var arr = [];
-                                    if(angular.isArray(permissionStr)) {
-                                        arr = permissionStr;
-                                        //the directive template uses the permission key to check.  it needs to be a string.
-                                        item.permission = arr.join(",")
-                                    }
-                                    else {
-                                        arr = permissionStr.split(',');
-                                    }
-                                    allPermissions = _.union(allPermissions, arr);
+                    var getTogglePermissions = function () {
+                        var allPermissions = [];
+                        _.each(scope.section.links, function (item) {
+                            var permissionStr = item.permission;
+                            if (permissionStr != undefined) {
+                                var arr = [];
+                                if (angular.isArray(permissionStr)) {
+                                    arr = permissionStr;
+                                    //the directive template uses the permission key to check.  it needs to be a string.
+                                    item.permission = arr.join(",")
                                 }
-                            });
-                            return allPermissions;
+                                else {
+                                    arr = permissionStr.split(',');
+                                }
+                                allPermissions = _.union(allPermissions, arr);
+                            }
+                        });
+                        return allPermissions;
                     }
                     checkPermissions();
 
 
-
                     scope.toggle = function () {
-                        if(!scope.section.expanded) {
+                        if (!scope.section.expanded) {
                             controller.openToggleItem(scope.section);
                         }
                         else {

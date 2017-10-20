@@ -2,7 +2,7 @@
 var systemLocate = System.locate;
 System.locate = function (load) {
     return Promise.resolve(systemLocate.call(this, load)).then(function (address) {
-        return address + "?ver=0.8.3"
+        return address + "?ver=0.8.4"
     });
 };
 
@@ -46,6 +46,18 @@ System.config({
         '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.min',
         '@angular/http': 'npm:@angular/http/bundles/http.umd.min',
         '@angular/material': 'npm:@angular/material/bundles/material.umd.min',
+        '@angular/flex-layout': '../assets/medikly_theme/vendors/flex-layout/bundles/flex-layout.umd',
+        'ngx-perfect-scrollbar': '../assets/medikly_theme/vendors/ngx-perfect-scrollbar/bundles/ngx-perfect-scrollbar.umd',
+        'ngx-order-pipe': '../assets/medikly_theme/vendors/ngx-order-pipe/dist/bundles/ngx-order-pipe.umd',
+        'ng2-dragula/ng2-dragula': '../assets/medikly_theme/vendors/ng2-dragula/bundles/ng2-dragula.umd',
+        'ng-circle-progress': '../assets/medikly_theme/vendors/ng-circle-progress/index.d',
+        'angular2-highcharts': '../assets/medikly_theme/vendors/angular2-highcharts/dist/index',
+        'angular2-highcharts/dist/HighchartsService': '../assets/medikly_theme/vendors/angular2-highcharts/dist/HighchartsService',
+        'highcharts/highstock': '../assets/medikly_theme/vendors/highcharts/highstock',
+        'highcharts/modules/map' : '../assets/medikly_theme/vendors/highcharts/modules/map',
+        'ng2-file-upload/ng2-file-upload': '../assets/medikly_theme/vendors/ng2-file-upload/bundles/ng2-file-upload.umd',
+        'ng2-file-upload': '../assets/medikly_theme/vendors/ng2-file-upload/index',
+        'ng2-validation': '../assets/medikly_theme/vendors/ng2-validation/bundles/ng2-validation.umd',
         '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.min',
               '@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.min',
         '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min',

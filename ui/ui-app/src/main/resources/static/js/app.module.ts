@@ -3,6 +3,8 @@ import {BrowserModule} from "@angular/platform-browser";
 import {UpgradeModule} from "@angular/upgrade/static";
 import {UIRouterModule} from "@uirouter/angular";
 import {UIRouterUpgradeModule} from "@uirouter/angular-hybrid";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
 
 import "routes";
 
@@ -11,7 +13,9 @@ import "routes";
         BrowserModule,
         UIRouterModule,
         UIRouterUpgradeModule,
-        UpgradeModule
+        UpgradeModule,
+        BrowserAnimationsModule,
+        HttpModule
     ],
     providers: [
         {provide: NgModuleFactoryLoader, useClass: SystemJsNgModuleLoader}

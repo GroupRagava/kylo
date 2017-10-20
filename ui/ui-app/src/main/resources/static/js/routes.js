@@ -11,7 +11,31 @@ define(['angular', 'kylo-common', '@uirouter/angular', 'kylo-services',
             debug: false
         });
 
-        $urlRouterProvider.otherwise("/home");
+        $urlRouterProvider.otherwise("/homepage");
+
+        $stateProvider.state( {
+            name: 'homepage.**',
+            url: '/homepage',
+            loadChildren: 'medikly/home/home.module#HomeModule'
+        });
+
+        $stateProvider.state( {
+            name: 'projects.**',
+            url: '/projects',
+            loadChildren: 'medikly/projects/projects.module#ProjectsModule'
+        });
+
+        $stateProvider.state( {
+            name: 'view.**',
+            url: '/projects/view',
+            loadChildren: 'medikly/project-view/project-view.module#ProjectViewModule'
+        });
+
+        $stateProvider.state( {
+            name: 'workspace.**',
+            url: '/projects/view/:id/workspace',
+            loadChildren: 'medikly/project-workspace/project-workspace.module#ProjectWorkspaceModule'
+        });
 
         $stateProvider
             .state('home', {
