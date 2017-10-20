@@ -6,7 +6,7 @@ import {Component, Input} from '@angular/core';
 @Component({
   selector: 'chart-horizontal',
   templateUrl: 'js/medikly/shared/charts/horizontal/horizontal.component.html',
-  styleUrls: ['js/medikly/shared/charts/horizontal/horizontal.component.scss']
+  styleUrls: ['js/medikly/shared/charts/horizontal/horizontal.component.css']
 })
 export class HorizontalComponent {
   @Input('categories') categories: string[];

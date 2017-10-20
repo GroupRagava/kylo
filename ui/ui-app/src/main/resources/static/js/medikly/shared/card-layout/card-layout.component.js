@@ -60,7 +60,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'app-card-layout',
             templateUrl: 'js/medikly/shared/card-layout/card-layout.component.html',
-            styleUrls: ['js/medikly/shared/card-layout/card-layout.component.scss']
+            styleUrls: ['js/medikly/shared/card-layout/card-layout.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], CardLayoutComponent);

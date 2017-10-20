@@ -67,7 +67,7 @@ define(["require", "exports", "@angular/core", "@covalent/core"], function (requ
         core_1.Component({
             selector: 'info-panel',
             templateUrl: 'js/medikly/project-view/main/info-panel/info-panel.component.html',
-            styleUrls: ['js/medikly/project-view/main/info-panel/info-panel.component.scss']
+            styleUrls: ['js/medikly/project-view/main/info-panel/info-panel.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], InfoPanelComponent);

@@ -10,7 +10,7 @@ import {MdDialog, MdDialogRef} from '@angular/material';
 @Component({
   selector: 'app-project-view-home',
   templateUrl: 'js/medikly/project-view/home/home.component.html',
-  styleUrls: ['js/medikly/project-view/home/home.component.scss']
+  styleUrls: ['js/medikly/project-view/home/home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
   filters: any = [];

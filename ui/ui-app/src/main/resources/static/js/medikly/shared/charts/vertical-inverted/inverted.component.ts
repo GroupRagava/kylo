@@ -9,7 +9,7 @@ import {Component, Input} from '@angular/core';
 @Component({
   selector: 'chart-vertical-inverted',
   templateUrl: 'js/medikly/shared/charts/vertical-inverted/inverted.component.html',
-  styleUrls: ['js/medikly/shared/charts/vertical-inverted/inverted.component.scss']
+  styleUrls: ['js/medikly/shared/charts/vertical-inverted/inverted.component.css']
 })
 export class InvertedComponent {
 

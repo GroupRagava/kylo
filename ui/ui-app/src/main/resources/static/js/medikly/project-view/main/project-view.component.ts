@@ -6,7 +6,7 @@ import {DOCUMENTS} from '../../shared/data/documents';
 @Component({
   selector: 'app-project-view',
   templateUrl: 'js/medikly/project-view/main/project-view.component.html',
-  styleUrls: ['js/medikly/project-view/main/project-view.component.scss']
+  styleUrls: ['js/medikly/project-view/main/project-view.component.css']
 })
 export class ProjectViewComponent implements OnInit, OnDestroy {
   filters: any = [];

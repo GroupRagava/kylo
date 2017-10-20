@@ -143,7 +143,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'chart-horizontal',
             templateUrl: 'js/medikly/shared/charts/horizontal/horizontal.component.html',
-            styleUrls: ['js/medikly/shared/charts/horizontal/horizontal.component.scss']
+            styleUrls: ['js/medikly/shared/charts/horizontal/horizontal.component.css']
         })
     ], HorizontalComponent);
     exports.HorizontalComponent = HorizontalComponent;

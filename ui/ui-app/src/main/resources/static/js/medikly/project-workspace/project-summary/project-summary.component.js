@@ -31,7 +31,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'app-project-summary',
             templateUrl: 'js/medikly/project-workspace/project-summary/project-summary.component.html',
-            styleUrls: ['js/medikly/project-workspace/project-summary/project-summary.component.scss']
+            styleUrls: ['js/medikly/project-workspace/project-summary/project-summary.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], ProjectSummaryComponent);

@@ -92,7 +92,7 @@ define(["require", "exports", "@angular/core", "@angular/material", "../../../sh
         core_1.Component({
             selector: 'app-display-mode-list',
             templateUrl: 'js/medikly/shared/display-documents/mode-list/mode-list.component.html',
-            styleUrls: ['js/medikly/shared/display-documents/mode-list/mode-list.component.scss']
+            styleUrls: ['js/medikly/shared/display-documents/mode-list/mode-list.component.css']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog, display_documents_service_1.DisplayDocumentsService])
     ], ModeListComponent);

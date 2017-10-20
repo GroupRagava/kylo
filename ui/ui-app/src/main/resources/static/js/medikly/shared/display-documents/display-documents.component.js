@@ -105,7 +105,7 @@ define(["require", "exports", "@angular/core", "@angular/material", "../../share
         core_1.Component({
             selector: 'app-display-documents',
             templateUrl: 'js/medikly/shared/display-documents/display-documents.component.html',
-            styleUrls: ['js/medikly/shared/display-documents/display-documents.component.scss']
+            styleUrls: ['js/medikly/shared/display-documents/display-documents.component.css']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog, display_documents_service_1.DisplayDocumentsService])
     ], DisplayDocumentsComponent);

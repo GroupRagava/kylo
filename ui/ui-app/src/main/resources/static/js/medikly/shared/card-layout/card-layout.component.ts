@@ -34,7 +34,7 @@ export class MdkCardLayoutContentDirective {
 @Component({
   selector: 'app-card-layout',
   templateUrl: 'js/medikly/shared/card-layout/card-layout.component.html',
-  styleUrls: ['js/medikly/shared/card-layout/card-layout.component.scss']
+  styleUrls: ['js/medikly/shared/card-layout/card-layout.component.css']
 })
 export class CardLayoutComponent implements OnInit {
 

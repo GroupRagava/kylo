@@ -25,7 +25,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'app-profile-key-stats',
             templateUrl: 'js/medikly/shared/profile/profile-key-stats/profile-key-stats.component.html',
-            styleUrls: ['js/medikly/shared/profile/profile-key-stats/profile-key-stats.component.scss']
+            styleUrls: ['js/medikly/shared/profile/profile-key-stats/profile-key-stats.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], ProfileKeyStatsComponent);

@@ -6,7 +6,7 @@ import { StepState } from '@covalent/core';
 @Component({
   selector: 'info-panel',
   templateUrl: 'js/medikly/project-view/main/info-panel/info-panel.component.html',
-  styleUrls: ['js/medikly/project-view/main/info-panel/info-panel.component.scss']
+  styleUrls: ['js/medikly/project-view/main/info-panel/info-panel.component.css']
 })
 export class InfoPanelComponent implements OnInit, OnDestroy {
   @ViewChild('openButton') openButton;

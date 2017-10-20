@@ -32,7 +32,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'app-main',
             templateUrl: 'js/medikly/projects/main/main.component.html',
-            styleUrls: ['js/medikly/projects/main/main.component.scss']
+            styleUrls: ['js/medikly/projects/main/main.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], MainComponent);

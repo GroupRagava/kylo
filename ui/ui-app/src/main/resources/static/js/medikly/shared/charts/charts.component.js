@@ -84,7 +84,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'chart-vertical',
             templateUrl: 'js/medikly/shared/charts/charts.component.html',
-            styleUrls: ['js/medikly/shared/charts/charts.component.scss']
+            styleUrls: ['js/medikly/shared/charts/charts.component.css']
         })
     ], ChartsComponent);
     exports.ChartsComponent = ChartsComponent;

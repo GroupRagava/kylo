@@ -6,7 +6,7 @@ import { Component, OnInit, Input} from '@angular/core';
 @Component({
   selector: 'app-profile-header-card',
   templateUrl: 'js/medikly/shared/profile/profile-header-card/profile-header-card.component.html',
-  styleUrls: ['js/medikly/shared/profile/profile-header-card/profile-header-card.component.scss']
+  styleUrls: ['js/medikly/shared/profile/profile-header-card/profile-header-card.component.css']
 })
 export class ProfileHeaderCardComponent implements OnInit {
 

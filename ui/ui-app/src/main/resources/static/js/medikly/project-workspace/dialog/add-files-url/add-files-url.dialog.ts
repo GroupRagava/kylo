@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 
 @Component({
   selector: 'app-add-files-url-dialog',
-  styleUrls: ['js/medikly/project-workspace/dialog/add-files-url/add-files-url.dialog.scss'],
+  styleUrls: ['js/medikly/project-workspace/dialog/add-files-url/add-files-url.dialog.css'],
   template: `
     <div class="dialog-content">
     <h2 md-dialog-title>Add files via URL</h2>

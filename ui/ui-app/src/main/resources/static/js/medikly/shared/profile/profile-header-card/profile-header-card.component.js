@@ -37,7 +37,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'app-profile-header-card',
             templateUrl: 'js/medikly/shared/profile/profile-header-card/profile-header-card.component.html',
-            styleUrls: ['js/medikly/shared/profile/profile-header-card/profile-header-card.component.scss']
+            styleUrls: ['js/medikly/shared/profile/profile-header-card/profile-header-card.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], ProfileHeaderCardComponent);

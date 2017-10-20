@@ -69,7 +69,7 @@ define(["require", "exports", "@angular/core", "../../shared/data/documents"], f
         core_1.Component({
             selector: 'app-project-view',
             templateUrl: 'js/medikly/project-view/main/project-view.component.html',
-            styleUrls: ['js/medikly/project-view/main/project-view.component.scss']
+            styleUrls: ['js/medikly/project-view/main/project-view.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], ProjectViewComponent);

@@ -11,7 +11,7 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 @Component({
   selector: 'app-workspace-home',
   templateUrl: 'js/medikly/project-workspace/home/home.component.html',
-  styleUrls: ['js/medikly/project-workspace/home/home.component.scss']
+  styleUrls: ['js/medikly/project-workspace/home/home.component.css']
 })
 export class HomeComponent implements OnInit {
   uploader: FileUploader = new FileUploader({

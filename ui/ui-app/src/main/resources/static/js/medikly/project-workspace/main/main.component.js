@@ -127,7 +127,7 @@ define(["require", "exports", "@angular/core", "ng2-file-upload", "../dialog/upl
         core_1.Component({
             selector: 'app-main',
             templateUrl: 'js/medikly/project-workspace/main/main.component.html',
-            styleUrls: ['js/medikly/project-workspace/main/main.component.scss']
+            styleUrls: ['js/medikly/project-workspace/main/main.component.css']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog])
     ], MainComponent);

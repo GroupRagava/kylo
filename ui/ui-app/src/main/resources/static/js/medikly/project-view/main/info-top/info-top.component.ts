@@ -3,7 +3,7 @@ import {Component, Input, OnInit} from '@angular/core';
 @Component({
     selector: 'app-project-info-top',
     templateUrl: 'js/medikly/project-view/main/info-top/info-top.component.html',
-    styleUrls: ['js/medikly/project-view/main/info-top/info-top.component.scss']
+    styleUrls: ['js/medikly/project-view/main/info-top/info-top.component.css']
 })
 export class InfoTopComponent implements OnInit {
 

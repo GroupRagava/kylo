@@ -3,7 +3,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 @Component({
   selector: 'app-main',
   templateUrl: 'js/medikly/projects/main/main.component.html',
-  styleUrls: ['js/medikly/projects/main/main.component.scss']
+  styleUrls: ['js/medikly/projects/main/main.component.css']
 })
 export class MainComponent implements OnInit, OnDestroy {
   //SideMenu

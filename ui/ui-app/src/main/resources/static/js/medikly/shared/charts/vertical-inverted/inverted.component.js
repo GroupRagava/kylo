@@ -158,7 +158,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'chart-vertical-inverted',
             templateUrl: 'js/medikly/shared/charts/vertical-inverted/inverted.component.html',
-            styleUrls: ['js/medikly/shared/charts/vertical-inverted/inverted.component.scss']
+            styleUrls: ['js/medikly/shared/charts/vertical-inverted/inverted.component.css']
         })
     ], InvertedComponent);
     exports.InvertedComponent = InvertedComponent;

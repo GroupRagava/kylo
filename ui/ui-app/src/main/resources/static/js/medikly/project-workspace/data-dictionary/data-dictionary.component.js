@@ -79,7 +79,7 @@ define(["require", "exports", "@angular/core", "../dialog/add-description-file/a
         core_1.Component({
             selector: 'app-project-summary',
             templateUrl: 'js/medikly/project-workspace/data-dictionary/data-dictionary.component.html',
-            styleUrls: ['js/medikly/project-workspace/data-dictionary/data-dictionary.component.scss']
+            styleUrls: ['js/medikly/project-workspace/data-dictionary/data-dictionary.component.css']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog])
     ], DataDictionaryComponent);

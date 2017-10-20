@@ -82,7 +82,7 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/pl
         core_1.Component({
             selector: 'app-projects-home',
             templateUrl: 'js/medikly/projects/home/projects.component.html',
-            styleUrls: ['js/medikly/projects/home/projects.component.scss']
+            styleUrls: ['js/medikly/projects/home/projects.component.css']
         }),
         __param(1, core_1.Inject(platform_browser_1.DOCUMENT)),
         __metadata("design:paramtypes", [material_1.MdDialog, Document, core_1.ElementRef])

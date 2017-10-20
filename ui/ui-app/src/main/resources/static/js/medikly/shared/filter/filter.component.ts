@@ -9,7 +9,7 @@ import {FormControl, Validators} from '@angular/forms';
 @Component({
   selector: 'filter-sidebar',
   templateUrl: 'filter.component.html',
-  styleUrls: ['filter.component.scss']
+  styleUrls: ['filter.component.css']
 })
 export class FilterComponent implements OnInit {
   @Input('categories') categories: any;

@@ -8,7 +8,7 @@ import {MdDialog, MdDialogRef} from "@angular/material";
 @Component({
   selector: 'app-project-summary',
   templateUrl: 'js/medikly/project-workspace/data-dictionary/data-dictionary.component.html',
-  styleUrls: ['js/medikly/project-workspace/data-dictionary/data-dictionary.component.scss']
+  styleUrls: ['js/medikly/project-workspace/data-dictionary/data-dictionary.component.css']
 })
 export class DataDictionaryComponent implements OnInit{
 

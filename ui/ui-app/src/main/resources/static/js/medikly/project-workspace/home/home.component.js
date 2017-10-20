@@ -48,7 +48,7 @@ define(["require", "exports", "@angular/core", "ng2-file-upload", "../dialog/upl
         core_1.Component({
             selector: 'app-workspace-home',
             templateUrl: 'js/medikly/project-workspace/home/home.component.html',
-            styleUrls: ['js/medikly/project-workspace/home/home.component.scss']
+            styleUrls: ['js/medikly/project-workspace/home/home.component.css']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog])
     ], HomeComponent);

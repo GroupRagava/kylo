@@ -7,7 +7,7 @@ import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-add-description-file-dialog',
-  styleUrls: ['js/medikly/project-workspace/dialog/add-description-file/add-description-file.dialog.scss'],
+  styleUrls: ['js/medikly/project-workspace/dialog/add-description-file/add-description-file.dialog.css'],
   template: `
    <div class="dialog-content">
    

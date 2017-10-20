@@ -14,7 +14,7 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 
 @Component({
   selector: 'app-upload-files-dialog',
-  styleUrls: ['js/medikly/project-workspace/dialog/upload-files/upload-files.dialog.scss'],
+  styleUrls: ['js/medikly/project-workspace/dialog/upload-files/upload-files.dialog.css'],
   template: `
     <div class="dialog-content">
     <h2 md-dialog-title>Add files to your dataset</h2>

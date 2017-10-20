@@ -59,7 +59,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'app-target-tabs',
             templateUrl: 'js/medikly/project-view/target-component/target-tabs/target-tabs.component.html',
-            styleUrls: ['js/medikly/project-view/target-component/target-tabs/target-tabs.component.scss']
+            styleUrls: ['js/medikly/project-view/target-component/target-tabs/target-tabs.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], TargetTabsComponent);

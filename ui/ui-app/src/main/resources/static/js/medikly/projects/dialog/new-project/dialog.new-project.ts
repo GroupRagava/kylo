@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-content-element-dialog',
   templateUrl: 'js/medikly/projects/dialog/new-project/dialog.new-project.html',
-  styleUrls: ['js/medikly/projects/dialog/new-project/dialog.new-project.scss'],
+  styleUrls: ['js/medikly/projects/dialog/new-project/dialog.new-project.css'],
 })
 export class DialogNewProject implements OnInit {
   actionsAlignment: string;

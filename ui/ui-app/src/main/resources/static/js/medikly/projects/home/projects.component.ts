@@ -7,7 +7,7 @@ import { DialogNewProject } from '../dialog/new-project/dialog.new-project';
 @Component({
   selector: 'app-projects-home',
   templateUrl: 'js/medikly/projects/home/projects.component.html',
-  styleUrls: ['js/medikly/projects/home/projects.component.scss']
+  styleUrls: ['js/medikly/projects/home/projects.component.css']
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
 

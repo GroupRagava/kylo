@@ -64,7 +64,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'filter-sidebar',
             templateUrl: 'filter.component.html',
-            styleUrls: ['filter.component.scss']
+            styleUrls: ['filter.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], FilterComponent);

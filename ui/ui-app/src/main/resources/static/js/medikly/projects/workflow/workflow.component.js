@@ -127,7 +127,7 @@ define(["require", "exports", "@angular/core"], function (require, exports, core
         core_1.Component({
             selector: 'app-projects-workflow',
             templateUrl: 'js/medikly/projects/workflow/workflow.component.html',
-            styleUrls: ['js/medikly/projects/workflow/workflow.component.scss']
+            styleUrls: ['js/medikly/projects/workflow/workflow.component.css']
         }),
         __metadata("design:paramtypes", [])
     ], WorkflowComponent);

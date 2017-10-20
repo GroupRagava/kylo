@@ -124,7 +124,7 @@ define(["require", "exports", "@angular/core", "@angular/material"], function (r
         core_1.Component({
             selector: 'app-project-view-home',
             templateUrl: 'js/medikly/project-view/home/home.component.html',
-            styleUrls: ['js/medikly/project-view/home/home.component.scss']
+            styleUrls: ['js/medikly/project-view/home/home.component.css']
         }),
         __metadata("design:paramtypes", [material_1.MdDialog])
     ], HomeComponent);

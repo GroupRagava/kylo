@@ -3,7 +3,7 @@ import {Component, Input} from '@angular/core';
 @Component({
   selector: 'app-target-tabs',
   templateUrl: 'js/medikly/project-view/target-component/target-tabs/target-tabs.component.html',
-  styleUrls: ['js/medikly/project-view/target-component/target-tabs/target-tabs.component.scss']
+  styleUrls: ['js/medikly/project-view/target-component/target-tabs/target-tabs.component.css']
 })
 export class TargetTabsComponent {
 

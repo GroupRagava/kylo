@@ -11,7 +11,7 @@ import {DOCUMENTS} from '../data/documents';
 @Component({
   selector: 'app-display-documents',
   templateUrl: 'js/medikly/shared/display-documents/display-documents.component.html',
-  styleUrls: ['js/medikly/shared/display-documents/display-documents.component.scss']
+  styleUrls: ['js/medikly/shared/display-documents/display-documents.component.css']
 })
 export class DisplayDocumentsComponent implements OnInit, OnDestroy {
   displayMode = 'default';

@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-project-summary',
   templateUrl: 'js/medikly/project-workspace/project-summary/project-summary.component.html',
-  styleUrls: ['js/medikly/project-workspace/project-summary/project-summary.component.scss']
+  styleUrls: ['js/medikly/project-workspace/project-summary/project-summary.component.css']
 })
 export class ProjectSummaryComponent implements OnInit{
 
