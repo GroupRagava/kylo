@@ -40,6 +40,12 @@ body {
       width: 100%;
       margin: 0;
     }
+    .mat-card-header{
+      padding: 0px;
+    }
+    .mat-card-header-text{
+      margin: 0 0;
+    }
     .mat-card-image:first-child {
       margin-top: 0;
       border-radius: $border-radius-base $border-radius-base 0 0;
@@ -48,6 +54,7 @@ body {
       padding-top: $gutter;
       padding-left: $gutter;
       padding-right: $gutter;
+      padding-bottom: 0px;
       line-height: 1;
       font-size: 16px !important;
       font-weight: 400;

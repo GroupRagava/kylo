@@ -10,7 +10,7 @@
   margin: -25px 0 0 0; }
 
 /deep/ .card-layout-content {
-  background-color: #eeeeee;
+  background-color: #F9F9F9;
   height: calc(100vh - 230px); }
 
 /*# sourceMappingURL=card-layout.component.css.map */
