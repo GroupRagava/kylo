@@ -1,3 +1,11 @@
+:host {
+  margin-left: -25px !important;
+  margin-right: -25px !important;
+  margin-top: -17px !important;
+  margin-bottom: -25px !important;
+  display: block;
+}
+
 /deep/{
   .expansion-project{
     .mat-expansion-panel-body{
