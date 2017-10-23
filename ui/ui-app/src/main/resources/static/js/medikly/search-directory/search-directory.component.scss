@@ -53,9 +53,10 @@ $toolBar: 64px;
 }
 
 :host {
-  margin-left: -5px;
-  margin-right: -5px;
-  margin-top: -5px;
+  margin-left: -25px !important;
+  margin-right: -25px !important;
+  margin-top: -17px !important;
+  margin-bottom: -25px !important;
   display: block;
 }
 :host /deep/ {
@@ -86,6 +87,10 @@ $toolBar: 64px;
     width: 100%;
     min-width: 1px;
   }
+}
+
+.sidenav-container-directory{
+  height: $height;
 }
 
 .sidenav-secondary {
