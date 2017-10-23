@@ -1,5 +1,4 @@
 import {NgModule} from '@angular/core';
-import {RouterModule} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {environment} from '../environments/environment';
 import {CovalentExpansionPanelModule} from '@covalent/core';
@@ -24,18 +23,13 @@ import {
     MdGridListModule,
     MdMenuModule
 } from '@angular/material';
-
 import {NgCircleProgressModule} from 'ng-circle-progress';
-
 import {AgmCoreModule} from '@agm/core';
 import {CovalentSearchModule} from '@covalent/core';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {SearchDirectoryComponent} from './search-directory.component';
 import {DirectoryListingComponent} from './listing/directory-listing.component';
 import {DirectoryProfileComponent} from './profile/directory-profile.component';
-/*import { SidebarComponent } from '../layouts/sidebar/sidebar.component';
- import { FilterComponent } from '../layouts/filter/filter.component';*/
-import {SearchDirectoryRouting} from './search-directory.routing';
 import {
     AboutComponent,
     EducationTrainingComponent,
@@ -51,17 +45,18 @@ import {
 } from './profile/expansion/index';
 import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
 
-
-let directoryState = { name: 'directory', url: '/directory',    views: {
-    "content": {
-        component: SearchDirectoryComponent,
-    }}
+let directoryState = {
+    name: 'directory', url: '/directory', views: {
+        "content": {
+            component: SearchDirectoryComponent,
+        }
+    }
 };
 
 @NgModule({
     imports: [
         CommonModule,
-        UIRouterModule.forChild({ states: [directoryState]}),
+        UIRouterModule.forChild({states: [directoryState]}),
         PerfectScrollbarModule.forChild(),
         MdCardModule,
         MdToolbarModule,
@@ -74,7 +69,7 @@ let directoryState = { name: 'directory', url: '/directory',    views: {
         MdSliderModule,
         MdCheckboxModule,
         MdSidenavModule,
-/*        MdExpansionModule,*/
+        /*        MdExpansionModule,*/
         MdSelectionModule,
         MdRadioModule,
         MdSelectModule,
@@ -85,7 +80,7 @@ let directoryState = { name: 'directory', url: '/directory',    views: {
         MdMenuModule,
         CovalentSearchModule,
         SharedProfileModule,
-/*        NgCircleProgressModule.forRoot({
+ /*       NgCircleProgressModule.forRoot({
             // set defaults here
             radius: 40,
             outerStrokeWidth: 16,
