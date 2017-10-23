@@ -108,7 +108,7 @@ define(["require", "exports", "@angular/core", "./data/sidebar", "./data/doctors
         //     this.mapHeight = event.target.innerHeight - 135;
         // }
         SearchDirectoryComponent.prototype.ngOnDestroy = function () {
-            this.sub.unsubscribe();
+            //this.sub.unsubscribe();
             //this.ts.restoreToolbarColor();
         };
         SearchDirectoryComponent.prototype.getCategories = function () {

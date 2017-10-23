@@ -127,7 +127,7 @@ export class SearchDirectoryComponent implements OnInit, OnDestroy {
   // }
 
   ngOnDestroy() {
-    this.sub.unsubscribe();
+    //this.sub.unsubscribe();
 
     //this.ts.restoreToolbarColor();
   }

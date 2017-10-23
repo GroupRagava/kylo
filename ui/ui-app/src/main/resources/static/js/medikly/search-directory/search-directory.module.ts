@@ -95,7 +95,7 @@ let directoryState = { name: 'directory', url: '/directory',    views: {
             showSubtitle: false,
             animationDuration: 300,
         }),*/
- /*       AgmCoreModule.forRoot({apiKey: environment.googleMapApiKey})*/
+        AgmCoreModule.forRoot({apiKey: environment.googleMapApiKey})
     ],
     declarations: [SearchDirectoryComponent,
         DirectoryListingComponent,

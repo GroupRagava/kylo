@@ -89,12 +89,12 @@
         </button>
       </md-toolbar>
 
-<!--      <agm-map [streetViewControl]="false" [latitude]="mapCfg.lat" [longitude]="mapCfg.lng" [zoom]="mapCfg.zoom"
+      <agm-map [streetViewControl]="false" [latitude]="mapCfg.lat" [longitude]="mapCfg.lng" [zoom]="mapCfg.zoom"
                [styles]="styles" #map1>
         <ng-template ngFor let-provider [ngForOf]="providers">
           <agm-marker *ngIf="provider.addresses.length > 0 && provider.addresses[0].point"
                       [latitude]="provider.addresses[0].point.lat" [longitude]="provider.addresses[0].point.ln"
-                      [iconUrl]="provider.enumeration_type == 'NPI-2' ? 'assets/images/marker/hospital.svg' : 'assets/images/marker/person_pin.svg'"
+                      [iconUrl]="provider.enumeration_type == 'NPI-2' ? 'assets/medikly_theme/images/marker/hospital.svg' : 'assets/medikly_theme/images/marker/person_pin.svg'"
                       (markerClick)="clickedMarker(infoWindow)">
             <agm-info-window #infoWindow>
               <div fxLayout="row">
@@ -130,7 +130,7 @@
           </agm-marker>
         </ng-template>
 
-      </agm-map>-->
+      </agm-map>
     </div>
 
   </div>

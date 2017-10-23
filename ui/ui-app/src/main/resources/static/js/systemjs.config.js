@@ -38,7 +38,7 @@ System.config({
         "services/module-name":"services/module-name"
     },
     map: {
-        '@agm/core': 'npm:@agm/core/core.umd',
+        '@agm/core': '../assets/medikly_theme/vendors/agm/core/core.umd',
         '@angular/animations': 'npm:@angular/animations/bundles/animations.umd.min',
         '@angular/animations/browser': 'npm:@angular/animations/bundles/animations-browser.umd.min',
         '@angular/common': 'npm:@angular/common/bundles/common.umd.min',
