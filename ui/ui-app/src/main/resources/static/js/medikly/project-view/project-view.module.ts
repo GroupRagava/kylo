@@ -47,7 +47,7 @@ import {HttpService} from '../services/http.service';
 import {CardLayoutModule} from '../shared/card-layout/card-layout.module';
 import {InfoTopComponent} from './main/info-top/info-top.component';
 import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
-//import {DialogWorkspaceModule} from '../project-workspace/dialog/dialog-workspace.module';
+import {DialogWorkspaceModule} from '../project-workspace/dialog/dialog-workspace.module';
 
 
 
@@ -126,7 +126,7 @@ let assetsState = { name: 'view.assets', url: '/assets',    views: {
       showSubtitle: false,
       animationDuration: 300,
     }),*/
-    //DialogWorkspaceModule
+    DialogWorkspaceModule
   ],
   declarations: [
     ProjectViewComponent,

@@ -4,8 +4,8 @@ import {Component, OnInit, OnDestroy} from '@angular/core';
 import {DOCUMENTS} from '../../shared/data/documents';
 //import {SidenavService} from '../../core/sidenav/sidenav.service';
 import {MdDialog, MdDialogRef} from '@angular/material';
-//import {DialogUploadFiles} from '../../project-workspace/dialog/upload-files/upload-files.dialog';
-//import {DialogAddFilesUrl} from '../../project-workspace/dialog/add-files-url/add-files-url.dialog';
+import {DialogUploadFiles} from '../../project-workspace/dialog/upload-files/upload-files.dialog';
+import {DialogAddFilesUrl} from '../../project-workspace/dialog/add-files-url/add-files-url.dialog';
 
 @Component({
   selector: 'app-project-view-home',
@@ -97,7 +97,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   //Open dialog upload files
   openDialogUploadFiles() {
- /*   let dialogRef = this.dialog.open(DialogUploadFiles, {
+ let dialogRef = this.dialog.open(DialogUploadFiles, {
       width: '500px',
       height: '100vh',
       position: { right: '0px' }
@@ -109,12 +109,12 @@ export class HomeComponent implements OnInit, OnDestroy {
         }
 
       }
-    });*/
+    });
   }
 
   //Open dialog add files from URL
   openDialogAddFilesUrl() {
- /*   let dialogRef = this.dialog.open(DialogAddFilesUrl, {
+ let dialogRef = this.dialog.open(DialogAddFilesUrl, {
       width: '500px',
       height: '100vh',
       position: { right: '0px' }
@@ -124,7 +124,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       if (result) {
         this.files.push(dialogRef.componentInstance.files);
       }
-    });*/
+    });
   }
 
   redirectToWorkspace(){

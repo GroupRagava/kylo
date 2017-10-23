@@ -7,11 +7,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/material"], function (require, exports, core_1, material_1) {
+define(["require", "exports", "@angular/core", "@angular/material", "../../project-workspace/dialog/upload-files/upload-files.dialog", "../../project-workspace/dialog/add-files-url/add-files-url.dialog"], function (require, exports, core_1, material_1, upload_files_dialog_1, add_files_url_dialog_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    //import {DialogUploadFiles} from '../../project-workspace/dialog/upload-files/upload-files.dialog';
-    //import {DialogAddFilesUrl} from '../../project-workspace/dialog/add-files-url/add-files-url.dialog';
     var HomeComponent = (function () {
         function HomeComponent(dialog) {
             this.dialog = dialog;
@@ -84,33 +82,34 @@ define(["require", "exports", "@angular/core", "@angular/material"], function (r
         };
         //Open dialog upload files
         HomeComponent.prototype.openDialogUploadFiles = function () {
-            /*   let dialogRef = this.dialog.open(DialogUploadFiles, {
-                 width: '500px',
-                 height: '100vh',
-                 position: { right: '0px' }
-               });
-               dialogRef.afterClosed().subscribe(result => {
-                 if (result) {
-                   for (let file of dialogRef.componentInstance.uploader.queue) {
-                     this.files.push(file);
-                   }
-           
-                 }
-               });*/
+            var _this = this;
+            var dialogRef = this.dialog.open(upload_files_dialog_1.DialogUploadFiles, {
+                width: '500px',
+                height: '100vh',
+                position: { right: '0px' }
+            });
+            dialogRef.afterClosed().subscribe(function (result) {
+                if (result) {
+                    for (var _i = 0, _a = dialogRef.componentInstance.uploader.queue; _i < _a.length; _i++) {
+                        var file = _a[_i];
+                        _this.files.push(file);
+                    }
+                }
+            });
         };
         //Open dialog add files from URL
         HomeComponent.prototype.openDialogAddFilesUrl = function () {
-            /*   let dialogRef = this.dialog.open(DialogAddFilesUrl, {
-                 width: '500px',
-                 height: '100vh',
-                 position: { right: '0px' }
-               });
-           
-               dialogRef.afterClosed().subscribe(result => {
-                 if (result) {
-                   this.files.push(dialogRef.componentInstance.files);
-                 }
-               });*/
+            var _this = this;
+            var dialogRef = this.dialog.open(add_files_url_dialog_1.DialogAddFilesUrl, {
+                width: '500px',
+                height: '100vh',
+                position: { right: '0px' }
+            });
+            dialogRef.afterClosed().subscribe(function (result) {
+                if (result) {
+                    _this.files.push(dialogRef.componentInstance.files);
+                }
+            });
         };
         HomeComponent.prototype.redirectToWorkspace = function () {
             //let url = this.router.url;

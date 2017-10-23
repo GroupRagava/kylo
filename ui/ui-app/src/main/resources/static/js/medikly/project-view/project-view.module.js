@@ -4,10 +4,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-define(["require", "exports", "@angular/core", "@angular/common", "@angular/material", "@angular/flex-layout", "@angular/forms", "../shared/charts/charts.module", "ngx-perfect-scrollbar", "../shared/listing/shared-listing.module", "ngx-order-pipe", "ng2-dragula/ng2-dragula", "../shared/dialog/dialog.module", "../shared/display-documents/display-documents.module", "@covalent/core", "./main/project-view.component", "./main/info-panel/info-panel.component", "./home/home.component", "./target-component/target.component", "../shared/profile/shared-profile.module", "./target-component/target-tabs/target-tabs.component", "./assets/assets.component", "./segments/segments.component", "./reports/reports.component", "./target-component/expansion-chart/expansion-chart.component", "../services/http.service", "../shared/card-layout/card-layout.module", "./main/info-top/info-top.component", "@uirouter/angular"], function (require, exports, core_1, common_1, material_1, flex_layout_1, forms_1, charts_module_1, ngx_perfect_scrollbar_1, shared_listing_module_1, ngx_order_pipe_1, ng2_dragula_1, dialog_module_1, display_documents_module_1, core_2, project_view_component_1, info_panel_component_1, home_component_1, target_component_1, shared_profile_module_1, target_tabs_component_1, assets_component_1, segments_component_1, reports_component_1, expansion_chart_component_1, http_service_1, card_layout_module_1, info_top_component_1, angular_1) {
+define(["require", "exports", "@angular/core", "@angular/common", "@angular/material", "@angular/flex-layout", "@angular/forms", "../shared/charts/charts.module", "ngx-perfect-scrollbar", "../shared/listing/shared-listing.module", "ngx-order-pipe", "ng2-dragula/ng2-dragula", "../shared/dialog/dialog.module", "../shared/display-documents/display-documents.module", "@covalent/core", "./main/project-view.component", "./main/info-panel/info-panel.component", "./home/home.component", "./target-component/target.component", "../shared/profile/shared-profile.module", "./target-component/target-tabs/target-tabs.component", "./assets/assets.component", "./segments/segments.component", "./reports/reports.component", "./target-component/expansion-chart/expansion-chart.component", "../services/http.service", "../shared/card-layout/card-layout.module", "./main/info-top/info-top.component", "@uirouter/angular", "../project-workspace/dialog/dialog-workspace.module"], function (require, exports, core_1, common_1, material_1, flex_layout_1, forms_1, charts_module_1, ngx_perfect_scrollbar_1, shared_listing_module_1, ngx_order_pipe_1, ng2_dragula_1, dialog_module_1, display_documents_module_1, core_2, project_view_component_1, info_panel_component_1, home_component_1, target_component_1, shared_profile_module_1, target_tabs_component_1, assets_component_1, segments_component_1, reports_component_1, expansion_chart_component_1, http_service_1, card_layout_module_1, info_top_component_1, angular_1, dialog_workspace_module_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    //import {DialogWorkspaceModule} from '../project-workspace/dialog/dialog-workspace.module';
     var projectsViewState = { name: 'view', url: '/projects/view/:id', views: {
             "content": {
                 component: project_view_component_1.ProjectViewComponent,
@@ -83,6 +82,17 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
                 material_1.MdChipsModule,
                 core_2.CovalentChipsModule,
                 card_layout_module_1.CardLayoutModule,
+                /*    NgCircleProgressModule.forRoot({
+                      // set defaults here
+                      radius: 40,
+                      outerStrokeWidth: 16,
+                      innerStrokeWidth: 8,
+                      outerStrokeColor: '#78C000',
+                      innerStrokeColor: '#C7E596',
+                      showSubtitle: false,
+                      animationDuration: 300,
+                    }),*/
+                dialog_workspace_module_1.DialogWorkspaceModule
             ],
             declarations: [
                 project_view_component_1.ProjectViewComponent,
