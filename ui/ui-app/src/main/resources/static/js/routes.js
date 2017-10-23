@@ -37,6 +37,12 @@ define(['angular', 'kylo-common', '@uirouter/angular', 'kylo-services',
             loadChildren: 'medikly/project-workspace/project-workspace.module#ProjectWorkspaceModule'
         });
 
+        $stateProvider.state( {
+            name: 'directory.**',
+            url: '/directory',
+            loadChildren: 'medikly/search-directory/search-directory.module#SearchDirectoryModule'
+        });
+
         $stateProvider
             .state('home', {
                 url: '/home',

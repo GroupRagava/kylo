@@ -38,6 +38,7 @@ System.config({
         "services/module-name":"services/module-name"
     },
     map: {
+        '@agm/core': '../assets/medikly_theme/vendors/agm/core/core.umd',
         '@angular/animations': 'npm:@angular/animations/bundles/animations.umd.min',
         '@angular/animations/browser': 'npm:@angular/animations/bundles/animations-browser.umd.min',
         '@angular/common': 'npm:@angular/common/bundles/common.umd.min',
@@ -50,7 +51,7 @@ System.config({
         'ngx-perfect-scrollbar': '../assets/medikly_theme/vendors/ngx-perfect-scrollbar/bundles/ngx-perfect-scrollbar.umd',
         'ngx-order-pipe': '../assets/medikly_theme/vendors/ngx-order-pipe/dist/bundles/ngx-order-pipe.umd',
         'ng2-dragula/ng2-dragula': '../assets/medikly_theme/vendors/ng2-dragula/bundles/ng2-dragula.umd',
-        'ng-circle-progress': '../assets/medikly_theme/vendors/ng-circle-progress/index.d',
+        'ng-circle-progress': '../assets/medikly_theme/vendors/ng-circle-progress/index',
         'angular2-highcharts': '../assets/medikly_theme/vendors/angular2-highcharts/dist/index',
         'angular2-highcharts/dist/HighchartsService': '../assets/medikly_theme/vendors/angular2-highcharts/dist/HighchartsService',
         'highcharts/highstock': '../assets/medikly_theme/vendors/highcharts/highstock',
