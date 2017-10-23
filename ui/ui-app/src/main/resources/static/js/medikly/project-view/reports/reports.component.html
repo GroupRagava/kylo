@@ -215,22 +215,22 @@
     <md-nav-list class="messages-nav" dense>
 
       <a href="javascript:;" class="measure-list-item" md-list-item>
-        <md-icon class="mat-text-muted">inbox</md-icon>
+        <md-icon class="mat-text-muted ml-0 mr-0">inbox</md-icon>
         <span class="ml-1">My Reports</span>
       </a>
       <a href="javascript:;"  class="measure-list-item submenu-item-measure" *ngFor="let folder of folderMenu"
          md-list-item>
-        <md-icon class="mat-text-muted">{{folder.icon}}</md-icon>
+        <md-icon class="mat-text-muted ml-0 mr-0">{{folder.icon}}</md-icon>
         <span class="ml-1">{{folder.title}}</span>
       </a>
       <a href="javascript:;" (click)="openDialogFolder()"
          class="measure-list-item submenu-item-measure tc-blue-500" md-list-item>
-        <md-icon class="tc-blue-500">add</md-icon>
+        <md-icon class="tc-blue-500 ml-0 mr-0">add</md-icon>
         <span class="ml-1">Create folder</span>
       </a>
 
       <a href="javascript:;" class="measure-list-item" *ngFor="let main of mainMenu" md-list-item>
-        <md-icon class="mat-text-muted">{{main.icon}}</md-icon>
+        <md-icon class="mat-text-muted ml-0 mr-0">{{main.icon}}</md-icon>
         <span class="ml-1">{{main.title}}</span>
       </a>
 
@@ -238,22 +238,22 @@
       <h3 md-subheader>Labels</h3>
       <a href="javascript:;" class="measure-list-item submenu-item-measure" *ngFor="let label of labelMenu"
          md-list-item>
-        <md-icon class="mat-text-muted">{{label.icon}}</md-icon>
+        <md-icon class="mat-text-muted ml-0 mr-0">{{label.icon}}</md-icon>
         <span class="ml-1">{{label.title}}</span>
       </a>
       <a href="javascript:;" (click)="openDialogLabel()"
          class="measure-list-item submenu-item-measure tc-blue-500" md-list-item>
-        <md-icon class="tc-blue-500">add</md-icon>
+        <md-icon class="tc-blue-500 ml-0 mr-0">add</md-icon>
         <span>Create label</span>
       </a>
       <md-divider></md-divider>
       <a href="javascript:;" class="measure-list-item" *ngFor="let data of dataMenu" md-list-item>
-        <md-icon class="mat-text-muted">{{data.icon}}</md-icon>
+        <md-icon class="mat-text-muted ml-0 mr-0">{{data.icon}}</md-icon>
         <span class="ml-1">{{data.title}}</span>
       </a>
       <md-divider></md-divider>
       <a href="javascript:;" class="measure-list-item" *ngFor="let info of infoMenu" md-list-item>
-        <md-icon class="mat-text-muted">{{info.icon}}</md-icon>
+        <md-icon class="mat-text-muted ml-0 mr-0">{{info.icon}}</md-icon>
         <span class="ml-1">{{info.title}}</span>
       </a>
 
