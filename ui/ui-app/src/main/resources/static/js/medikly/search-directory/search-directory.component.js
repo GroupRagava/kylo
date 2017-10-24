@@ -11,7 +11,8 @@ define(["require", "exports", "@angular/core", "./data/sidebar", "./data/doctors
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var SearchDirectoryComponent = (function () {
-        function SearchDirectoryComponent() {
+        function SearchDirectoryComponent(snackBar) {
+            this.snackBar = snackBar;
             this.collapseSidebar = false;
             this.listingEnabled = true;
             this.mapCfg = {
@@ -242,19 +243,19 @@ define(["require", "exports", "@angular/core", "./data/sidebar", "./data/doctors
             var config = new material_1.MdSnackBarConfig();
             config.duration = this.autoHide;
             config.extraClasses = this.addExtraClass ? ['party'] : null;
-            //this.snackBar.open(this.alreadyAdded, this.action && this.actionButtonLabel, config);
+            this.snackBar.open(this.alreadyAdded, this.action && this.actionButtonLabel, config);
         };
         SearchDirectoryComponent.prototype.openAdded = function () {
             var config = new material_1.MdSnackBarConfig();
             config.duration = this.autoHide;
             config.extraClasses = this.addExtraClass ? ['party'] : null;
-            //this.snackBar.open(this.added, this.action && this.actionButtonLabel, config);
+            this.snackBar.open(this.added, this.action && this.actionButtonLabel, config);
         };
         SearchDirectoryComponent.prototype.openMax = function () {
             var config = new material_1.MdSnackBarConfig();
             config.duration = this.autoHide;
             config.extraClasses = this.addExtraClass ? ['party'] : null;
-            //this.snackBar.open(this.max, this.action && this.actionButtonLabel, config);
+            this.snackBar.open(this.max, this.action && this.actionButtonLabel, config);
         };
         SearchDirectoryComponent.prototype.followMessage = function (provider) {
             var config = new material_1.MdSnackBarConfig();
@@ -263,11 +264,11 @@ define(["require", "exports", "@angular/core", "./data/sidebar", "./data/doctors
             var index = this.following.indexOf(provider.key);
             if (index > -1) {
                 this.following.splice(index, 1);
-                //this.snackBar.open('Removed '+provider.basic.first_name+' '+provider.basic.last_name+' from your favorite list.', this.action && this.actionButtonLabel, config);
+                this.snackBar.open('Removed ' + provider.basic.first_name + ' ' + provider.basic.last_name + ' from your favorite list.', this.action && this.actionButtonLabel, config);
             }
             else {
                 this.following.push(provider.key);
-                //this.snackBar.open('Added '+provider.basic.first_name+' '+provider.basic.last_name+' to favorite list.', this.action && this.actionButtonLabel, config);
+                this.snackBar.open('Added ' + provider.basic.first_name + ' ' + provider.basic.last_name + ' to favorite list.', this.action && this.actionButtonLabel, config);
             }
         };
         SearchDirectoryComponent.prototype.toggleDropdown = function () {
@@ -300,7 +301,7 @@ define(["require", "exports", "@angular/core", "./data/sidebar", "./data/doctors
             templateUrl: 'js/medikly/search-directory/search-directory.component.html',
             styleUrls: ['js/medikly/search-directory/search-directory.component.css']
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [material_1.MdSnackBar])
     ], SearchDirectoryComponent);
     exports.SearchDirectoryComponent = SearchDirectoryComponent;
 });

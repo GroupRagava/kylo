@@ -101,7 +101,7 @@ export class SearchDirectoryComponent implements OnInit, OnDestroy {
     }]
   }];
 
-  constructor(/*public snackBar: MdSnackBar*/) {
+  constructor(public snackBar: MdSnackBar) {
 /*    ts.setTopSectionTitle('Directory');
     ts.setToolbarColor('blue');*/
   }
@@ -282,19 +282,19 @@ export class SearchDirectoryComponent implements OnInit, OnDestroy {
     const config = new MdSnackBarConfig();
     config.duration = this.autoHide;
     config.extraClasses = this.addExtraClass ? ['party'] : null;
-    //this.snackBar.open(this.alreadyAdded, this.action && this.actionButtonLabel, config);
+    this.snackBar.open(this.alreadyAdded, this.action && this.actionButtonLabel, config);
   }
   openAdded() {
     const config = new MdSnackBarConfig();
     config.duration = this.autoHide;
     config.extraClasses = this.addExtraClass ? ['party'] : null;
-    //this.snackBar.open(this.added, this.action && this.actionButtonLabel, config);
+    this.snackBar.open(this.added, this.action && this.actionButtonLabel, config);
   }
   openMax() {
     const config = new MdSnackBarConfig();
     config.duration = this.autoHide;
     config.extraClasses = this.addExtraClass ? ['party'] : null;
-    //this.snackBar.open(this.max, this.action && this.actionButtonLabel, config);
+    this.snackBar.open(this.max, this.action && this.actionButtonLabel, config);
   }
 
   followMessage(provider){
@@ -306,11 +306,11 @@ export class SearchDirectoryComponent implements OnInit, OnDestroy {
 
     if(index > -1){
       this.following.splice(index, 1);
-      //this.snackBar.open('Removed '+provider.basic.first_name+' '+provider.basic.last_name+' from your favorite list.', this.action && this.actionButtonLabel, config);
+      this.snackBar.open('Removed '+provider.basic.first_name+' '+provider.basic.last_name+' from your favorite list.', this.action && this.actionButtonLabel, config);
     }
     else{
       this.following.push(provider.key);
-      //this.snackBar.open('Added '+provider.basic.first_name+' '+provider.basic.last_name+' to favorite list.', this.action && this.actionButtonLabel, config);
+      this.snackBar.open('Added '+provider.basic.first_name+' '+provider.basic.last_name+' to favorite list.', this.action && this.actionButtonLabel, config);
     }
 
 

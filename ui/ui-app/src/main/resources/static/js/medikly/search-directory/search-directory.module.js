@@ -38,6 +38,7 @@ define(["require", "exports", "@angular/core", "@angular/common", "../environmen
                 material_1.MdSidenavModule,
                 /*        MdExpansionModule,*/
                 material_1.MdSelectionModule,
+                material_1.MdSnackBarModule,
                 material_1.MdRadioModule,
                 material_1.MdSelectModule,
                 material_1.MdProgressBarModule,

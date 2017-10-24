@@ -21,6 +21,7 @@ import {
     MdSidenavModule, MdSelectionModule, MdRadioModule, MdSelectModule,
     MdProgressBarModule,
     MdGridListModule,
+    MdSnackBarModule,
     MdMenuModule
 } from '@angular/material';
 import {NgCircleProgressModule} from 'ng-circle-progress';
@@ -71,6 +72,7 @@ let directoryState = {
         MdSidenavModule,
         /*        MdExpansionModule,*/
         MdSelectionModule,
+        MdSnackBarModule,
         MdRadioModule,
         MdSelectModule,
         MdProgressBarModule,
