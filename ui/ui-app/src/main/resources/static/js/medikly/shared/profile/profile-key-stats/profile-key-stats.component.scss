@@ -9,6 +9,10 @@
     border-bottom: 1px solid #cecece;
     text-transform: uppercase;
     min-height: 58px;
+
+    .content-widget{
+      min-height: 54px;
+    }
   }
   .card-widget > div{
     padding: 8px !important;

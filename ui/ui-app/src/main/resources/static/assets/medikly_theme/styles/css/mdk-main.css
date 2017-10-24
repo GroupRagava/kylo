@@ -3593,6 +3593,9 @@ md-sidenav .collapse-btn {
 md-sidenav.mat-sidenav-end {
   left: auto; }
 
+.medikly-covalent-styling .material-icons {
+  font-size: 18px; }
+
 .site-sidenav :focus {
   outline: none; }
 

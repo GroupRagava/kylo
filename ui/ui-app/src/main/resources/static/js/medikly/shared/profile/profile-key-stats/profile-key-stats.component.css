@@ -8,6 +8,8 @@
     border-bottom: 1px solid #cecece;
     text-transform: uppercase;
     min-height: 58px; }
+    .profile-key-stats .card-widget .content-widget {
+      min-height: 54px; }
   .profile-key-stats .card-widget > div {
     padding: 8px !important; }
   .profile-key-stats .widget-text {
