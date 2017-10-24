@@ -7,14 +7,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", "@angular/core", "@angular/material", "@angular/forms", "@angular/router"], function (require, exports, core_1, material_1, forms_1, router_1) {
+define(["require", "exports", "@angular/core", "@angular/material", "@angular/forms"], function (require, exports, core_1, material_1, forms_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var DialogNewProject = (function () {
-        function DialogNewProject(dialogRef, fb, router) {
+        function DialogNewProject(dialogRef, fb) {
             this.dialogRef = dialogRef;
             this.fb = fb;
-            this.router = router;
             this.privacy = "open";
             this.maxName = 60;
             this.maxObjective = 120;
@@ -29,7 +28,7 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/fo
         DialogNewProject.prototype.openProjectTemplate = function () {
             console.log('cerrado');
             this.dialogRef.close();
-            this.router.navigate(['/projects/view/' + 0]);
+            //this.router.navigate(['/projects/view/'+0]);
         };
         return DialogNewProject;
     }());
@@ -39,7 +38,7 @@ define(["require", "exports", "@angular/core", "@angular/material", "@angular/fo
             templateUrl: 'js/medikly/projects/dialog/new-project/dialog.new-project.html',
             styleUrls: ['js/medikly/projects/dialog/new-project/dialog.new-project.css'],
         }),
-        __metadata("design:paramtypes", [material_1.MdDialogRef, forms_1.FormBuilder, router_1.Router])
+        __metadata("design:paramtypes", [material_1.MdDialogRef, forms_1.FormBuilder])
     ], DialogNewProject);
     exports.DialogNewProject = DialogNewProject;
 });

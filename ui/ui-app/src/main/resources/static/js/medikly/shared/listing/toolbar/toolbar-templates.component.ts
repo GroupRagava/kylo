@@ -4,7 +4,7 @@ import {MdGridList} from '@angular/material';
 @Component({
     selector: 'app-toolbar-templates',
     templateUrl: 'js/medikly/shared/listing/toolbar/toolbar-templates.component.html',
-    styleUrls: ['js/medikly/shared/listing/toolbar/toolbar-templates.component.scss'],
+    styleUrls: ['js/medikly/shared/listing/toolbar/toolbar-templates.component.css'],
     providers: [MdGridList],
 })
 export class ToolbarTemplatesComponent implements OnInit {

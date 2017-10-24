@@ -8,8 +8,6 @@ import {Component, OnInit} from '@angular/core';
 import {MdDialog, MdDialogRef} from '@angular/material';
 import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 
-import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-content-element-dialog',
@@ -23,7 +21,7 @@ export class DialogNewProject implements OnInit {
   maxName: number = 60;
   maxObjective: number = 120;
 
-  constructor(public dialogRef: MdDialogRef<DialogNewProject>, private fb: FormBuilder, public router: Router) {
+  constructor(public dialogRef: MdDialogRef<DialogNewProject>, private fb: FormBuilder) {
   }
 
   ngOnInit() {
@@ -37,7 +35,7 @@ export class DialogNewProject implements OnInit {
   openProjectTemplate(){
     console.log('cerrado');
     this.dialogRef.close();
-    this.router.navigate(['/projects/view/'+0]);
+    //this.router.navigate(['/projects/view/'+0]);
   }
 
 }

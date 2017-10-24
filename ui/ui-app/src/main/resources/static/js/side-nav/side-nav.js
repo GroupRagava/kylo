@@ -66,7 +66,7 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                 $scope.selectMenuItem = selectMenuItem;
 
 
-                $scope.collapsed = false;
+                $scope.collapsed = true;
 
                 $scope.expandCollapseSideNavList = expandCollapseSideNavList;
 
@@ -121,7 +121,7 @@ define(['angular', 'side-nav/module-name', 'constants/AccessConstants', 'side-na
                         text: "Feed Manager",
                         narrowText: 'Feed',
                         icon: 'feedback',
-                        expanded: true,
+                        expanded: false,
                         elementId: 'toggle_feed_manager'
                     });
                     var links = [];
