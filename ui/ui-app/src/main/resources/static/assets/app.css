@@ -128,11 +128,11 @@ md-list .md-button:not(.md-no-style).selected {
   fill: #3483BA;
 }
 
-md-sidenav md-list {
+.site-sidenav md-list {
   padding: 0px 0px 8px 0px;
 }
 
-md-sidenav md-list .alerts-count {
+.site-sidenav md-list .alerts-count {
   background-color: red;
   color: white;
   padding: 3px;
@@ -140,13 +140,13 @@ md-sidenav md-list .alerts-count {
   margin-left: 10px;
 }
 
-md-sidenav:not(.collapsed), md-sidenav.md-locked-open:not(.collapsed) {
+.site-sidenav:not(.collapsed), .site-sidenav.md-locked-open:not(.collapsed) {
   max-width: 200px;
   min-width: 200px;
   width: 200px;
 }
 
-md-sidenav.collapsed, md-sidenav.md-locked-open.collapsed {
+.site-sidenav.collapsed, .site-sidenav.md-locked-open.collapsed {
   max-width: 50px;
   min-width: 50px;
   width: 50px;
