@@ -3613,7 +3613,7 @@ md-sidenav.mat-sidenav-end {
 .accordion-sidenav .md-button.md-kylo-theme:not([disabled]):hover {
   background-color: rgba(158, 158, 158, 0.2);
   color: #eee; }
-  .accordion-sidenav .md-button.md-kylo-theme:not([disabled]):hover .accordion-list ng-md-icon {
+  .accordion-sidenav .md-button.md-kylo-theme:not([disabled]):hover ng-md-icon {
     color: #eee; }
 
 /*.accordion-sidenav .md-button.md-kylo-theme:not([disabled]):hover {
