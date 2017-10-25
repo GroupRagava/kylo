@@ -32,7 +32,28 @@
 
 
         <div class="content-block">
-<!--          <md-expansion-panel class="expansion-project">
+
+          <td-expansion-panel class="expansion-project">
+
+            <ng-template td-expansion-panel-label>
+              <div class="project-block-workspace" fxLayout="row">
+                <div fxLayout="column">
+                  <span class="pf-title">Project files</span>
+                  <span class="pf-subtitle">{{files.length}} files, 0 tables</span>
+                </div>
+              </div>
+            </ng-template>
+
+            <a *ngFor="let item of files" class="link-chips">
+              <div class="md-caption link-option item-expansion">
+                <span class="title-document">{{item.file.name}}</span>
+                <span class="flat-badge grey-extension-file pull-right"
+                      [ngClass]="{'orange-extension-file': getExtension(item.file.name)==='json' || getExtension(item.file.name)==='png' }">{{getExtension(item.file.name)}}</span>
+              </div>
+            </a>
+          </td-expansion-panel>
+
+     <!--     <md-expansion-panel class="expansion-project">
             <md-expansion-panel-header>
 
               <div class="project-block-workspace" fxLayout="row">

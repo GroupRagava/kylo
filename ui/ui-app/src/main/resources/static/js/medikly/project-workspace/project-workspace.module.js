@@ -4,7 +4,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-define(["require", "exports", "@angular/core", "@angular/common", "./main/main.component", "./project-summary/project-summary.component", "./data-dictionary/data-dictionary.component", "./home/home.component", "./dialog/dialog-workspace.module", "@uirouter/angular", "@angular/material", "@angular/flex-layout", "ngx-perfect-scrollbar", "ng2-file-upload/ng2-file-upload"], function (require, exports, core_1, common_1, main_component_1, project_summary_component_1, data_dictionary_component_1, home_component_1, dialog_workspace_module_1, angular_1, material_1, flex_layout_1, ngx_perfect_scrollbar_1, ng2_file_upload_1) {
+define(["require", "exports", "@angular/core", "@angular/common", "./main/main.component", "./project-summary/project-summary.component", "./data-dictionary/data-dictionary.component", "./home/home.component", "./dialog/dialog-workspace.module", "@uirouter/angular", "@covalent/core", "@angular/material", "@angular/flex-layout", "ngx-perfect-scrollbar", "ng2-file-upload/ng2-file-upload"], function (require, exports, core_1, common_1, main_component_1, project_summary_component_1, data_dictionary_component_1, home_component_1, dialog_workspace_module_1, angular_1, core_2, material_1, flex_layout_1, ngx_perfect_scrollbar_1, ng2_file_upload_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var workspaceState = { name: 'workspace', url: '/projects/view/:id/workspace', views: {
@@ -54,7 +54,7 @@ define(["require", "exports", "@angular/core", "@angular/common", "./main/main.c
                 material_1.MdCheckboxModule,
                 material_1.MdMenuModule,
                 material_1.MdSidenavModule,
-                /*    MdExpansionModule,*/
+                core_2.CovalentExpansionPanelModule,
                 material_1.MdSelectionModule,
                 material_1.MdRadioModule,
                 material_1.MdSelectModule,

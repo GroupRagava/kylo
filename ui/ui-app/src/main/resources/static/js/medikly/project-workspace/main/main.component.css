@@ -8,6 +8,8 @@
 /deep/ .expansion-project .mat-expansion-panel-body {
   padding-left: 0px;
   padding-right: 0px; }
+/deep/ .expansion-project .td-expansion-panel-header .td-expansion-panel-header-content {
+  padding-right: 0px !important; }
 
 .main-workspace {
   height: calc(100vh - 64px); }

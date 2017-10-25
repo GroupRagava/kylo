@@ -10,6 +10,7 @@ import {ProjectWorkspaceRouting} from './project-workspace.routing';
 import {DialogWorkspaceModule} from './dialog/dialog-workspace.module';
 import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CovalentExpansionPanelModule } from '@covalent/core';
 
 import {
   MdSidenavModule,
@@ -74,7 +75,7 @@ let dictionaryState = { name: 'workspace.dictionary', url: '/data-dictionary',  
     MdCheckboxModule,
     MdMenuModule,
     MdSidenavModule,
-/*    MdExpansionModule,*/
+    CovalentExpansionPanelModule,
     MdSelectionModule,
     MdRadioModule,
     MdSelectModule,
