@@ -19,7 +19,6 @@ define(["require", "exports", "@angular/core", "@covalent/core"], function (requ
                 { name: 'name', label: 'Dessert (100g serving)', sortable: true },
                 { name: 'type', label: 'Type', filter: true },
                 { name: 'calories', label: 'Calories', numeric: true, format: NUMBER_FORMAT, sortable: true, hidden: false },
-                { name: 'fat', label: 'Fat (g)', numeric: true, format: DECIMAL_FORMAT, sortable: true },
                 { name: 'carbs', label: 'Carbs (g)', numeric: true, format: NUMBER_FORMAT }
             ];
             this.data = [
