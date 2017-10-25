@@ -3401,6 +3401,7 @@ md-ink-bar.mat-ink-bar {
   font-weight: 500;
   padding: 10px 20px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #888888 !important; }
   .button-tab.active {
     color: #db4437 !important;
