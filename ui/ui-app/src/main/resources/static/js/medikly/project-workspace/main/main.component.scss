@@ -16,6 +16,8 @@
 }
 
 .main-workspace{
+  height: calc(100vh - 64px);
+
   .content-workspace{
     padding: 13px;
   }

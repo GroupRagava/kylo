@@ -9,10 +9,12 @@
   padding-left: 0px;
   padding-right: 0px; }
 
-.main-workspace .content-workspace {
-  padding: 13px; }
-.main-workspace .submenu-sidenav {
-  width: 280px; }
+.main-workspace {
+  height: calc(100vh - 64px); }
+  .main-workspace .content-workspace {
+    padding: 13px; }
+  .main-workspace .submenu-sidenav {
+    width: 280px; }
 
 .left-sidebar-workspace .block-sidebar {
   padding: 16px 0px; }

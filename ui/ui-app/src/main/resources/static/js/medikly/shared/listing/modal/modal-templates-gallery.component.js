@@ -67,7 +67,7 @@ define(["require", "exports", "@angular/core", "@angular/material"], function (r
         core_1.Component({
             selector: 'app-modal-templates-gallery',
             templateUrl: 'js/medikly/shared/listing/modal/modal-templates-gallery.component.html',
-            styleUrls: ['js/medikly/shared/listing/modal/modal-templates-gallery.component.scss'],
+            styleUrls: ['js/medikly/shared/listing/modal/modal-templates-gallery.component.css'],
             providers: [material_1.MdGridList],
         }),
         __metadata("design:paramtypes", [])

@@ -73,7 +73,7 @@ define(["require", "exports", "@angular/core", "@angular/material"], function (r
         core_1.Component({
             selector: 'app-toolbar-templates',
             templateUrl: 'js/medikly/shared/listing/toolbar/toolbar-templates.component.html',
-            styleUrls: ['js/medikly/shared/listing/toolbar/toolbar-templates.component.scss'],
+            styleUrls: ['js/medikly/shared/listing/toolbar/toolbar-templates.component.css'],
             providers: [material_1.MdGridList],
         }),
         __metadata("design:paramtypes", [])
