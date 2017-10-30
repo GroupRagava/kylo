@@ -12,6 +12,14 @@
             <md-tabs md-dynamic-height md-border-bottom md-selected="vm.selectedTabIndex">
                 <md-tab ng-disabled="vm.loadingFeedData || vm.errorLoadingFeed">
                     <md-tab-label>
+                        <div>Overview</div>
+                    </md-tab-label>
+                    <md-tab-body ng-if="vm.selectedTabIndex == 0">
+                        <medikly-feed-details-overview></medikly-feed-details-overview>
+                    </md-tab-body>
+                </md-tab>
+                <md-tab ng-disabled="vm.loadingFeedData || vm.errorLoadingFeed">
+                    <md-tab-label>
                         <div>Profile</div>
                     </md-tab-label>
                     <md-tab-body>
@@ -34,19 +42,11 @@
                         <thinkbig-service-level-agreement view="feed" feed="vm.model" ng-if="vm.selectedTabIndex == 3" new-sla="vm.newSla"></thinkbig-service-level-agreement>
                     </md-tab-body>
                 </md-tab>
-                <md-tab ng-disabled="true">
-                    <md-tab-label>
-                        <div>Versions</div>
-                    </md-tab-label>
-                    <md-tab-body>
-                        Version History
-                    </md-tab-body>
-                </md-tab>
                 <md-tab>
                     <md-tab-label>
                         <div>Settings</div>
                     </md-tab-label>
-                    <md-tab-body>
+                    <md-tab-body ng-if="vm.selectedTabIndex == 4">
                         <md-progress-linear md-mode="indeterminate" ng-if="vm.loadingFeedData"></md-progress-linear>
                         <thinkbig-feed-info ng-if="!vm.loadingFeedData && vm.model.loaded" selected-tab-index="vm.selectedTabIndex"></thinkbig-feed-info>
                         <div ng-if="vm.loadingFeedData" class="layout-padding" style="min-height:200px;height:200px;">Loading Feed</div>
@@ -54,6 +54,14 @@
                         <div ng-if="vm.errorLoadingFeed" class="layout-padding">Unable to find the feed.  Either this feed doesnt exist or you don't have access to view it.</div>
                     </md-tab-body>
                 </md-tab>
+            <!--    <md-tab ng-disabled="true">
+                    <md-tab-label>
+                        <div>Versions</div>
+                    </md-tab-label>
+                    <md-tab-body>
+                        Version History
+                    </md-tab-body>
+                </md-tab>-->
             </md-tabs>
         </body-section>
 

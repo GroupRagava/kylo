@@ -3660,3 +3660,58 @@ kylo-side-nav .accordion-list .md-button.md-icon-button {
 
 .feeds-table .feed-element:hover {
   background-color: #e3e3e3; }
+
+.feed-details .feed-details-list {
+  padding: 24px !important; }
+  .feed-details .feed-details-list .feed-details-item {
+    margin-bottom: 16px;
+    padding: 24px !important; }
+  .feed-details .feed-details-list .panel-default {
+    background-color: #fff;
+    border-radius: .125rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+    border-color: #dfe3e9; }
+  .feed-details .feed-details-list .panel-add-files {
+    background-color: rgba(97, 144, 195, 0.15);
+    border: 1px dashed #5b91c0;
+    border-radius: 2px;
+    color: #8a9cae;
+    cursor: pointer; }
+    .feed-details .feed-details-list .panel-add-files:hover {
+      border: 2px solid #6290c3; }
+  .feed-details .feed-details-list .dataset-icon {
+    margin-right: 1.5rem;
+    height: 40px;
+    width: 40px; }
+    .feed-details .feed-details-list .dataset-icon svg {
+      font-size: 40px;
+      line-height: 40px;
+      height: 40px;
+      width: 40px; }
+  .feed-details .feed-details-list .dataset-description {
+    padding-top: 5px;
+    color: #4e5057;
+    font-size: 24px;
+    font-weight: 700;
+    word-wrap: break-word; }
+  .feed-details .feed-details-list .summary-description {
+    color: #4e5057;
+    font-size: 18px;
+    font-weight: 700; }
+  .feed-details .feed-details-list .add-files-description {
+    color: #4e5057;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left; }
+  .feed-details .feed-details-list .summary-subdescription {
+    font-size: 14px; }
+  .feed-details .feed-details-list .icon-item-overview {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; }
+  .feed-details .feed-details-list .link-feed {
+    color: #6290c3; }
+    .feed-details .feed-details-list .link-feed:hover {
+      color: #3c6a9d;
+      text-decoration: underline; }
