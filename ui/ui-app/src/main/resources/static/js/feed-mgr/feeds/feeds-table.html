@@ -24,7 +24,7 @@
                     on-selected-option="vm.selectedTableOption" filter-model="vm.filter" filter-model-options="{debounce:1000}">
     </header-section>
 
-    <body-section>
+    <body-section class="feeds-table">
       <div ng-if="vm.loading">
         <md-progress-linear md-mode="indeterminate"></md-progress-linear>
         <span class="md-body-2 layout-padding-left">Loading feeds</span>
@@ -36,8 +36,8 @@
                         total-items="vm.paginationData.total"
                         pagination-id="feeds"
                         current-page="vm.currentPage">
-            <div layout="row" layout-fill>
-              <div flex="30" layout="column" class="item-column md-list-item-text " ng-click="vm.feedDetails($event,feed)" title="{{feed.feedName}} - {{feed.state}}">
+            <div class="feed-element" layout="row" layout-fill ng-click="vm.feedDetails($event,feed)" title="{{feed.feedName}} - {{feed.state}}">
+              <div flex="30" layout="column" class="item-column md-list-item-text ">
                                      <span class="item-title" title="{{feed.feedName}} - {{feed.state}}" ng-class="{'disabled':feed.state == 'DISABLED'}">
                                       {{feed.feedName}}
                                    </span>
@@ -105,7 +105,7 @@
             </tr>
             </thead>
             <tbody md-body>
-            <tr md-row
+            <tr md-row class="feed-element"
                 ng-repeat="feed in vm.feedData"
                 ng-click="vm.feedDetails($event,feed)">
               <td md-cell>{{feed.feedName}}</td>

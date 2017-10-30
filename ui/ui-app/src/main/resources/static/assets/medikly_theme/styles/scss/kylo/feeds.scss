@@ -1,0 +1,10 @@
+.feeds-table {
+  .feed-element {
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: #e3e3e3;
+    }
+  }
+}

@@ -3654,3 +3654,9 @@ kylo-side-nav .accordion-list .md-button.md-icon-button {
 
 .sidebar-medikly card-layout .card-toolbar {
   background-color: #F9F9F9; }
+
+.feeds-table .feed-element:focus {
+  outline: none; }
+
+.feeds-table .feed-element:hover {
+  background-color: #e3e3e3; }
