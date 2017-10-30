@@ -10,18 +10,6 @@
         <body-section transclude-to="body" class="md-padding">
 
             <md-tabs md-dynamic-height md-border-bottom md-selected="vm.selectedTabIndex">
-                <md-tab>
-                    <md-tab-label>
-                        <div>Details</div>
-                    </md-tab-label>
-                    <md-tab-body>
-                        <md-progress-linear md-mode="indeterminate" ng-if="vm.loadingFeedData"></md-progress-linear>
-                        <thinkbig-feed-info ng-if="!vm.loadingFeedData && vm.model.loaded" selected-tab-index="vm.selectedTabIndex"></thinkbig-feed-info>
-                        <div ng-if="vm.loadingFeedData" class="layout-padding" style="min-height:200px;height:200px;">Loading Feed</div>
-                        <div ng-if="!vm.loadingFeedData && vm.model.loaded == false && vm.loadMessage != '' " class="layout-padding">{{vm.loadMessage}}</div>
-                      <div ng-if="vm.errorLoadingFeed" class="layout-padding">Unable to find the feed.  Either this feed doesnt exist or you don't have access to view it.</div>
-                    </md-tab-body>
-                </md-tab>
                 <md-tab ng-disabled="vm.loadingFeedData || vm.errorLoadingFeed">
                     <md-tab-label>
                         <div>Profile</div>
@@ -52,6 +40,18 @@
                     </md-tab-label>
                     <md-tab-body>
                         Version History
+                    </md-tab-body>
+                </md-tab>
+                <md-tab>
+                    <md-tab-label>
+                        <div>Settings</div>
+                    </md-tab-label>
+                    <md-tab-body>
+                        <md-progress-linear md-mode="indeterminate" ng-if="vm.loadingFeedData"></md-progress-linear>
+                        <thinkbig-feed-info ng-if="!vm.loadingFeedData && vm.model.loaded" selected-tab-index="vm.selectedTabIndex"></thinkbig-feed-info>
+                        <div ng-if="vm.loadingFeedData" class="layout-padding" style="min-height:200px;height:200px;">Loading Feed</div>
+                        <div ng-if="!vm.loadingFeedData && vm.model.loaded == false && vm.loadMessage != '' " class="layout-padding">{{vm.loadMessage}}</div>
+                        <div ng-if="vm.errorLoadingFeed" class="layout-padding">Unable to find the feed.  Either this feed doesnt exist or you don't have access to view it.</div>
                     </md-tab-body>
                 </md-tab>
             </md-tabs>
