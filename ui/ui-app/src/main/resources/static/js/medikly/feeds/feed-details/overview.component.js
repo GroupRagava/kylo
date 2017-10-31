@@ -6,7 +6,7 @@ define(["require", "exports"], function (require, exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
     var moduleName = require("feed-mgr/feeds/edit-feed/module-name");
     /**
-     * Displays the Visual Query page.
+     * Feed Details - Overview
      */
     var FeedDetailsOverviewComponent = (function () {
         function FeedDetailsOverviewComponent($scope, dialog, $mdDialog) {
@@ -40,7 +40,7 @@ define(["require", "exports"], function (require, exports) {
         },
         controller: [FeedDetailsOverviewComponent],
         controllerAs: "vm",
-        templateUrl: "js/medikly/feeds/feed-details/feed-details-overview.html"
+        templateUrl: "js/medikly/feeds/feed-details/overview.component.html"
     });
 });
-//# sourceMappingURL=feed-details-overview.component.js.map
+//# sourceMappingURL=overview.component.js.map

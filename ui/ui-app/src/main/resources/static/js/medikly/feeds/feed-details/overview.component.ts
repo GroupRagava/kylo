@@ -13,7 +13,7 @@ declare const angular: IAngularStatic;
 const moduleName: string = require("feed-mgr/feeds/edit-feed/module-name");
 
 /**
- * Displays the Visual Query page.
+ * Feed Details - Overview
  */
 class FeedDetailsOverviewComponent implements OnInit {
 
@@ -52,6 +52,6 @@ angular.module(moduleName).component('feedDetailsOverview', {
     },
     controller: [FeedDetailsOverviewComponent],
     controllerAs: "vm",
-    templateUrl: "js/medikly/feeds/feed-details/feed-details-overview.html"
+    templateUrl: "js/medikly/feeds/feed-details/overview.component.html"
 });
 

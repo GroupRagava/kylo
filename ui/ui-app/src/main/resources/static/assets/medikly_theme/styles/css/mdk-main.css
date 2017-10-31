@@ -3715,3 +3715,53 @@ kylo-side-nav .accordion-list .md-button.md-icon-button {
     .feed-details .feed-details-list .link-feed:hover {
       color: #3c6a9d;
       text-decoration: underline; }
+
+.feed-contributors {
+  padding: 24px; }
+  .feed-contributors .box {
+    border-radius: .125rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+    border-color: #dfe3e9; }
+    .feed-contributors .box .contributors-list {
+      padding: 16px 24px;
+      background-color: #fff;
+      display: block;
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px; }
+      .feed-contributors .box .contributors-list .item-contributor .avatar {
+        border-radius: .25rem;
+        height: 36px;
+        width: 36px;
+        margin-right: 12px; }
+      .feed-contributors .box .contributors-list .item-contributor .authorization-label {
+        color: #333d49;
+        font-size: 14px;
+        line-height: 18px; }
+      .feed-contributors .box .contributors-list .item-contributor .link-user:hover {
+        text-decoration: underline; }
+        .feed-contributors .box .contributors-list .item-contributor .link-user:hover .name-label {
+          color: #3c6a9d; }
+      .feed-contributors .box .contributors-list .item-contributor .name-label {
+        color: #3c6a9d;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 0 .125rem; }
+      .feed-contributors .box .contributors-list .item-contributor .user-label {
+        color: #8c9caf;
+        font-size: 13px; }
+    .feed-contributors .box .contributors-actions {
+      background-color: #f8f9fa;
+      padding: 5px 24px;
+      border-bottom-left-radius: .25rem;
+      border-bottom-right-radius: .25rem;
+      border-top: 1px solid #dfe3e9; }
+      .feed-contributors .box .contributors-actions .contributors-search-container .btn-invite {
+        background-color: #c8d0d9;
+        color: #ffffff; }
+      .feed-contributors .box .contributors-actions .select-contributors {
+        padding-left: 20px;
+        padding-right: 12px; }
+        .feed-contributors .box .contributors-actions .select-contributors md-select-value {
+          border-bottom-color: transparent; }
