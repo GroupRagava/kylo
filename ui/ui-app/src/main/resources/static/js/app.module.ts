@@ -6,6 +6,8 @@ import {UIRouterUpgradeModule} from "@uirouter/angular-hybrid";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 
+import {MdDialogModule} from '@angular/material';
+
 import "routes";
 
 @NgModule({
@@ -15,6 +17,7 @@ import "routes";
         UIRouterUpgradeModule,
         UpgradeModule,
         BrowserAnimationsModule,
+        MdDialogModule,
         HttpModule
     ],
     providers: [

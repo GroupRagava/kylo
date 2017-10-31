@@ -10,7 +10,7 @@ define(['angular', '@uirouter/angularjs', 'kylo-common', 'kylo-feedmgr',
     'feed-mgr/feeds/edit-feed/profile-history/profile-invalid',
     'feed-mgr/feeds/edit-feed/profile-history/profile-stats',
     'feed-mgr/feeds/edit-feed/profile-history/profile-valid',
-    'medikly/feeds/feed-details/feed-details-overview',
+    'medikly/feeds/feed-details/feed-details-overview.component',
     'feed-mgr/feeds/edit-feed/EditFeedController',
     'feed-mgr/feeds/edit-feed/details/TableOptionsDetailsDirective'], function (angular) {
 

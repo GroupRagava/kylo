@@ -1,0 +1,57 @@
+/**
+ * Created by German on 31/10/17.
+ */
+
+import {OnInit} from "@angular/core";
+import {IAngularStatic} from "angular";
+
+import {MdDialog, MdDialogRef} from '@angular/material';
+import {DialogAddFilesUrl} from '../../project-workspace/dialog/add-files-url/add-files-url.dialog';
+
+declare const angular: IAngularStatic;
+
+const moduleName: string = require("feed-mgr/feeds/edit-feed/module-name");
+
+/**
+ * Displays the Visual Query page.
+ */
+class FeedDetailsOverviewComponent implements OnInit {
+
+
+    constructor($scope: angular.IScope, private dialog: MdDialog, private $mdDialog: angular.material.IDialogService) {
+    }
+
+    ngOnInit(): void {
+    }
+
+    $onInit(): void {
+        this.ngOnInit();
+    }
+
+    //Open dialog add files from URL
+    openDialogAddFilesUrl() {
+/*        let dialogRef = this.dialog.open(DialogAddFilesUrl, {
+            width: '500px',
+            height: '100vh',
+            position: { right: '0px' }
+        });
+
+        dialogRef.afterClosed().subscribe(result => {
+            if (result) {
+                //this.files.push(dialogRef.componentInstance.files);
+            }
+        });*/
+    }
+
+
+}
+
+angular.module(moduleName).component('feedDetailsOverview', {
+    bindings: {
+        engine: "<"
+    },
+    controller: [FeedDetailsOverviewComponent],
+    controllerAs: "vm",
+    templateUrl: "js/medikly/feeds/feed-details/feed-details-overview.html"
+});
+

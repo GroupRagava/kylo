@@ -36,7 +36,7 @@
             </div>
             <div layout="column">
                 <span class="summary-description">
-                    Add a detailed summary for your dataset.
+                    Add a detailed summary for your feed.
                 </span>
                 <span flex></span>
                 <span class="summary-subdescription mat-text-muted">
@@ -65,13 +65,14 @@
                 </span>
                 <span flex></span>
                 <span class="summary-subdescription mat-text-muted">
-                    You can add up to 1 GB to this dataset.
+                    You can add up to 1 GB to this feed.
                 </span>
             </div>
 
             <span flex></span>
-            <md-button class="icon-btn md-icon-button md-primary icon-item-overview" ng-click="edit($event)">
-                <ng-md-icon icon="edit"></ng-md-icon>
+            <md-button layout-align="center" class="mat-button btn-outline btn-color-lightblue" ng-click="vm.openDialogAddFilesUrl()">
+                <ng-md-icon icon="link" size="20"></ng-md-icon>
+                <span >Link a feed</span>
             </md-button>
 
         </md-list-item>
