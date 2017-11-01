@@ -3675,10 +3675,7 @@ kylo-side-nav .accordion-list .md-button.md-icon-button {
     background-color: rgba(97, 144, 195, 0.15);
     border: 1px dashed #5b91c0;
     border-radius: 2px;
-    color: #8a9cae;
-    cursor: pointer; }
-    .feed-details .feed-details-list .panel-add-files:hover {
-      border: 2px solid #6290c3; }
+    color: #8a9cae; }
   .feed-details .feed-details-list .dataset-icon {
     margin-right: 1.5rem;
     height: 40px;
@@ -3700,7 +3697,6 @@ kylo-side-nav .accordion-list .md-button.md-icon-button {
     font-weight: 700; }
   .feed-details .feed-details-list .add-files-description {
     color: #4e5057;
-    font-family: Lato;
     font-size: 24px;
     font-weight: 400;
     line-height: 1;
@@ -3714,7 +3710,8 @@ kylo-side-nav .accordion-list .md-button.md-icon-button {
     color: #6290c3; }
     .feed-details .feed-details-list .link-feed:hover {
       color: #3c6a9d;
-      text-decoration: underline; }
+      text-decoration: underline;
+      cursor: pointer; }
 
 .feed-contributors {
   padding: 24px; }
@@ -3740,7 +3737,8 @@ kylo-side-nav .accordion-list .md-button.md-icon-button {
         font-size: 14px;
         line-height: 18px; }
       .feed-contributors .box .contributors-list .item-contributor .link-user:hover {
-        text-decoration: underline; }
+        text-decoration: underline;
+        cursor: pointer; }
         .feed-contributors .box .contributors-list .item-contributor .link-user:hover .name-label {
           color: #3c6a9d; }
       .feed-contributors .box .contributors-list .item-contributor .name-label {

@@ -30,12 +30,6 @@
       border: 1px dashed #5b91c0;
       border-radius: 2px;
       color: #8a9cae;
-      cursor: pointer;
-
-      &:hover {
-        border: 2px solid #6290c3;
-        //margin: -1px;
-      }
     }
 
     .dataset-icon {
@@ -67,7 +61,6 @@
 
     .add-files-description {
       color: #4e5057;
-      font-family: Lato;
       font-size: 24px;
       font-weight: 400;
       line-height: 1;
@@ -89,6 +82,7 @@
       &:hover {
         color: #3c6a9d;
         text-decoration: underline;
+        cursor: pointer;
       }
     }
   }

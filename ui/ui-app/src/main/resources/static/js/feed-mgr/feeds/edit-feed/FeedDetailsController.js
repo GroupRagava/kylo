@@ -485,6 +485,10 @@ define(['angular','feed-mgr/feeds/edit-feed/module-name'], function (angular,mod
         };
 
         init();
+
+        function openDialogAddFile(){
+
+        }
     };
 
     var FeedUploadFileDialogController = function ($scope, $mdDialog, $http, RestUrlService, FileUpload, feedId){

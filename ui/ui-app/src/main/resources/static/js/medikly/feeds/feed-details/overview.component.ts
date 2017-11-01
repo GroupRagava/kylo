@@ -2,7 +2,7 @@
  * Created by German on 31/10/17.
  */
 
-import {OnInit} from "@angular/core";
+import {OnInit, Output, EventEmitter} from "@angular/core";
 import {IAngularStatic} from "angular";
 
 import {MdDialog, MdDialogRef} from '@angular/material';
@@ -16,7 +16,6 @@ const moduleName: string = require("feed-mgr/feeds/edit-feed/module-name");
  * Feed Details - Overview
  */
 class FeedDetailsOverviewComponent implements OnInit {
-
 
     constructor($scope: angular.IScope, private dialog: MdDialog, private $mdDialog: angular.material.IDialogService) {
     }
@@ -42,7 +41,6 @@ class FeedDetailsOverviewComponent implements OnInit {
             }
         });*/
     }
-
 
 }
 

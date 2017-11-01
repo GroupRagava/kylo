@@ -17,7 +17,7 @@ const moduleName: string = require("feed-mgr/feeds/edit-feed/module-name");
  */
 class FeedDetailsContributorsComponent implements OnInit {
 
-    canList: string[] = ['Can view only','Can view and edit', 'Can view, edit, and manage'];
+    canList: string[] = ['Can view only', 'Can view and edit', 'Can view, edit, and manage'];
     can: string = this.canList[0];
 
     constructor() {
@@ -30,14 +30,13 @@ class FeedDetailsContributorsComponent implements OnInit {
         this.ngOnInit();
     }
 
-
 }
 
 angular.module(moduleName).component('feedDetailsContributors', {
     bindings: {
         engine: "<"
     },
-    controller: [FeedDetailsContributorsComponent],
+    controller: [ FeedDetailsContributorsComponent],
     controllerAs: "vm",
     templateUrl: "js/medikly/feeds/feed-details/contributors.component.html"
 });

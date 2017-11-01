@@ -50,7 +50,7 @@
             </md-button>
         </md-list-item>
 
-        <md-list-item class="feed-details-item panel-add-files">
+        <md-list-item class="feed-details-item panel-add-files" ng-click="vm.openDialogAddFileEvent()">
 
             <div class="dataset-icon">
                 <svg fill="#8c9caf" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@
 
             <div layout="column">
                 <span class="add-files-description">
-                    Drag and drop or <a class="link-feed">browse</a> to add files.
+                    Browse to add files.
                 </span>
                 <span flex></span>
                 <span class="summary-subdescription mat-text-muted">
@@ -70,10 +70,6 @@
             </div>
 
             <span flex></span>
-            <md-button layout-align="center" class="mat-button btn-outline btn-color-lightblue" ng-click="vm.openDialogAddFilesUrl()">
-                <ng-md-icon icon="link" size="20"></ng-md-icon>
-                <span >Link a feed</span>
-            </md-button>
 
         </md-list-item>
 
