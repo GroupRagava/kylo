@@ -66,8 +66,11 @@ define(['angular','feed-mgr/feeds/edit-feed/module-name'], function (angular,mod
         }
 
         this.addToContributors = function(){
-            self.contributors.push(this.selectedItem);
-            this.selectedItem=null;
+            var index = self.contributors.indexOf(this.selectedItem);
+            if(index==-1){
+                self.contributors.push(this.selectedItem);
+                this.selectedItem=null;
+            }
         };
 
         /**
