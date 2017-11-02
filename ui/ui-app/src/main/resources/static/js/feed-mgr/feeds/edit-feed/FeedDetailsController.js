@@ -19,7 +19,7 @@ define(['angular','feed-mgr/feeds/edit-feed/module-name'], function (angular,mod
     var controller = function ($scope, $q, $transition$, $mdDialog, $mdToast, $http, $state, AccessControlService, RestUrlService, FeedService, RegisterTemplateService, StateService, SideNavService,
                                FileUpload, ConfigurationService,EntityAccessControlDialogService, EntityAccessControlService, UiComponentsService) {
 
-        var SLA_INDEX = 3;
+        var SLA_INDEX = 7;
         var self = this;
 
         /**
@@ -91,7 +91,7 @@ define(['angular','feed-mgr/feeds/edit-feed/module-name'], function (angular,mod
         }, function(newVal) {
             //Make the Lineage tab fit without side nav
             //open side nav if we are not navigating between lineage links
-            if (newVal == 2 || (requestedTabIndex != undefined && requestedTabIndex == 2)) {
+            if (newVal == 6 || (requestedTabIndex != undefined && requestedTabIndex == 6)) {
                 SideNavService.hideSideNav();
                 self.cardWidth = false;
                 requestedTabIndex = 0;

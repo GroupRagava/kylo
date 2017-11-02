@@ -10,7 +10,7 @@
 
         <body-section transclude-to="body" class="md-padding">
 
-            <md-tabs md-dynamic-height md-border-bottom md-selected="vm.selectedTabIndex">
+            <md-tabs md-dynamic-height md-border-bottom md-selected="vm.selectedTabIndex" md-swipe-content>
                 <md-tab>
                     <md-tab-label>
                         <div>Overview</div>
@@ -145,12 +145,12 @@
                         </div>
                     </md-tab-body>
                 </md-tab>
-                <!--                <md-tab ng-disabled="vm.loadingFeedData || vm.errorLoadingFeed">
+                <md-tab ng-disabled="vm.loadingFeedData || vm.errorLoadingFeed">
                     <md-tab-label>
                         <div>Profile</div>
                     </md-tab-label>
                     <md-tab-body>
-                        <thinkbig-feed-profile-history ng-if="vm.selectedTabIndex == 2"></thinkbig-feed-profile-history>
+                        <thinkbig-feed-profile-history ng-if="vm.selectedTabIndex == 5"></thinkbig-feed-profile-history>
                     </md-tab-body>
                 </md-tab>
                 <md-tab ng-disabled="vm.loadingFeedData || vm.errorLoadingFeed">
@@ -158,7 +158,7 @@
                         <div>Lineage</div>
                     </md-tab-label>
                     <md-tab-body>
-                        <thinkbig-feed-lineage ng-if="vm.selectedTabIndex == 3"></thinkbig-feed-lineage>
+                        <thinkbig-feed-lineage ng-if="vm.selectedTabIndex == 6"></thinkbig-feed-lineage>
                     </md-tab-body>
                 </md-tab>
                 <md-tab ng-disabled="vm.loadingFeedData || !vm.allowSlaAccess || vm.errorLoadingFeed">
@@ -166,10 +166,10 @@
                         <div>SLA</div>
                     </md-tab-label>
                     <md-tab-body>
-                        <thinkbig-service-level-agreement view="feed" feed="vm.model" ng-if="vm.selectedTabIndex == 4"
+                        <thinkbig-service-level-agreement view="feed" feed="vm.model" ng-if="vm.selectedTabIndex == 7"
                                                           new-sla="vm.newSla"></thinkbig-service-level-agreement>
                     </md-tab-body>
-                </md-tab>-->
+                </md-tab>
                 <!--    <md-tab ng-disabled="true">
                         <md-tab-label>
                             <div>Versions</div>
