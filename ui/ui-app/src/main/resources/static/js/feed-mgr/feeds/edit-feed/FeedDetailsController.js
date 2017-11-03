@@ -213,6 +213,22 @@ define(['angular','feed-mgr/feeds/edit-feed/module-name'], function (angular,mod
                         .hideDelay(3000)
                 );
             });
+        };
+
+        this.showSummaryDialog = function() {
+            $mdDialog.show({
+                controller: 'FeedUploadFileDialogController',
+                escapeToClose: false,
+                fullscreen: true,
+                parent: angular.element(document.body),
+                templateUrl: "js/feed-mgr/feeds/edit-feed/feed-details-summary-dialog.html",
+                locals: {feedId: self.feedId}
+            }).then(function(msg) {
+                $mdToast.show(
+                    $mdToast.simple()
+                        .hideDelay(3000)
+                );
+            });
         }
 
         this.showAccessControlDialog = function(){
