@@ -40,7 +40,13 @@ import { FileUploadModule } from 'ng2-file-upload/ng2-file-upload';
 let workspaceState = { name: 'workspace', url: '/projects/view/:id/workspace',    views: {
   "content": {
     component: MainComponent,
-  }}
+  }},
+  data: {
+    breadcrumbRoot: true,
+    displayName: "Project Name / Workspace",
+    module: 'workspace',
+    permissions: ['']
+  }
 };
 let homeState = { name: 'workspace.home', url: '/home',    views: {
   "child-content": {

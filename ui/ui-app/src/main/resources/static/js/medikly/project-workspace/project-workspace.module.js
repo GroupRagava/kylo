@@ -11,6 +11,12 @@ define(["require", "exports", "@angular/core", "@angular/common", "./main/main.c
             "content": {
                 component: main_component_1.MainComponent,
             }
+        },
+        data: {
+            breadcrumbRoot: true,
+            displayName: "Project Name / Workspace",
+            module: 'workspace',
+            permissions: ['']
         }
     };
     var homeState = { name: 'workspace.home', url: '/home', views: {

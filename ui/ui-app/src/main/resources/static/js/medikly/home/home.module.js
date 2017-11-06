@@ -16,8 +16,8 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
             }
         },
         data: {
-            breadcrumbRoot: false,
-            displayName: "Homepage",
+            breadcrumbRoot: true,
+            displayName: "Home",
             module: 'homepage',
             permissions: ['']
         }

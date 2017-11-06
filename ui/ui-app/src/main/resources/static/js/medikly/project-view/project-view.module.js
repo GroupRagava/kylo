@@ -11,6 +11,12 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
             "content": {
                 component: project_view_component_1.ProjectViewComponent,
             }
+        },
+        data: {
+            breadcrumbRoot: true,
+            displayName: "Project Name",
+            module: 'projects',
+            permissions: ['']
         }
     };
     var homeState = { name: 'view.home', url: '/home', views: {

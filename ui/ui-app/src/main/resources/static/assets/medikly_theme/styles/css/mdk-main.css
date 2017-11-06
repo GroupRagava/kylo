@@ -3899,3 +3899,30 @@ kylo-side-nav .accordion-list .md-button.md-icon-button {
   .feed-contributors .autocomplete-custom-template .item-title img {
     height: 18px;
     width: 18px; }
+
+.feed-activity {
+  padding: 24px; }
+  .feed-activity .activity-item {
+    padding: 8px 12px;
+    border-bottom: 1px solid #dfe3e9; }
+    .feed-activity .activity-item:first-child {
+      border-top: 1px solid #dfe3e9; }
+    .feed-activity .activity-item .small-since {
+      font-weight: 300;
+      white-space: nowrap;
+      color: #8c9caf;
+      display: block;
+      font-size: 13px;
+      line-height: 20px; }
+    .feed-activity .activity-item .link-user {
+      color: #333d49;
+      font-weight: 700;
+      cursor: pointer; }
+    .feed-activity .activity-item .avatar {
+      border-radius: .125rem;
+      height: 28px;
+      margin-top: .375rem;
+      width: 28px; }
+    .feed-activity .activity-item .icon-activity {
+      margin-top: 0;
+      fill: #f396bf; }

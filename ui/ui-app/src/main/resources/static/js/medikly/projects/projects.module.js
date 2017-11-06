@@ -26,6 +26,12 @@ define(["require", "exports", "@angular/core", "@angular/common", "@angular/mate
             "child-content": {
                 component: projects_component_1.ProjectsComponent,
             }
+        },
+        data: {
+            breadcrumbRoot: true,
+            displayName: "Projects",
+            module: 'projects',
+            permissions: ['']
         }
     };
     var recentState = { name: 'projects.home.recent', url: '/recent', views: {

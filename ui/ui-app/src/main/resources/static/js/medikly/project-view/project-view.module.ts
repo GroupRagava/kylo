@@ -54,7 +54,13 @@ import {DialogWorkspaceModule} from '../project-workspace/dialog/dialog-workspac
 let projectsViewState = { name: 'view', url: '/projects/view/:id',    views: {
   "content": {
     component: ProjectViewComponent,
-  }}
+  }},
+  data: {
+    breadcrumbRoot: true,
+    displayName: "Project Name",
+    module: 'projects',
+    permissions: ['']
+  }
 };
 let homeState = { name: 'view.home', url: '/home',    views: {
   "child-content": {

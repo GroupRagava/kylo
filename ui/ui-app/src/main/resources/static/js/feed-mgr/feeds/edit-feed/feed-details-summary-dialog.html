@@ -1,7 +1,6 @@
 <md-dialog arial-label="Edit Field">
     <md-dialog-content class="md-dialog-content">
       <h2 class="md-title">Edit summary</h2>
-
       <md-tabs md-dynamic-height md-border-bottom md-selected="vm.selectedTabIndex" md-swipe-content>
         <md-tab>
           <md-tab-label>
@@ -9,7 +8,7 @@
           </md-tab-label>
           <md-tab-body>
             <md-input-container class="md-block">
-            <textarea rows="6" style="height: 480px; width: 686px"></textarea>
+            <textarea rows="6" style="height: 480px; width: 686px" ng-model="input"></textarea>
             </md-input-container>
           </md-tab-body>
         </md-tab>
