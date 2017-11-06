@@ -12,6 +12,12 @@ define(["require", "exports", "@angular/core", "@angular/common", "../environmen
             "content": {
                 component: search_directory_component_1.SearchDirectoryComponent,
             }
+        },
+        data: {
+            breadcrumbRoot: true,
+            displayName: "Directory",
+            module: 'directory',
+            permissions: ['']
         }
     };
     var SearchDirectoryModule = (function () {

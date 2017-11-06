@@ -51,6 +51,12 @@ let directoryState = {
         "content": {
             component: SearchDirectoryComponent,
         }
+    },
+    data: {
+        breadcrumbRoot: true,
+        displayName: "Directory",
+        module: 'directory',
+        permissions: ['']
     }
 };
 

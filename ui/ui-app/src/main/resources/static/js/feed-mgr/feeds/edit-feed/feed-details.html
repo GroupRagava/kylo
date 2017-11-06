@@ -121,7 +121,20 @@
                         <div>Activity</div>
                     </md-tab-label>
                     <md-tab-body>
-
+                        <div ng-if="vm.selectedTabIndex == 3" class="feed-activity">
+                            <div flex layout-fill layout="row" class="activity-item" ng-repeat="activity in vm.activities">
+                                <ng-md-icon icon="local_activity" size="20" class="icon-activity"></ng-md-icon>
+                                <div flex="30">
+                                    <a layout="column">
+                                        <span><a class="link-user">{{activity.user}}</a> created <strong>{{activity.element}}.</strong></span>
+                                        <span flex></span>
+                                        <span class="small-since">{{activity.days}} days ago</span>
+                                    </a>
+                                </div>
+                                <div flex></div>
+                                <img class="avatar" src="assets/medikly_theme/images/providers/M/4.png">
+                            </div>
+                        </div>
                     </md-tab-body>
                 </md-tab>
                 <md-tab ng-disabled="vm.loadingFeedData || vm.errorLoadingFeed">
@@ -183,7 +196,8 @@
 
     </card-layout>
 
-    <card-layout style="max-width:350px;width:350px;min-width:350px;" flex="initial" body-css="md-padding" class="sidebar-medikly">
+    <card-layout style="max-width:350px;width:350px;min-width:350px;" flex="initial" body-css="md-padding"
+                 class="sidebar-medikly">
         <header-section>
             <div layout="row" layout-align="space-between center">
                 <div class="card-title" flex>Feed Summary</div>

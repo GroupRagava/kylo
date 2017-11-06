@@ -25,8 +25,8 @@ export let HOME_STATES: Ng2StateDeclaration = {
         }
     },
     data: {
-        breadcrumbRoot: false,
-        displayName: "Homepage",
+        breadcrumbRoot: true,
+        displayName: "Home",
         module: 'homepage',
         permissions: ['']
     }

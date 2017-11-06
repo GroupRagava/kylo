@@ -48,7 +48,7 @@ export let HOME_STATES: Ng2StateDeclaration =
         }
     },
     data: {
-        breadcrumbRoot: false,
+        breadcrumbRoot: true,
         displayName: "Projects",
         module: 'projects',
         permissions: ['']
@@ -64,7 +64,13 @@ let projectsState = { name: 'projects', url: '/projects',    views: {
 let homeState = { name: 'projects.home', url: '/home',    views: {
     "child-content": {
         component: ProjectsComponent,
-    }}
+    }},
+    data: {
+        breadcrumbRoot: true,
+        displayName: "Projects",
+        module: 'projects',
+        permissions: ['']
+    }
 };
 let recentState = { name: 'projects.home.recent', url: '/recent',    views: {
     "display-documents": {
