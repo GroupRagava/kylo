@@ -9,3 +9,13 @@
 .sidebar-medikly card-layout .card-toolbar {
   background-color: #F9F9F9;
 }
+
+.sidebar-medikly {
+  section {
+    background-color: #F9F9F9 !important;
+
+    .card-toolbar {
+      background-color: #F9F9F9 !important;
+    }
+  }
+}
