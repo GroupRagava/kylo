@@ -56,6 +56,7 @@ System.config({
         'angular2-highcharts/dist/HighchartsService': '../assets/medikly_theme/vendors/angular2-highcharts/dist/HighchartsService',
         'highcharts/highstock': '../assets/medikly_theme/vendors/highcharts/highstock',
         'highcharts/modules/map' : '../assets/medikly_theme/vendors/highcharts/modules/map',
+        '@qontu/ngx-inline-editor' : '../assets/medikly_theme/vendors/ngx-inline-editor/ngx-inline-editor.umd',
         'ng2-file-upload/ng2-file-upload': '../assets/medikly_theme/vendors/ng2-file-upload/bundles/ng2-file-upload.umd',
         'ng2-file-upload': '../assets/medikly_theme/vendors/ng2-file-upload/index',
         'ng2-validation': '../assets/medikly_theme/vendors/ng2-validation/bundles/ng2-validation.umd',
