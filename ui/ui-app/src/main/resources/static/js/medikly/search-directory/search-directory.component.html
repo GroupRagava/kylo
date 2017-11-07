@@ -158,7 +158,7 @@
         <span fxFlex></span>
         <button md-raised-button md-button-sm color="accent"
                 [disabled]="providersCompare.length<minProviders || providersCompare.length>maxProviders"
-                (click)="redirectToCompare()" class="mr-1">Compare
+                uiSref="compare" [uiParams]="{ ids: getsIdsProviders() }" class="mr-1">Compare
         </button>
       </div>
 

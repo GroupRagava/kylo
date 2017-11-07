@@ -43,6 +43,12 @@ define(['angular', 'kylo-common', '@uirouter/angular', 'kylo-services',
             loadChildren: 'medikly/search-directory/search-directory.module#SearchDirectoryModule'
         });
 
+        $stateProvider.state( {
+            name: 'compare.**',
+            url: '/compare',
+            loadChildren: 'medikly/compare/compare.module#CompareModule'
+        });
+
         $stateProvider
             .state('home', {
                 url: '/home',

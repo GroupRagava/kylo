@@ -265,7 +265,6 @@ export class SearchDirectoryComponent implements OnInit, OnDestroy {
   }
   redirectToCompare(){
     let param = this.getsIdsProviders();
-    //this.router.navigate(['/compare/'+param]);
   }
 
   getsIdsProviders(){

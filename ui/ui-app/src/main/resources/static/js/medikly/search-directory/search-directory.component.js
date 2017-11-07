@@ -227,7 +227,6 @@ define(["require", "exports", "@angular/core", "./data/sidebar", "./data/doctors
         };
         SearchDirectoryComponent.prototype.redirectToCompare = function () {
             var param = this.getsIdsProviders();
-            //this.router.navigate(['/compare/'+param]);
         };
         SearchDirectoryComponent.prototype.getsIdsProviders = function () {
             var param = '';
