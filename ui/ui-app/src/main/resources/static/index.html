@@ -62,13 +62,9 @@
 
         <ui-router-breadcrumbs style="padding-left:25px;" displayname-property="data.displayName" template-url="js/common/ui-router-breadcrumbs/uiBreadcrumbs.tpl.html" flex md-truncate></ui-router-breadcrumbs>
 
-        <div layout="row" layout-fill layout-align="center" flex hide-xs class=" search-wrapper" ng-show="mc.allowSearch">
-
-
-            <ng-md-icon icon="search" class="search-icon"></ng-md-icon>
-            <input type="search" ng-model="mc.searchQuery" ng-keypress="mc.onSearchKeypress($event)" class="search-input" placeholder="Global Search" >
-
-
+        <div layout="row" layout-fill layout-align="center" flex="40" hide-xs class="search-wrapper" ng-class="{focus: mc.searchHasFocus}" ng-show="mc.allowSearch">
+            <ng-md-icon icon="search" size="18" class="search-icon md-18"></ng-md-icon>
+            <input type="search" ng-model="mc.searchQuery" ng-keypress="mc.onSearchKeypress($event)" class="search-input" ng-focus="mc.searchFocused(true)" ng-blur="mc.searchFocused(false)" placeholder="Search..." >
         </div>
 
         <span flex></span>

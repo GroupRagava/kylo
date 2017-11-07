@@ -57,6 +57,8 @@ define(['angular','app'], function (angular) {
          */
         self.allowSearch = false;
 
+        self.searchHasFocus = false;
+
         /**
          * Check if the Side Nav is hidden or not
          * @returns {*|boolean}
@@ -83,6 +85,10 @@ define(['angular','app'], function (angular) {
             if (self.currentState.name != 'search') {
                 StateService.Search().navigateToSearch(true);
             }
+        };
+
+        this.searchFocused = function(focused) {
+            self.searchHasFocus = focused;
         };
 
         /**
