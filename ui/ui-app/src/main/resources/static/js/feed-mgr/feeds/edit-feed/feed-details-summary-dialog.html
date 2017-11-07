@@ -9,6 +9,7 @@
           <md-tab-body>
             <md-input-container class="md-block">
             <textarea rows="6" style="height: 480px; width: 686px" ng-model="input"></textarea>
+
             </md-input-container>
           </md-tab-body>
         </md-tab>
@@ -19,6 +20,7 @@
           <md-tab-body>
             <md-input-container class="md-block">
               <textarea rows="6" style="height: 480px; width: 686px"></textarea>
+              <div ng-bind-html="input | markdown" class="preview"></div>
             </md-input-container>
           </md-tab-body>
         </md-tab>

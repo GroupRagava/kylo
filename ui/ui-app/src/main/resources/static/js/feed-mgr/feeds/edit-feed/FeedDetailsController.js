@@ -1,4 +1,4 @@
-define(['angular', 'feed-mgr/feeds/edit-feed/module-name'], function (angular, moduleName) {
+define(['angular', 'feed-mgr/feeds/edit-feed/module-name', 'showdown'], function (angular, moduleName) {
 
     /**
      * Displays the details for a feed.
@@ -542,7 +542,7 @@ define(['angular', 'feed-mgr/feeds/edit-feed/module-name'], function (angular, m
 
     };
 
-    var FeedDetailsSummaryController = function ($scope, $mdDialog, ngSanitize) {
+    var FeedDetailsSummaryController = function ($scope, $mdDialog, ngSanitize, Showdown) {
         var self = this;
         $scope.uploading = false;
         $scope.uploadFile = null;
@@ -562,14 +562,16 @@ define(['angular', 'feed-mgr/feeds/edit-feed/module-name'], function (angular, m
         $scope.cancel = function () {
             $mdDialog.cancel();
         };
-
-
     };
 
     angular.module(moduleName).controller('FeedDetailsController', ["$scope", "$q", "$transition$", "$mdDialog", "$mdToast", "$http", "$state", "AccessControlService", "RestUrlService", "FeedService", "RegisterTemplateService", "StateService", "SideNavService", "FileUpload", "ConfigurationService", "EntityAccessControlDialogService", "EntityAccessControlService", "UiComponentsService", controller]);
 
     angular.module(moduleName).controller('FeedUploadFileDialogController', ["$scope", "$mdDialog", "$http", "RestUrlService", "FileUpload", "feedId", FeedUploadFileDialogController]);
 
-    angular.module(moduleName).controller('FeedDetailsSummaryController', ["$scope", "ngSanitize", "showdown","$mdDialog", "$http", "RestUrlService", "FileUpload", "feedId", FeedDetailsSummaryController])
+    angular.module(moduleName).controller('FeedDetailsSummaryController', ["$scope", "ngSanitize", "showdown", "$window", "$mdDialog", "$http", "RestUrlService", "FileUpload", "feedId", FeedDetailsSummaryController])
+        .filter('markdown', function() {
+            var converter = new showdown.converter();
+            return converter.makeHtml;
+        });
 
 });

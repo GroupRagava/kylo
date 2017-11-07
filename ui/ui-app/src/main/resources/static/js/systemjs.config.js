@@ -95,6 +95,7 @@ System.config({
         "jquery-ui":"bower:jquery-ui/jquery-ui.min",
         "lz-string": "bower:lz-string/libs/lz-string.min",
         "moment":"bower:moment/min/moment.min",
+        "showdown": "../assets/medikly_theme/vendors/showdown/dist/showdown",
         'ng-fx':"bower:ngFx/dist/ngFx.min",
         "nvd3": "bower:nvd3/build/nv.d3.min",
         "ocLazyLoad":"bower:oclazyload/dist/ocLazyLoad.require",
