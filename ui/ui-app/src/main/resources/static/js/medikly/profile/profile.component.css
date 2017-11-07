@@ -169,4 +169,7 @@ app-profile md-chip {
 /deep/ app-profile-header-card.small-profile-header .mat-card-title {
   font-size: 14px !important; }
 
+md-input-container:not(.md-input-has-value) input:not(:focus) {
+  color: inherit; }
+
 /*# sourceMappingURL=profile.component.css.map */
