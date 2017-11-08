@@ -18,7 +18,7 @@
         <form [formGroup]="form">
 
           <div class="mb-1">
-            <md-input-container style="width: 100%">
+            <md-input-container class="mt-0 mb-0" style="width: 100%">
               <input mdInput
                      placeholder="Project name ({{!form._value.name || form._value.name.length==0 ? 'max. '+maxName : maxName-form.value.name.length}})"
                      [formControl]="form.controls['name']" maxlength="{{maxName}}">
@@ -27,7 +27,7 @@
           </div>
 
           <div class="mb-1">
-            <md-input-container style="width: 100%">
+            <md-input-container class="mt-0 mb-0" style="width: 100%">
         <textarea autosize rows="1" mdInput
                   placeholder="Project objective ({{!form._value.objective || form._value.objective.length==0 ? 'max. '+maxObjective : maxObjective-form.value.objective.length}})"
                   [formControl]="form.controls['objective']" maxlength="{{maxObjective}}"></textarea>
@@ -38,11 +38,11 @@
             <md-radio-group [formControl]="form.controls['privacy']" [(ngModel)]="privacy">
               <div fxLayout="row">
                 <div fxFlex="50">
-                  <md-radio-button value="open">Open</md-radio-button>
+                  <md-radio-button value="open" class="mb-0">Open</md-radio-button>
                   <span class="info-radio"><br>Publicly available project that anyone can view</span>
                 </div>
                 <div fxFlex="50">
-                  <md-radio-button value="private">Private</md-radio-button>
+                  <md-radio-button value="private" class="mb-0">Private</md-radio-button>
                   <span class="info-radio"><br>You control who can view and contribute to this project</span>
                 </div>
               </div>
