@@ -6,6 +6,11 @@ define(['angular','app'], function (angular) {
     var controller = function ($scope, $http, $location, $timeout, $window, $mdSidenav, $mdMedia, $mdBottomSheet, $log, $q, $element, $rootScope, $transitions, $mdDialog, StateService,
                                SearchService, SideNavService, AccessControlService) {
         var self = this;
+
+        $scope.toggleRight = buildToggler('right');
+        $scope.isOpenRight = function(){
+            return $mdSidenav('right').isOpen();
+        };
         /**
          * Function to toggle the left nav
          * @type {toggleSideNavList}
@@ -75,6 +80,17 @@ define(['angular','app'], function (angular) {
 
         function closeSideNavList() {
             $mdSidenav('left').close();
+        }
+
+        function buildToggler(navID) {
+            return function() {
+                // Component lookup should always be available since we are not using `ng-if`
+                $mdSidenav(navID)
+                    .toggle()
+                    .then(function () {
+                        $log.debug("toggle " + navID + " is done");
+                    });
+            };
         }
 
         /**
