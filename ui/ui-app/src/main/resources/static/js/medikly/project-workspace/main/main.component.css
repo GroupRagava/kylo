@@ -71,7 +71,8 @@
     .left-sidebar-workspace .content-block .link-option:hover {
       background-color: rgba(0, 0, 0, 0.05);
       text-decoration: none;
-      color: #3c6a9d; }
+      color: #3c6a9d;
+      cursor: pointer; }
     .left-sidebar-workspace .content-block .link-option.active {
       background-color: #3c6a9d; }
       .left-sidebar-workspace .content-block .link-option.active .title-document {

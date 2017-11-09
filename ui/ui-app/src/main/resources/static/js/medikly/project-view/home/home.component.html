@@ -195,7 +195,6 @@
       <div class="title-block">DOCUMENTS ({{documents.length}})</div>
       <div class="content-block">
         <a class="link-chips" *ngFor="let document of documents">
-           <!--[routerLink]="['/projects/view/'+project+''+document.url]">-->
           <div class="md-caption link-option" uiSref="{{document.url}}" [uiParams]="{ id: project }">
             <span class="title-document">{{document.name}}</span>
             <span class="flat-badge pull-right">MD</span>

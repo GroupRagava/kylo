@@ -64,7 +64,8 @@
   .right-sidebar-home .content-block .link-option:hover {
     background-color: rgba(0, 0, 0, 0.05);
     text-decoration: none;
-    color: #3c6a9d; }
+    color: #3c6a9d;
+    cursor: pointer; }
 .right-sidebar-home .mr-2 {
   margin-right: 2px !important; }
 .right-sidebar-home .mr-3 {
