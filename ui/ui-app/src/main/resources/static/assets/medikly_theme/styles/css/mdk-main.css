@@ -3707,6 +3707,20 @@ md-sidenav.mat-sidenav-end {
   border-radius: 50%;
   text-align: center; }
 
+.chips-mdk .td-chip-removal {
+  padding-top: 5px;
+  padding-left: 6px; }
+
+.chips-mdk md-input-container {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+  .chips-mdk md-input-container .mat-input-wrapper {
+    padding-bottom: 1.296875em;
+    margin-top: 0px; }
+
+.mat-card {
+  padding: 0px !important; }
+
 .accordion-sidenav .collapsible-item .title {
   color: #eee;
   background-color: #2b303b; }
