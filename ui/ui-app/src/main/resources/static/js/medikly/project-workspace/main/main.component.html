@@ -81,7 +81,7 @@
         <div class="content-block">
 
           <a *ngFor="let document of documents" class="link-chips">
-            <div class="md-caption link-option" uiSref="{{document.url}}" ><!--routerLinkActive="active" [routerLink]="[document.url]"-->
+            <div class="md-caption link-option" uiSrefActive="active" uiSref="{{document.url}}" ><!--routerLinkActive="active" [routerLink]="[document.url]"-->
               <span class="title-document">{{document.name}}</span>
               <span class="flat-badge pull-right">MD</span>
             </div>

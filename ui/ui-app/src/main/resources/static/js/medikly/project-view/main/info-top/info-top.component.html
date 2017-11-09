@@ -11,7 +11,7 @@
     </button>
     <md-menu #topEdit="mdMenu" x-position="before" dense>
       <md-nav-list dense>
-        <a md-list-item> <!--[routerLink]="['/projects/view/'+documentId+'/workspace/project-summary']">-->
+        <a md-list-item uiSref="workspace.summary" [uiParams]="{ id: documentId }"> <!--[routerLink]="['/projects/view/'+documentId+'/workspace/project-summary']">-->
           Edit
         </a>
         <a class="tc-red-500" md-list-item>

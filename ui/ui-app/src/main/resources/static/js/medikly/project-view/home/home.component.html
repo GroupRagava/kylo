@@ -22,7 +22,7 @@
               </button>
               <md-menu #projectObjectiveMenu="mdMenu" x-position="before" dense>
                 <md-nav-list dense>
-                  <a md-list-item> <!--[routerLink]="['/projects/view/'+project+'/workspace/project-summary']">-->
+                  <a md-list-item uiSref="workspace.summary" [uiParams]="{ id: project }"> <!--[routerLink]="['/projects/view/'+project+'/workspace/project-summary']">-->
                     Edit
                   </a>
                 </md-nav-list>
@@ -62,7 +62,7 @@
               </button>
               <md-menu #projectSummaryMenu="mdMenu" x-position="before" dense>
                 <md-nav-list dense>
-                  <a md-list-item> <!--[routerLink]="['/projects/view/'+project+'/workspace/project-summary']">-->
+                  <a md-list-item uiSref="workspace.summary" [uiParams]="{ id: project }"> <!--[routerLink]="['/projects/view/'+project+'/workspace/project-summary']">-->
                     Edit
                   </a>
                 </md-nav-list>

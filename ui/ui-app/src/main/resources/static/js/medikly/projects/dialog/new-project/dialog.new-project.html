@@ -19,8 +19,7 @@
 
           <div class="mb-1">
             <md-input-container class="mt-0 mb-0" style="width: 100%">
-              <input mdInput
-                     placeholder="Project name ({{!form._value.name || form._value.name.length==0 ? 'max. '+maxName : maxName-form.value.name.length}})"
+              <input mdInput placeholder="Project name ({{!form._value.name || form._value.name.length==0 ? 'max. '+maxName : maxName-form.value.name.length}})"
                      [formControl]="form.controls['name']" maxlength="{{maxName}}">
             </md-input-container>
             <span *ngIf="privacy != 'private'" class="info-radio pl-0">This will also be your project URL: https://dev.medikly.ly/geraldmorris/{{form._value.name}} <br></span>
@@ -61,6 +60,7 @@
         <button
           md-button
           color="primary"
+          uiSref="view.home" [uiParams]="{ id: 15 }"
           md-dialog-close="true" [disabled]="!form.valid">CREATE PROJECT
         </button>
       </md-card-actions>
