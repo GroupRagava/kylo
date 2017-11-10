@@ -11,7 +11,6 @@ import {DialogWorkspaceModule} from './dialog/dialog-workspace.module';
 import {UIRouterModule, Ng2StateDeclaration} from "@uirouter/angular";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CovalentExpansionPanelModule } from '@covalent/core';
-
 import {
   MdSidenavModule,
   MdCardModule,
@@ -25,7 +24,8 @@ import {
   MdSliderModule,
   MdCheckboxModule,
   MdMenuModule,
-/*  MdExpansionModule,*/
+  MdInputModule,
+  /*MdExpansionModule,*/
   MdSelectionModule,
   MdRadioModule,
   MdSelectModule,
@@ -36,7 +36,7 @@ import {
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
 import { FileUploadModule } from 'ng2-file-upload/ng2-file-upload';
-
+import { CovalentMarkdownModule } from '@covalent/markdown';
 let workspaceState = { name: 'workspace', url: '/projects/view/:id/workspace',    views: {
   "content": {
     component: MainComponent,
@@ -78,11 +78,15 @@ let dictionaryState = { name: 'workspace.dictionary', url: '/data-dictionary',  
     MdChipsModule,
     MdListModule,
     MdSliderModule,
+    MdInputModule,
     MdCheckboxModule,
     MdMenuModule,
     MdSidenavModule,
+    FormsModule,
+    ReactiveFormsModule,
     CovalentExpansionPanelModule,
     MdSelectionModule,
+    CovalentMarkdownModule,
     MdRadioModule,
     MdSelectModule,
     MdProgressBarModule,

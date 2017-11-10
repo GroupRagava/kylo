@@ -4,7 +4,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-define(["require", "exports", "@angular/core", "@angular/platform-browser", "@angular/upgrade/static", "@uirouter/angular", "@uirouter/angular-hybrid", "@angular/platform-browser/animations", "@angular/http", "@angular/material", "routes"], function (require, exports, core_1, platform_browser_1, static_1, angular_1, angular_hybrid_1, animations_1, http_1, material_1) {
+define(["require", "exports", "@angular/core", "@angular/platform-browser", "@angular/upgrade/static", "@uirouter/angular", "@uirouter/angular-hybrid", "@angular/platform-browser/animations", "@angular/http", "@covalent/markdown", "@angular/material", "routes"], function (require, exports, core_1, platform_browser_1, static_1, angular_1, angular_hybrid_1, animations_1, http_1, markdown_1, material_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var KyloModule = (function () {
@@ -23,7 +23,8 @@ define(["require", "exports", "@angular/core", "@angular/platform-browser", "@an
                 static_1.UpgradeModule,
                 animations_1.BrowserAnimationsModule,
                 material_1.MdDialogModule,
-                http_1.HttpModule
+                http_1.HttpModule,
+                markdown_1.CovalentMarkdownModule
             ],
             providers: [
                 { provide: core_1.NgModuleFactoryLoader, useClass: core_1.SystemJsNgModuleLoader }

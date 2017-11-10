@@ -1,73 +1,35 @@
 <md-card class="">
 
-  <div fxLayout="row" fxLayoutAlign="center center">
-    <md-card-header>
-      <md-card-title>Project Summary</md-card-title>
-      <md-card-subtitle></md-card-subtitle>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <md-card-header>
+            <md-card-title>Project Summary</md-card-title>
+            <md-card-subtitle></md-card-subtitle>
 
-    </md-card-header>
-    <span fxFlex></span>
-  </div>
-
-  <md-card-content>
-    <div class="toolbar border-none" id="toolbar-toolbar">
-    <span class="ql-formats">
-      <select class="ql-font">
-        <option selected=""></option>
-        <option value="serif"></option>
-        <option value="monospace"></option>
-      </select>
-      <select class="ql-size">
-        <option value="small"></option>
-        <option selected=""></option>
-        <option value="large"></option>
-        <option value="huge"></option>
-      </select>
-    </span>
-      <span class="ql-formats">
-      <button class="ql-bold"></button>
-      <button class="ql-italic"></button>
-      <button class="ql-underline"></button>
-      <button class="ql-strike"></button>
-    </span>
-      <span class="ql-formats">
-      <select class="ql-color"></select>
-      <select class="ql-background"></select>
-    </span>
-      <span class="ql-formats">
-      <button class="ql-list" value="ordered"></button>
-      <button class="ql-list" value="bullet"></button>
-      <select class="ql-align">
-        <option selected=""></option>
-        <option value="center"></option>
-        <option value="right"></option>
-        <option value="justify"></option>
-      </select>
-    </span>
-      <span class="ql-formats">
-      <button class="ql-link"></button>
-      <button class="ql-image"></button>
-    </span>
-    </div>
-    <hr class="ma-0">
-    <div class="border-none" id="editor-container">
-      <h2>One Ring to Rule Them All</h2>
-      <p><a href="http://en.wikipedia.org/wiki/One_Ring"> http://en.wikipedia.org/wiki/One_Ring </a></p>
-      <br/>
-      <p>Three Rings for the <em> Elven-kings </em> under the sky, Seven for the <u> Dwarf-lords </u> in halls of stone,
-        Nine for <u> Mortal Men </u> , doomed to die, One for the <u> Dark Lord </u> on his dark throne. <br/> In the
-        Land of Mordor where the Shadows lie. </p>
-      <p> One Ring to <strong> rule </strong> them all, One Ring to <strong> find </strong> them, One Ring to <strong>
-        bring </strong> them all and in the darkness <strong> bind </strong> them. In the Land of Mordor where the
-        Shadows lie. </p>
+        </md-card-header>
+        <span fxFlex></span>
     </div>
 
+    <md-card-content>
 
-    <div fxLayout="row">
-      <span fxFlex></span>
-      <button md-button color="primary" class="btn-outline btn-color-lightblue mt-1">Save</button>
-    </div>
+        <form [formGroup]="form">
+            <div fxLayout="row">
+                <div fxFlex="45" class="pr-1">
+                    <md-input-container style="width: 100%" class="mt-0 mb-0">
+                        <textarea mdInput mdTextareaAutosize [formControl]="form.controls['markdown']"></textarea>
+                    </md-input-container>
+                </div>
+                <div fxFlex="45">
+                    <td-markdown [content]="form.value.markdown"></td-markdown>
+                </div>
+            </div>
+        </form>
 
-  </md-card-content>
+
+        <div fxLayout="row">
+            <span fxFlex></span>
+            <button md-button color="primary" class="btn-outline btn-color-lightblue mt-1">Save</button>
+        </div>
+
+    </md-card-content>
 
 </md-card>

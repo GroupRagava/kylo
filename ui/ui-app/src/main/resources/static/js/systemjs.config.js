@@ -35,7 +35,8 @@ System.config({
         "npm:": "../node_modules/",
         "ng-text-truncate":"vendor/ng-text-truncate/ng-text-truncate",
         "routes": "routes.js",
-        "services/module-name":"services/module-name"
+        "services/module-name":"services/module-name",
+        "simplemde": "vendor/simplemde"
     },
     map: {
         '@agm/core': '../assets/medikly_theme/vendors/agm/core/core.umd',
@@ -57,6 +58,8 @@ System.config({
         'highcharts/highstock': '../assets/medikly_theme/vendors/highcharts/highstock',
         'highcharts/modules/map' : '../assets/medikly_theme/vendors/highcharts/modules/map',
         '@qontu/ngx-inline-editor' : '../assets/medikly_theme/vendors/ngx-inline-editor/ngx-inline-editor.umd',
+        '@covalent/text-editor' : '../assets/medikly_theme/vendors/text-editor/text-editor.umd',
+        '@covalent/markdown' : '../assets/medikly_theme/vendors/markdown/bundles/markdown.umd',
         'ng2-file-upload/ng2-file-upload': '../assets/medikly_theme/vendors/ng2-file-upload/bundles/ng2-file-upload.umd',
         'ng2-file-upload': '../assets/medikly_theme/vendors/ng2-file-upload/index',
         'ng2-validation': '../assets/medikly_theme/vendors/ng2-validation/bundles/ng2-validation.umd',
@@ -119,6 +122,7 @@ System.config({
         'angular-material-icons':['angular'],
         'angular-material-data-table':['angular'],
         "angular-nvd3":['angular','nvd3'],
+        "simplemde": ['angular', 'simplemde'],
         "angular-sanitize":["angular"],
         'angular-ui-grid':['angular','angularAnimate'],
         'angular-ui-codemirror':['angular','codemirror'],

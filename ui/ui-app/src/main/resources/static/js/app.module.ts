@@ -5,8 +5,10 @@ import {UIRouterModule} from "@uirouter/angular";
 import {UIRouterUpgradeModule} from "@uirouter/angular-hybrid";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
-
+import { CovalentMarkdownModule } from '@covalent/markdown';
 import {MdDialogModule} from '@angular/material';
+
+import { ProjectSummaryComponent } from './medikly/project-workspace/project-summary/project-summary.component';
 
 import "routes";
 
@@ -18,7 +20,8 @@ import "routes";
         UpgradeModule,
         BrowserAnimationsModule,
         MdDialogModule,
-        HttpModule
+        HttpModule,
+        CovalentMarkdownModule
     ],
     providers: [
         {provide: NgModuleFactoryLoader, useClass: SystemJsNgModuleLoader}
